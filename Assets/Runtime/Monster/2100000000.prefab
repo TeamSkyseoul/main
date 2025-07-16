@@ -1472,6 +1472,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 410353445288940057}
   body: {fileID: 583409319565097871}
+  hp:
+    maxValue: 0
   initOnEnable: 0
   weapon: {fileID: 6191749435204424647}
 --- !u!195 &5515132425823479974
@@ -1508,7 +1510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Graph: {fileID: -8740561517853658475, guid: a5a60fd1d0d0564498f76ac68d85157e,
+  m_Graph: {fileID: -8740561517853658475, guid: ecd01a4e4c4613e4b8f61b5bee7d85b0,
     type: 2}
   m_BlackboardVariableOverridesList:
   - rid: 8244193283249012811

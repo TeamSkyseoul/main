@@ -12,7 +12,12 @@ namespace Character
         void IStun.Stun(float stunDuration) => stunTime = Time.time;
         float hitTime;
         bool IHitStun.IsHit => Time.time < hitTime;
-        void IHitStun.HitStun(float hitDuration) => hitTime = Time.time;
+        void IHitStun.HitStun(float hitDuration) => hitTime = Time.time + hitDuration;
+
+        protected override void OnTakeDamage()
+        {
+            (this as IHitStun)?.HitStun(0.5f);
+        }
 
         void ITraveler.StartTravel()
         {

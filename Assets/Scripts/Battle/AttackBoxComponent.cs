@@ -32,6 +32,11 @@ public class AttackBoxComponent : MonoBehaviour
     {
         AttackBox.OpenAttackWindow();
     }
+    public void SetActor(Transform actor)
+    {
+        _actor = actor;
+        _attackBox = CreateAttackBox();
+    }
     private AttackBox CreateAttackBox()
     {
         var hitBox = new AttackBox(_actor, _attackWindow);

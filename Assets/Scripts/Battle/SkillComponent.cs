@@ -1,4 +1,3 @@
-using Cysharp.Threading.Tasks.Triggers;
 using System.Collections;
 using UnityEngine;
 
@@ -34,7 +33,11 @@ public class SkillComponent : MonoBehaviour
         }
         gameObject.SetActive(false);
     }
-
+    public void SetCaster(Transform caster)
+    {
+        attackContainer.SetActor(caster);
+        Initialize(Skill,Controller);
+    }
     public void Initialize(Skill skill, SkillController controller)
     {
         if (attackContainer == null) return;

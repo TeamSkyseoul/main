@@ -25,6 +25,7 @@ namespace Character
         {
             if (!initialize) return;
 
+            SkillInstance.SetCaster(transform);
             SkillInstance.transform.position = transform.position + SkillOffset;
             SkillInstance.transform.eulerAngles = transform.eulerAngles + SkillRotation;
             SkillInstance.Fire();

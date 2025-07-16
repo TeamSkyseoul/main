@@ -8,5 +8,5 @@ public enum BattleState
 	Fleeing,
 	Attacking,
 	Patrolling,
-	Finding
+	Tracing
 }
