@@ -1,9 +1,10 @@
+using Battle;
 using UnityEngine;
 namespace Character
 {
     public interface IMove
     {
-        void SetActor(Transform transform);
+        void SetActor(IActor transform);
     }
     public interface IStrength
     {

@@ -1,12 +1,26 @@
-using System;
 using Unity.Behavior;
 
 [BlackboardEnum]
-public enum BattleState
+public enum BattleStatus
 {
     Idle,
-	Fleeing,
-	Attacking,
-	Patrolling,
-	Tracing
+    Fleeing,
+    Attacking,
+    Patrolling,
+    Tracing
+}
+
+[BlackboardEnum]
+public enum AbnormalStatus
+{
+    HitStun,
+    Stun,
+    Die
+}
+
+[BlackboardEnum]
+public enum BasicStatus
+{
+    IsGrounded,
+    IsAiring
 }

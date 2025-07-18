@@ -11,11 +11,12 @@ namespace Character
         [SerializeField] protected Animator animator;
         [SerializeField] protected HitBoxComponent body;
         [SerializeField] Statistics hp = new(1);
-        Statistics IHP.HP =>hp;
+        [SerializeField] GroundChecker groundChecker;
+        Statistics IHP.HP => hp;
         HitBox IDamageable.HitBox { get => body?.HitBox ?? HitBox.Empty; }
         readonly IMove walk = new Walk();
         readonly IMove gravity = new ReciveGravity();
-        public bool IsGrounded => Physics.Raycast(transform.position, Vector3.down, 0.3f, LayerMask.GetMask("Ground"));
+        public bool IsGrounded => groundChecker?.IsGrounded ?? true;
         public bool IsDead { get; private set; } = true;
         float IDeathable.DeathDuration { get; set; }
         [SerializeField] bool initOnEnable;
@@ -23,8 +24,8 @@ namespace Character
         {
             (this as IDeathable).Revive();
             (this as IHP).HP.Initialize();
-            walk.SetActor(transform);
-            gravity.SetActor(transform);
+            walk.SetActor(this);
+            gravity.SetActor(this);
             OnInitialize();
         }
         protected virtual void OnInitialize() { }

@@ -11,7 +11,7 @@ namespace Character
     public interface IMovable { void Move(Vector3 direction, float strength); }
     public interface ISliding { void Slide(); }
     public interface IHP { Statistics HP { get; } }
-    public interface IControlable { void SetController(IController controller); }
+    public interface IControlable {  }
     public interface ISkillOwner
     {
         public SkillComponent Skill { get; set; }

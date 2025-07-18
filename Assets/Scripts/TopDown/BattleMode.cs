@@ -55,7 +55,8 @@ namespace TopDown
                 Loader<GameObject, IPlayable>.GetLoader(nameof(IPlayable)),
                 Loader<GameObject, IProp>.GetLoader(nameof(IProp)),
                 Loader<GameObject, SkillComponent>.GetLoader(nameof(Skill)),
-                new SceneLoader(MapType.BattleMap.ToString())
+                new SceneLoader(MapType.BattleMap.ToString()),
+                new JsonSceneLoader(MapType.BattleMap.ToString())
             };
             resourceLoader.Initialize(loaders);
             resourceLoader.Load();
@@ -100,7 +101,7 @@ namespace TopDown
         async void OnClearBattle()
         {
             if (playerCharacter is IControlable controlable && playerCharacter is IActor actor)
-                controlable.SetController(new EmptyJoycon(actor));
+            { }
 
             await UniTask.WaitForSeconds(3f);
             ExitMode();
@@ -146,9 +147,9 @@ namespace TopDown
             fieldClear[field] = true;
             if (fieldClear.Values.All(clear => clear)) OnClearBattle();
         }
-        void OnExitField(FieldComponent field)
+        protected virtual void OnExitField(FieldComponent field)
         {
-            field.Dispose();
+            // field.Dispose();
         }
         void OnBirthActor(IActor actor)
         {

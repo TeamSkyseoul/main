@@ -1,21 +1,26 @@
 using UnityEngine.ResourceManagement;
 using UnityEngine;
 using UnityEngine.AI;
+using Battle;
 
 namespace Character
 {
     public class Walk : IMove, IDirection, IStrength, IUpdateReceiver
     {
         float strength;
-        Transform actor;
+        Transform actorTransform;
         Vector3 direction;
         NavMeshAgent agent;
 
-
-        void IMove.SetActor(Transform transform)
+        void IMove.SetActor(IActor actor)
         {
-            this.actor = transform;
-            agent = actor.GetComponent<NavMeshAgent>();
+            if (actor is not ITransform gameObject || !gameObject.transform.TryGetComponent<NavMeshAgent>(out var agent))
+            {
+                return;
+            }
+
+            this.actorTransform = gameObject.transform;
+            this.agent = agent;
         }
         void IDirection.SetDirection(Vector3 direction)
         {
@@ -31,18 +36,18 @@ namespace Character
         }
         void IUpdateReceiver.Update(float unscaledDeltaTime)
         {
-            if (actor == null || agent == null || !agent.enabled) return;
+            strength *= 1f - Mathf.Clamp01(1.5f * unscaledDeltaTime);
+            strength = strength < 0.1f ? 0f : strength;
+            if (actorTransform == null || agent == null || !agent.enabled || !agent.isOnNavMesh) return;
             var dir = direction;
             SetDirOfForward(ref dir);
             agent.Move(dir * strength * unscaledDeltaTime);
-            strength *= 1f - Mathf.Clamp01(1.5f * unscaledDeltaTime);
-            strength = strength < 0.1f ? 0f : strength;
         }
         void SetDirOfForward(ref Vector3 dir)
         {
-            if (actor == null) return;
+            if (actorTransform == null) return;
 
-            var @base = actor.transform;
+            var @base = actorTransform.transform;
             dir = @base.forward * dir.z + @base.right * dir.x;
             dir.y = 0;
             dir = dir.normalized;
@@ -51,21 +56,39 @@ namespace Character
     public class Jump : IMove, IStrength, IUpdateReceiver
     {
         float strength;
-        Transform actor;
+        Transform actorTransform;
         NavMeshAgent agent;
+        IGroundCheckable groundCheckable;
 
-        void IMove.SetActor(Transform transform)
+        void IMove.SetActor(IActor actor)
         {
-            this.actor = transform;
-            agent = actor.GetComponent<NavMeshAgent>();
+            if (actor is not ITransform gameObject || !gameObject.transform.TryGetComponent<NavMeshAgent>(out var agent))
+            {
+                Debug.LogWarning($"Actor is not NavMeshAgent");
+                return;
+            }
+
+            if (actor is not IGroundCheckable groundCheckable)
+            {
+                Debug.LogWarning($"Actor is not {nameof(IGroundCheckable)}");
+                return;
+            }
+
+            this.actorTransform = gameObject.transform;
+            this.agent = agent;
+            this.groundCheckable = groundCheckable;
         }
         public void SetStrength(float strength)
         {
-            this.strength = strength;
+            if (actorTransform is null)
+            {
+                Debug.LogWarning($"Actor not found.");
+                return;
+            }
 
-            if (!actor || !agent) return;
-            agent.enabled = false;
-            actor.position += Vector3.up * strength;
+            this.strength = strength;
+            agent.updatePosition = false;
+            agent.transform.position += Vector3.up * strength;
         }
         float IStrength.GetStrength()
         {
@@ -73,12 +96,9 @@ namespace Character
         }
         void IUpdateReceiver.Update(float unscaledDeltaTime)
         {
-            if (actor == null || agent == null) return;
-
-            var checker = actor.GetComponent<IGroundCheckable>();
-            agent.enabled = checker?.IsGrounded ?? true;
-            agent.enabled = agent.isOnNavMesh;
-            strength = agent.isOnNavMesh ? 0 : strength;
+            if (actorTransform is null || strength == 0) return;
+            agent.updatePosition = groundCheckable.IsGrounded;
+            strength = groundCheckable.IsGrounded ? 0 : strength;
         }
     }
     public class Sliding : IMove, IDirection, IStrength, IUpdateReceiver
@@ -87,13 +107,17 @@ namespace Character
         float startStrength;
         float startTime;
         Vector3 direction;
-        Transform actor;
+        IActor actor;
         NavMeshAgent agent;
 
-        void IMove.SetActor(Transform transform)
+        void IMove.SetActor(IActor actor)
         {
-            this.actor = transform;
-            agent = actor.GetComponent<NavMeshAgent>();
+            if (actor is not ITransform gameObejct || !gameObejct.transform.TryGetComponent<NavMeshAgent>(out var agent))
+            {
+                return;
+            }
+            this.actor = actor;
+            this.agent = agent;
         }
         void IDirection.SetDirection(Vector3 direction)
         {
@@ -111,7 +135,7 @@ namespace Character
         }
         void IUpdateReceiver.Update(float unscaledDeltaTime)
         {
-            if (!actor || !agent || strength == 0) return;
+            if (actor == null || strength == 0) return;
             var t = Mathf.Clamp01(Time.time - startTime);
             strength = startStrength * (1 - t);
             agent.Move(strength * unscaledDeltaTime * direction);
@@ -119,17 +143,26 @@ namespace Character
     }
     public class ReciveGravity : IMove, IUpdateReceiver
     {
-        Transform actor;
-        void IMove.SetActor(Transform transform)
+        Transform actorTransform;
+        IGroundCheckable groundCheckable;
+
+        void IMove.SetActor(IActor actor)
         {
-            this.actor = transform;
+            if (actor is not ITransform gameObject)
+            {
+                return;
+            }
+            if (actor is not IGroundCheckable groundCheckable)
+            {
+                return;
+            }
+            this.actorTransform = gameObject.transform;
+            this.groundCheckable = groundCheckable;
         }
         void IUpdateReceiver.Update(float unscaledDeltaTime)
         {
-            if (actor == null) return;
-            var checker = actor.GetComponent<IGroundCheckable>();
-            var grounded = checker?.IsGrounded ?? true;
-            if (!grounded) actor.transform.position += Physics.gravity * unscaledDeltaTime;
+            if (actorTransform == null) return;
+            if (!groundCheckable.IsGrounded) actorTransform.transform.position += Physics.gravity * unscaledDeltaTime /2f;
         }
     }
 }

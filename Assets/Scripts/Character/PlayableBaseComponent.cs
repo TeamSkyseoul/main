@@ -6,16 +6,14 @@ namespace Character
 {
     public abstract class PlayableBaseComponent : CharacterBaseComponent, ISliding, IJumpable, IControlable, IPlayable
     {
-        IController joycon;
         readonly IMove jump = new Jump();
         readonly IMove sliding = new Sliding();
 
         protected override void OnInitialize()
         {
             base.OnInitialize();
-            joycon = new playercontroller(this);
-            jump.SetActor(transform);
-            sliding.SetActor(transform);
+            jump.SetActor(this);
+            sliding.SetActor(this);
         }
         protected override void OnDie()
         {
@@ -26,7 +24,7 @@ namespace Character
         void IJumpable.Jump()
         {
             animator.SetBool("IsGrounded", false);
-            (jump as IStrength)?.SetStrength(10f);
+            (jump as IStrength)?.SetStrength(3f);
             OnJump();
         }
         protected override void OnTakeDamage()
@@ -47,7 +45,6 @@ namespace Character
         protected override void OnLateUpdate()
         {
             base.OnLateUpdate();
-            joycon?.Update();
         }
         protected override void OnFixedUpdate()
         {
@@ -60,9 +57,5 @@ namespace Character
             if (jumpStrength == 0) animator.SetBool("IsGrounded", IsGrounded);
         }
 
-        void IControlable.SetController(IController controller)
-        {
-            joycon = controller;
-        }
     }
 }
