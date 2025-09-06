@@ -56,8 +56,8 @@ namespace TopDown
                 Loader<GameObject, IPlayable>.GetLoader(nameof(IPlayable)),
                 Loader<GameObject, IProp>.GetLoader(nameof(IProp)),
                 Loader<GameObject, SkillComponent>.GetLoader(nameof(Skill)),
-                new JsonSceneLoader(MapType.BattleMap.ToString()),
-                new SceneLoader(MapType.BattleMap.ToString())
+                new SceneLoader(MapType.BattleMap.ToString()),
+                new JsonSceneLoader(MapType.BattleMap.ToString())
             };
             resourceLoader.Initialize(loaders);
             resourceLoader.Load();
@@ -136,7 +136,7 @@ namespace TopDown
             teh.OnEnter.AddListener((c) => { if (c.transform.GetComponentInParent<IPlayable>() != null) OnEnterField(field); });
             teh.OnExit.AddListener((c) => { if (c.transform.GetComponentInParent<IPlayable>() != null) OnExitField(field); });
             fieldClear.Add(field, false);
-            field.Dispose();
+            // field.Dispose();
         }
         void OnEnterField(FieldComponent field)
         {
