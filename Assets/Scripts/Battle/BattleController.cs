@@ -55,6 +55,7 @@ namespace Battle
                     IPlayable => battleHUD.UpdatePlayerHp,
                     //  IPlayable => battleHUD.UpdatePlayer,
                     // _ => battleHUD.UpdateMonster
+                    _ => battleHUD.UpdatePlayerHp
                 };
                 updateHUD.Invoke(health);
                 health.HP.Value--;
