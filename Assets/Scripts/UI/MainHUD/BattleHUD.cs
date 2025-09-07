@@ -26,7 +26,7 @@ namespace GameUI
 
         public void UpdatePlayerHp(IHP health) => statusBar.UpdatePlayerHp(health.HP.Ratio);
         public void UpdatePlayerStamina(float ratio) => statusBar.UpdateImpairment(ratio);
-        public void SendMessage(string type, string target) => notification.SendMessage(type, target);
+        public void ShowMessage(string type, string target) => notification.ShowMessage(type, target);
         public void ConsumeItem(int slotIndex, int amount = 1 ) => consumption.Consume(slotIndex,amount);
 
 
