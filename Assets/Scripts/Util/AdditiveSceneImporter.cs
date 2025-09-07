@@ -11,7 +11,7 @@ public class AdditiveSceneImporter : MonoBehaviour
 {
 #if UNITY_EDITOR
     public SceneAsset sceneRef;
-
+    public bool enableOnAwake;
 
     private void Awake()
     {
@@ -20,10 +20,12 @@ public class AdditiveSceneImporter : MonoBehaviour
 
     void LoadAdditiveScene()
     {
+        if (UnityEditor.EditorApplication.isPlaying) return;
         string path = AssetDatabase.GetAssetPath(sceneRef);
         if (!string.IsNullOrEmpty(path) && !SceneManager.GetSceneByPath(path).isLoaded)
         {
-            EditorSceneManager.OpenScene(path, OpenSceneMode.Additive);
+            var sceneMode = enableOnAwake ? OpenSceneMode.Additive : OpenSceneMode.AdditiveWithoutLoading;
+            var scene = EditorSceneManager.OpenScene(path, sceneMode);
         }
     }
 #endif

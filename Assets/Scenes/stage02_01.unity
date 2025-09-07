@@ -14,10 +14,10 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
-  m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: 0.06666667, g: 0.08627451, b: 0.15686275, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0.013
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: fec09bbb31e4132449d245a8afcf61f8, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -93,8 +93,10 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000002, guid: 7036a57e4e17be34d91cef0fae91f4da,
+    type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 21b52a4fbb8306a4ea6d66ec099a355c,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -338,7 +340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 271a4ba99a85df442a5f4b3689131c76, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -488,7 +490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 271a4ba99a85df442a5f4b3689131c76, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -544,7 +546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 068b377dc38acd341a1b6c8a4820f6b3, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -575,7 +577,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 584902133}
+    m_TransformParent: {fileID: 1616017522}
     m_Modifications:
     - target: {fileID: 6060319986375165410, guid: 9975d61b3bec316428c24a91bf9281fa,
         type: 3}
@@ -590,12 +592,12 @@ PrefabInstance:
     - target: {fileID: 6868345981531316056, guid: 9975d61b3bec316428c24a91bf9281fa,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.4160249
+      value: 1.4160248
       objectReference: {fileID: 0}
     - target: {fileID: 6868345981531316056, guid: 9975d61b3bec316428c24a91bf9281fa,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.4160249
+      value: 1.4160248
       objectReference: {fileID: 0}
     - target: {fileID: 6868345981531316056, guid: 9975d61b3bec316428c24a91bf9281fa,
         type: 3}
@@ -1081,7 +1083,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: a1a4c72cf14e38949bf40ffbfc794e62, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -1231,7 +1233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: a1a4c72cf14e38949bf40ffbfc794e62, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -1287,7 +1289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: a1a4c72cf14e38949bf40ffbfc794e62, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -1324,7 +1326,7 @@ GameObject:
   - component: {fileID: 139048582}
   - component: {fileID: 139048581}
   - component: {fileID: 139048586}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Plane (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1530,7 +1532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 7f71fac119618d544a4acda6c73867ae, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -1539,7 +1541,7 @@ MonoBehaviour:
   m_ScaleMode: 0
   m_Offset: {x: 1.0342091, y: 0.48890305, z: 0.5}
   m_Size: {x: 2.8, y: 1.5, z: 1}
-  m_FadeFactor: 0.828
+  m_FadeFactor: 1
 --- !u!4 &159936555
 Transform:
   m_ObjectHideFlags: 0
@@ -2036,7 +2038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: a1a4c72cf14e38949bf40ffbfc794e62, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -2055,7 +2057,7 @@ Transform:
   m_GameObject: {fileID: 182049704}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.2780075, y: 0.8549988, z: 8.615002}
+  m_LocalPosition: {x: 13.13, y: 0.8549988, z: 8.615002}
   m_LocalScale: {x: 4.207806, y: 4.207806, z: 4.207806}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2127,7 +2129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: a1a4c72cf14e38949bf40ffbfc794e62, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -3049,7 +3051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: a1a4c72cf14e38949bf40ffbfc794e62, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -3199,7 +3201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: a1a4c72cf14e38949bf40ffbfc794e62, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -4046,7 +4048,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 271a4ba99a85df442a5f4b3689131c76, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -4342,7 +4344,7 @@ Terrain:
   m_GameObject: {fileID: 496722434}
   m_Enabled: 1
   serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: 8d1e66000a58ba743ab95a8baa952904, type: 2}
+  m_TerrainData: {fileID: 0}
   m_TreeDistance: 5000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
@@ -4493,7 +4495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 271a4ba99a85df442a5f4b3689131c76, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -4549,7 +4551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 2e5e4446eac14554486e892b10fd442e, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -5090,6 +5092,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4444134085802831329, guid: 99071d059617e4d4e9d19c9bd5a5f671,
         type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4444134085802831329, guid: 99071d059617e4d4e9d19c9bd5a5f671,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 127
       objectReference: {fileID: 0}
@@ -5136,7 +5143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 7850768af295aaa458d8c53a00e2d383, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -5192,7 +5199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 7850768af295aaa458d8c53a00e2d383, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -5344,9 +5351,8 @@ Transform:
   - {fileID: 769833480}
   - {fileID: 1787314634}
   - {fileID: 907808005}
-  - {fileID: 692975253}
-  - {fileID: 99655984}
-  - {fileID: 700514722}
+  - {fileID: 1616017522}
+  - {fileID: 2081954291}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &587236414
@@ -6157,7 +6163,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 584902133}
+    m_TransformParent: {fileID: 1616017522}
     m_Modifications:
     - target: {fileID: 2578984235196363632, guid: 6d2d03b509a3a274c8bc17c9bd73191e,
         type: 3}
@@ -6321,7 +6327,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 584902133}
+    m_TransformParent: {fileID: 1616017522}
     m_Modifications:
     - target: {fileID: 5098073607553182525, guid: 15b40e8805ded1546af49bdb11a12649,
         type: 3}
@@ -6885,7 +6891,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 271a4ba99a85df442a5f4b3689131c76, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -7021,7 +7027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 7f71fac119618d544a4acda6c73867ae, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -7030,7 +7036,7 @@ MonoBehaviour:
   m_ScaleMode: 0
   m_Offset: {x: 1.0342091, y: 0.48890305, z: 0.5}
   m_Size: {x: 2.8, y: 1.5, z: 1}
-  m_FadeFactor: 0.828
+  m_FadeFactor: 1
 --- !u!4 &804213833
 Transform:
   m_ObjectHideFlags: 0
@@ -8733,7 +8739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: a1a4c72cf14e38949bf40ffbfc794e62, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -9284,7 +9290,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 50b03efa21373a4498de9eab4d3a4048, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -9430,7 +9436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 271a4ba99a85df442a5f4b3689131c76, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -9597,7 +9603,7 @@ Light:
   serializedVersion: 11
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2.88
+  m_Intensity: 5.73
   m_Range: 5.62
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -10027,7 +10033,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: a1a4c72cf14e38949bf40ffbfc794e62, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -10532,7 +10538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 7850768af295aaa458d8c53a00e2d383, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -10850,7 +10856,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: a1a4c72cf14e38949bf40ffbfc794e62, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -11079,7 +11085,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 068b377dc38acd341a1b6c8a4820f6b3, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -11313,7 +11319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 606ecf1aeaa8976428216465da4e1afb, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -11369,7 +11375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 068b377dc38acd341a1b6c8a4820f6b3, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -11509,7 +11515,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 7850768af295aaa458d8c53a00e2d383, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -12176,7 +12182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 068b377dc38acd341a1b6c8a4820f6b3, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -12489,7 +12495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 7f71fac119618d544a4acda6c73867ae, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -12498,7 +12504,7 @@ MonoBehaviour:
   m_ScaleMode: 0
   m_Offset: {x: 1.0342091, y: 0.48890305, z: 0.5}
   m_Size: {x: 2.8, y: 1.5, z: 1}
-  m_FadeFactor: 0.828
+  m_FadeFactor: 1
 --- !u!4 &1512754390
 Transform:
   m_ObjectHideFlags: 0
@@ -12630,7 +12636,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: a1a4c72cf14e38949bf40ffbfc794e62, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -13110,7 +13116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: a1a4c72cf14e38949bf40ffbfc794e62, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -13614,6 +13620,40 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1616004863}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1616017521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1616017522}
+  m_Layer: 0
+  m_Name: prop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1616017522
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616017521}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 692975253}
+  - {fileID: 700514722}
+  - {fileID: 99655984}
+  m_Father: {fileID: 584902133}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1617845784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13818,7 +13858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 7850768af295aaa458d8c53a00e2d383, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -14126,7 +14166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: a1a4c72cf14e38949bf40ffbfc794e62, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -14785,7 +14825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 606ecf1aeaa8976428216465da4e1afb, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}
@@ -16830,6 +16870,70 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2073355049}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2081954290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2081954291}
+  - component: {fileID: 2081954292}
+  m_Layer: 0
+  m_Name: Navmesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2081954291
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081954290}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 584902133}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2081954292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081954290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.033333335
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: ce3cf6f5d25bb0342833c9316a0d4b31, type: 2}
+  m_BuildHeightMesh: 0
 --- !u!1001 &2094851135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17307,7 +17411,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 2e5e4446eac14554486e892b10fd442e, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 1
+  m_FadeScale: 0.83
   m_StartAngleFade: 180
   m_EndAngleFade: 180
   m_UVScale: {x: 1, y: 1}

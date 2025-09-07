@@ -10,7 +10,7 @@ Material:
   m_Name: "\uD54F\uC790\uAD6D 2"
   m_Shader: {fileID: -6465566751694194690, guid: 9b4e681081e2b4c469111bb649e2f7ee,
     type: 3}
-  m_Parent: {fileID: 2100000, guid: a1a4c72cf14e38949bf40ffbfc794e62, type: 2}
+  m_Parent: {fileID: 2100000, guid: 606ecf1aeaa8976428216465da4e1afb, type: 2}
   m_ModifiedSerializedProperties: 16
   m_ValidKeywords: []
   m_InvalidKeywords: []

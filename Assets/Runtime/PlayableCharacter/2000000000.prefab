@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 225586846819966103}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.11, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -187,6 +187,8 @@ GameObject:
   - component: {fileID: 2376248195487570993}
   - component: {fileID: 6711620574241619711}
   - component: {fileID: 3737148222133589087}
+  - component: {fileID: 5945708465015163829}
+  - component: {fileID: 3894560250563087898}
   m_Layer: 0
   m_Name: 2000000000
   m_TagString: Player
@@ -228,8 +230,9 @@ MonoBehaviour:
   animator: {fileID: 7642961275539360215}
   body: {fileID: 1926270657456753617}
   hp:
-    maxValue: 1
-  initOnEnable: 0
+    maxValue: 100
+  groundChecker: {fileID: 5945708465015163829}
+  initOnEnable: 1
   gun: {fileID: 4403585581726299805}
   wideCam: {fileID: 7280782327186415068}
   zoomInCam: {fileID: 3582709219125025619}
@@ -255,6 +258,54 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &5945708465015163829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761591075741585143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28fe6bb583b603a44929a20f22ce9509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offset: {x: 0, y: 0, z: 0}
+  distance: 0.1
+  radius: 0.1
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 128
+--- !u!114 &3894560250563087898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761591075741585143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Graph: {fileID: -7633380018473413163, guid: c0afb8dcf16c11746b4f4f55cfbf96d9,
+    type: 2}
+  m_BlackboardVariableOverridesList:
+  - rid: 998882268276326491
+  m_IsInitialised: 0
+  m_IsStarted: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 998882268276326491
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]',
+        ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 1761591075741585143}
 --- !u!1 &3523605140092017767
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,6 +316,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8121020784069855122}
   - component: {fileID: 7280782327186415068}
+  - component: {fileID: 5437896701010205174}
   m_Layer: 0
   m_Name: Wide View
   m_TagString: Untagged
@@ -282,7 +334,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.000000041967898, y: 0.000000003143462, z: -6.6949537e-16,
     w: 1}
-  m_LocalPosition: {x: 1.0000001, y: 1.5, z: -2.1400006}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -312,7 +364,7 @@ MonoBehaviour:
     LookAtTarget: {fileID: 0}
     CustomLookAtTarget: 0
   Lens:
-    FieldOfView: 40
+    FieldOfView: 60
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
@@ -331,6 +383,21 @@ MonoBehaviour:
       BarrelClipping: 0.25
       Anamorphism: 0
   BlendHint: 0
+--- !u!114 &5437896701010205174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3523605140092017767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44d70cc20219cd84593f67d248eafe36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Offset: {x: 1.62, y: 0, z: 2.48}
+  ApplyAfter: 1
+  PreserveComposition: 0
 --- !u!1 &4838582996533470028
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,7 +423,7 @@ Transform:
   m_GameObject: {fileID: 4838582996533470028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.11, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -395,7 +462,7 @@ PrefabInstance:
     - target: {fileID: 4535583689865371044, guid: 5ef10c8b04ae63f4c903c4252aa230c1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.11
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4535583689865371044, guid: 5ef10c8b04ae63f4c903c4252aa230c1,
         type: 3}

@@ -71,6 +71,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0d9a4d2ced4956d46b965e8e30da0f69
+    m_Address: Rock_A_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0ebbcba4c34f6e640a5547cda761fa0d
     m_Address: "\uB09C\uAC04_1 (27) 1"
     m_ReadOnly: 0
@@ -137,6 +142,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1ce41a610b2c6584f8e65a6f3268a31a
+    m_Address: Rock_B_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2019117e91d451e4c94bb6ef3bf32077
     m_Address: Mansesan
     m_ReadOnly: 0
@@ -159,11 +169,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 23a9444caacc72b45a0ab36e6998c710
     m_Address: "\uC9F1\uB3CC_3"
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 2472c57dae555ab47b4abf32e6d35ceb
-    m_Address: Rock_C_01
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -341,6 +346,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4266f4ba9164c024180ce7daba90502e
     m_Address: ---------------------------------
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 42e5282d531acc842919ec2812356b3a
+    m_Address: 2
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -657,6 +667,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 889a6699dc11de248b1a92fe76004d7b
+    m_Address: Rock_C_02
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 895a24eef199808449a777af6e285fd2
     m_Address: Assets/Prefabs/Skill/2300000004.prefab
     m_ReadOnly: 0
@@ -675,11 +690,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8efee6aeedd01ee4bb165209ef53bdf5
     m_Address: "\uB3D9\uC0C1_1 (3)"
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 900f08a3006a1f04ab6ba862f4f25a84
-    m_Address: Rock_A_01
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -744,6 +754,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - IEnemy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9dc949a9b54098544a101d426b3b7f1a
+    m_Address: Rock_B_02
+    m_ReadOnly: 0
+    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a10534b0aef86c04e961b9c55b27d19c
     m_Address: "\uB2E4\uB9AC_\uBC11"
@@ -846,6 +861,11 @@ MonoBehaviour:
     m_SerializedLabels:
     - IEnemy
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bb12c276c48733144bc2f078f9eb1e0b
+    m_Address: 3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bb5b90dd842dbb24caef98f5a20e54b5
     m_Address: "\uC88C\uBB3C\uC1E0"
     m_ReadOnly: 0
@@ -866,11 +886,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: bf37dd299ec1b6249bc4e235bd007f08
-    m_Address: Rock_C_02
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c0c603720f4821843b3f22a82e9010d8
     m_Address: "\uB3D9\uC0C1_2 (6)"
     m_ReadOnly: 0
@@ -878,6 +893,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c284d51a99b2631459016ec49d223917
     m_Address: Gyeonghoeru
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c294ed0830f479942b07045d1d9a10f0
+    m_Address: Rock_C_01
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -929,6 +949,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: cc4b57b1752a2cc4280b895456c8b0ff
     m_Address: turtle ship
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cd950a41ec9282147929fd85217486ce
+    m_Address: 1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -1103,11 +1128,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: eaeba84cdab8e5f42b054a8aff7a0483
-    m_Address: Rock_B_01
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ebbb7fba7ac43c243b38a6d950c1d7c0
     m_Address: Terrain
     m_ReadOnly: 0
@@ -1157,6 +1177,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f476197c44c60e94eb792631e17e927c
     m_Address: "\uAC70\uBD81\uC120"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f654d6564b152f1478beef4b9ec504b6
+    m_Address: Rock_A_02
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

@@ -26,9 +26,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scripts/TopDown/Lobby/Lobby.unity
     guid: 741b99ff10f6dae42921f2fd793c19f0
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/BattleMap.unity
-    guid: 48c19840ed953104bb0c80adedbe5678
+    guid: 51b74023303d8a249b00c9184054208c
   - enabled: 1
     path: "Assets/0. \uC791\uC5C5/Test.unity"
     guid: 8688b594948ac4745a8375ff5ca217a6
