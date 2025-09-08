@@ -18,6 +18,13 @@ public partial class TryGetInputInt : Condition
                 var input = PlayerInput.IsInputMeleeAttack(out var attackNum);
                 Value.Value = attackNum;
                 return input;
+                
+            case PcInputInt.Consumption:
+              
+                var consume = PlayerInput.IsInputConsumption(out var consumptionNum);
+                Value.Value = consumptionNum;   
+                
+                return consume;
             default:
                 return false;
         }

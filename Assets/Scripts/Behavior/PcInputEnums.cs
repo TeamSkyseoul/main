@@ -18,5 +18,6 @@ public enum PcInputBool
 [BlackboardEnum]
 public enum PcInputInt
 {
-    MeleeAttack
+    MeleeAttack,
+    Consumption
 }

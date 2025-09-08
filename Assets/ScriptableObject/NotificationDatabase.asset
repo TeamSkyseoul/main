@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f44da8feb328514385a23fab88db4de, type: 3}
+  m_Name: NotificationDatabase
+  m_EditorClassIdentifier: 
+  notifications:
+  - key: ItemAcquired
+    format: "{0}\uC744/\uB97C \uD68D\uB4DD\uD558\uC600\uC2B5\uB2C8\uB2E4"
+  - key: EnemyAppeared
+    format: "{0}\uC774 \uB098\uD0C0\uB0AC\uC2B5\uB2C8\uB2E4"

@@ -50,12 +50,11 @@ namespace Battle
             if (actor is IDeathable death && death.IsDead) return;
             if (actor is IHP health)
             {
-                Action<IHP> updateHUD = health switch
+                Action<IHP> updateHUD = actor switch
                 {
                     IPlayable => battleHUD.UpdatePlayerHp,
-                    //  IPlayable => battleHUD.UpdatePlayer,
-                    // _ => battleHUD.UpdateMonster
-                    _ => battleHUD.UpdatePlayerHp
+                    IEnemy => hp => UIController.WorldUI.UpdateStatus(actor, hp),
+                    _ => hp => UIController.WorldUI.UpdateStatus(actor, hp)
                 };
                 updateHUD.Invoke(health);
                 health.HP.Value--;

@@ -16,14 +16,10 @@ namespace GameUI
                 return _instance;
             }
         }
+        public static WorldUI WorldUI => Instance.worldUI;
         #endregion
-        const string UI_PATH_PREFIX = "UI/";
-        GameObject uiRoot;
-        readonly Stack<UIPopUp> popUpStack = new();
-        int order = 10;
+
         public UIHUD MainHUD { get; private set; }
-
-
         public GameObject UIRoot
         {
             get
@@ -41,6 +37,14 @@ namespace GameUI
             }
         }
 
+        const string UI_PATH_PREFIX = "UI/";
+        GameObject uiRoot;
+        readonly Stack<UIPopUp> popUpStack = new();
+        readonly WorldUI worldUI = new();
+        int order = 10;
+
+        
+      
      
         void LoadUI<T>(string name, System.Action<T> onLoaded, Transform parent = null, bool sort = true) where T : UIBase
         {

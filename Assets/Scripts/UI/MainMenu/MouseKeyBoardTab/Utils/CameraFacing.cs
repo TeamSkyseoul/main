@@ -17,7 +17,7 @@ public class CameraFacing : MonoBehaviour
     {
         _cameraTransform = Camera.main.transform;
     }
-    void Update()
+    void LateUpdate()
     {
         RotateTranform();
     }

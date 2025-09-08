@@ -8,8 +8,8 @@ namespace GameUI
     public class BattleHUD : UIHUD
     {
         PlayerStatus statusBar;
-        QuickSlot quickSlot;
-        Equipment equipment;
+        ConsumptionWindow consumption;
+        Notification notification;
         public override bool Init()
         {
             if (!base.Init()) return false;
@@ -20,14 +20,17 @@ namespace GameUI
         void GetBattleWidgets()
         {
             statusBar = GetWidget<PlayerStatus>();
-            quickSlot = GetWidget<QuickSlot>();
-            equipment = GetWidget<Equipment>();
+            notification = GetWidget<Notification>();    
+            consumption = GetWidget<ConsumptionWindow>();       
         }
 
-        public void UpdatePlayerHp(IHP health) { statusBar.UpdatePlayerHp(health.HP.Ratio); }
-        public void UpdatePlayerStamina(float ratio) { statusBar.UpdateImpairment(ratio); }
-       
+        public void UpdatePlayerHp(IHP health) => statusBar.UpdatePlayerHp(health.HP.Ratio);
+        public void UpdatePlayerStamina(float ratio) => statusBar.UpdateImpairment(ratio);
+        public void ShowMessage(string type, string target) => notification.ShowMessage(type, target);
+        public void ConsumeItem(int slotIndex, int amount = 1 ) => consumption.Consume(slotIndex,amount);
+
+
     }
-       
+
 } 
 
