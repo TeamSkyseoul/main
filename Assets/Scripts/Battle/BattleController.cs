@@ -16,10 +16,7 @@ namespace Battle
         //readonly BattleHUD battleHUD = new();
         readonly HashSet<IActor> joinCharacters = new();
 
-        public BattleController()
-        {
-            battleHUD=UIController.Instance.ShowHUD<GameUI.BattleHUD>();
-        }
+        public BattleController() { battleHUD = UIController.Instance.ShowHUD<GameUI.BattleHUD>(); }
         public void Update()
         {
 

@@ -6,7 +6,7 @@ namespace GameUI
     public class UIController
     {
         #region Static
-        private static UIController _instance;
+        static UIController _instance;
         public static UIController Instance
         {
             get
@@ -20,32 +20,19 @@ namespace GameUI
         #endregion
 
         public UIHUD MainHUD { get; private set; }
-        public GameObject UIRoot
-        {
-            get
-            {
-                if (uiRoot == null)
-                {
-                    uiRoot = GameObject.Find("@UI_Root");
-                    if (uiRoot == null)
-                    {
-                        uiRoot = new GameObject { name = "@UI_Root" };
-                        Object.DontDestroyOnLoad(uiRoot);
-                    }
-                }
-                return uiRoot;
-            }
-        }
+        public GameObject UIRoot => uiHelper.GetOrAddUIRoot();
 
         const string UI_PATH_PREFIX = "UI/";
-        GameObject uiRoot;
+        readonly UIHelper uiHelper = new();
         readonly Stack<UIPopUp> popUpStack = new();
         readonly WorldUI worldUI = new();
         int order = 10;
+       
 
-        
-      
-     
+
+
+        UIController() {  uiHelper.FindOrAddGameObject(UI_PATH_PREFIX);}
+       
         void LoadUI<T>(string name, System.Action<T> onLoaded, Transform parent = null, bool sort = true) where T : UIBase
         {
             string path = UI_PATH_PREFIX + name;

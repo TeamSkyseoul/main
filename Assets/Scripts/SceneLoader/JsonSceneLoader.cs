@@ -319,14 +319,14 @@ namespace SceneLoad
         #region  UnityEditor
         void AttachEditorSafeHelper()
         {
-            var existing = GameObject.Find(nameof(JsonSceneLoaderEditorSafe));
+            var existing = GameObject.Find(nameof(JsonSceneLoaderComponent));
             if (existing != null) return;
 
            
-            var safeGo = new GameObject(nameof(JsonSceneLoaderEditorSafe));
+            var safeGo = new GameObject(nameof(JsonSceneLoaderComponent));
             UnityEngine.Object.DontDestroyOnLoad(safeGo);
 
-            var safeComp = safeGo.AddComponent<GameUI.JsonSceneLoaderEditorSafe>();
+            var safeComp = safeGo.AddComponent<GameUI.JsonSceneLoaderComponent>();
             safeComp.SetLoader(this);
         }
         #endregion
