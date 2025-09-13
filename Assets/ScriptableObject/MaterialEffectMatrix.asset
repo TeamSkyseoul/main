@@ -27,7 +27,7 @@ MonoBehaviour:
     DecalDuration: 1
     SFX: 
     ExtraParamsRaw: 
-  - ParticleAddress: 
+  - ParticleAddress: ' '
     ParticleDuration: 1
     DecalAddress: 
     DecalDuration: 1
@@ -51,7 +51,7 @@ MonoBehaviour:
     DecalDuration: 1
     SFX: 
     ExtraParamsRaw: 
-  - ParticleAddress: 
+  - ParticleAddress: ddd
     ParticleDuration: 1
     DecalAddress: 
     DecalDuration: 1
@@ -62,6 +62,42 @@ MonoBehaviour:
     DecalAddress: 
     DecalDuration: 1
     SFX: 
+    ExtraParamsRaw: CameraShake=10;
+  - ParticleAddress: 
+    ParticleDuration: 1
+    DecalAddress: 
+    DecalDuration: 1
+    SFX: 
+    ExtraParamsRaw: 
+  - ParticleAddress: 
+    ParticleDuration: 1
+    DecalAddress: 
+    DecalDuration: 1
+    SFX: 
+    ExtraParamsRaw: 
+  - ParticleAddress: 
+    ParticleDuration: 1
+    DecalAddress: 
+    DecalDuration: 1
+    SFX: 
+    ExtraParamsRaw: 
+  - ParticleAddress: 
+    ParticleDuration: 1
+    DecalAddress: 
+    DecalDuration: 1
+    SFX: 
+    ExtraParamsRaw: 
+  - ParticleAddress: 
+    ParticleDuration: 1
+    DecalAddress: 
+    DecalDuration: 1
+    SFX: 
+    ExtraParamsRaw: 
+  - ParticleAddress: 
+    ParticleDuration: 1
+    DecalAddress: 
+    DecalDuration: 1
+    SFX: 
     ExtraParamsRaw: 
   - ParticleAddress: 
     ParticleDuration: 1
@@ -99,46 +135,9 @@ MonoBehaviour:
     DecalDuration: 1
     SFX: 
     ExtraParamsRaw: 
-  - ParticleAddress: StoneBulletHit
-    ParticleDuration: 1
-    DecalAddress: 
-    DecalDuration: 1
-    SFX: 
-    ExtraParamsRaw: 
   - ParticleAddress: 
     ParticleDuration: 1
     DecalAddress: 
     DecalDuration: 1
     SFX: 
     ExtraParamsRaw: 
-  - ParticleAddress: 
-    ParticleDuration: 1
-    DecalAddress: 
-    DecalDuration: 1
-    SFX: 
-    ExtraParamsRaw: 
-  - ParticleAddress: 
-    ParticleDuration: 1
-    DecalAddress: 
-    DecalDuration: 1
-    SFX: 
-    ExtraParamsRaw: 
-  - ParticleAddress: 
-    ParticleDuration: 1
-    DecalAddress: 
-    DecalDuration: 1
-    SFX: 
-    ExtraParamsRaw: 
-  - ParticleAddress: 
-    ParticleDuration: 1
-    DecalAddress: 
-    DecalDuration: 1
-    SFX: 
-    ExtraParamsRaw: 
-  - ParticleAddress: 
-    ParticleDuration: 1
-    DecalAddress: 
-    DecalDuration: 1
-    SFX: 
-    ExtraParamsRaw: 
-  currentSize: 6

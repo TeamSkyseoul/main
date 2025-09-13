@@ -25,6 +25,7 @@ namespace Effect
             {
                 materialEffect = handle.Result;
                 materialEffect.BuildCache();
+              
             }
             else
             {
@@ -32,7 +33,7 @@ namespace Effect
             }
             Debug.Log($"[HitEffectController] :{materialEffect.rows.Count}");
         }
-
+        
         MaterialEffectData GetEffect(string attacker, string victim)
         {
             return materialEffect?.Get(attacker, victim);

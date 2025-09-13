@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace GameUI
 {   
-    public class ObjectStatus :WorldUI
+    public class ObjectStatus : MonoBehaviour
     {
         [SerializeField] TextMeshProUGUI nameText;
         [SerializeField] StatusBar hpStatusBar;
@@ -15,10 +15,13 @@ namespace GameUI
         Transform target;
         Vector3 offset = Vector3.zero;
 
+        public Action<ObjectStatus> OnReleased;
      
         private void Update()
         {
-            if (target != null) { transform.position = target.position + offset; }
+            if (target != null)
+                transform.position = target.position + offset;
+            
         }
             
 
@@ -27,21 +30,21 @@ namespace GameUI
         public void UpdateHp(float hp) => hpStatusBar.UpdateStatusBar(hp);
         public void UpdatePoise(float poise)=> poiseStatusBar.UpdateStatusBar(poise);
 
-        public void Bind(Transform  target, IHP ihp ,Vector3 height)
+        public void Bind(Transform  target, IHP ihp)
         {
             this.target = target;
             UpdateHp(ihp.HP.Ratio);
-            offset= height; 
         }
     
         public void Release()
         {
             Unbind();
-            InvokeRelease();
+            OnReleased.Invoke(this);
         }
         public void Unbind()
         {
             target = null;
+          
         }
            
 
