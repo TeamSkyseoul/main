@@ -15,10 +15,13 @@ namespace GameUI
         Transform target;
         Vector3 offset = Vector3.zero;
 
+        public Action<ObjectStatus> OnReleased;
+     
         private void Update()
         {
             if (target != null)
                 transform.position = target.position + offset;
+            
         }
             
 
@@ -33,10 +36,15 @@ namespace GameUI
             UpdateHp(ihp.HP.Ratio);
         }
     
-
+        public void Release()
+        {
+            Unbind();
+            OnReleased.Invoke(this);
+        }
         public void Unbind()
         {
             target = null;
+          
         }
            
 

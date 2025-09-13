@@ -70,6 +70,8 @@ namespace Battle
         void DoDie(IActor actor)
         {
             this.DisposeCharacter(actor);
+            if(actor is IEnemy)UIController.WorldUI.HideStatus(actor);
+            
             if (actor is IDeathable death) death.Die();
             OnDead?.Invoke(actor);
         }

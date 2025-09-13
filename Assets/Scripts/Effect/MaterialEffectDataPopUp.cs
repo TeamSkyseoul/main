@@ -14,7 +14,7 @@ namespace Effect
             window.Show();
         }
 
-        private void OnGUI()
+        void OnGUI()
         {
             if (data == null) return;
 
@@ -25,7 +25,19 @@ namespace Effect
             data.SFX = EditorGUILayout.TextField("SFX", data.SFX);
             data.ExtraParamsRaw = EditorGUILayout.TextField("Extra Params", data.ExtraParamsRaw);
 
+            if (GUILayout.Button("Reset")) { ResetData(); }
             if (GUILayout.Button("Close")) { Close(); }
+        }
+        void ResetData()
+        {
+            if (data == null) return;
+
+            data.ParticleAddress = string.Empty;
+            data.ParticleDuration = 1.0f;
+            data.DecalAddress = string.Empty;
+            data.DecalDuration = 1.0f;
+            data.SFX = string.Empty;
+            data.ExtraParamsRaw = string.Empty;
         }
     }
 }

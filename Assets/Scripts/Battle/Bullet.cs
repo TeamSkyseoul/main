@@ -1,4 +1,6 @@
+using Effect;
 using System;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 using Util;
 
@@ -24,6 +26,7 @@ namespace Battle
             _attackBox.SetType(AttackBox.AttackType.None);
             _attackBox.OnCollision += DrawHitLine;
             _attackBox.OnCollision += (c) => OnHit?.Invoke(c);
+            
         }
         public void OnFire()
         {

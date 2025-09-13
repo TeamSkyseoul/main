@@ -11,6 +11,7 @@ namespace GameUI
         readonly Queue<ObjectStatus> statusPool = new();
         Transform worldCanvasRoot;
 
+        ~WorldUI() { Clear(); }
         string GetStatusPrefabPath(IActor actor)
         {
             return actor switch
@@ -61,6 +62,7 @@ namespace GameUI
                 }
                     
                 status.Bind(attach, hp);
+                status.OnReleased = s => HideStatus(actor);
             }
 
             statusBars[actor] = status;

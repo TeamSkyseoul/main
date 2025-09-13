@@ -52,7 +52,7 @@ namespace Effect
         }
 
 #if UNITY_EDITOR
-        // Inspector에서 값 바뀔 때 자동으로 더티 플래그 설정
+      
         private void OnValidate()
         {
             UnityEditor.EditorUtility.SetDirty(this);

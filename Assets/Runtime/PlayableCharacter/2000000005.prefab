@@ -424,6 +424,7 @@ MonoBehaviour:
   body: {fileID: 506249653686506123}
   hp:
     maxValue: 0
+  groundChecker: {fileID: 0}
   initOnEnable: 0
   gun: {fileID: 8018892378736294412}
   wideCam: {fileID: 0}

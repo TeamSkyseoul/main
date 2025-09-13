@@ -27,7 +27,7 @@ MonoBehaviour:
     DecalDuration: 1
     SFX: 
     ExtraParamsRaw: 
-  - ParticleAddress: 
+  - ParticleAddress: ' '
     ParticleDuration: 1
     DecalAddress: 
     DecalDuration: 1
@@ -51,18 +51,18 @@ MonoBehaviour:
     DecalDuration: 1
     SFX: 
     ExtraParamsRaw: 
-  - ParticleAddress: 
+  - ParticleAddress: ddd
     ParticleDuration: 1
     DecalAddress: 
     DecalDuration: 1
     SFX: 
     ExtraParamsRaw: 
-  - ParticleAddress: 
+  - ParticleAddress: Blood
     ParticleDuration: 1
     DecalAddress: 
     DecalDuration: 1
     SFX: 
-    ExtraParamsRaw: 
+    ExtraParamsRaw: CameraShake=10;
   - ParticleAddress: 
     ParticleDuration: 1
     DecalAddress: 
