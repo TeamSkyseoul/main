@@ -1,0 +1,64 @@
+{
+    "items": [
+        {
+            "TypeA": 4,
+            "TypeB": 3,
+            "ParticleAddress": "Blood",
+            "ParticleDuration": 0.30000001192092898,
+            "DecalAddress": "",
+            "DecalDuration": 0.0,
+            "SFX": "",
+            "ExtraParamsRaw": ""
+        },
+        {
+            "TypeA": 3,
+            "TypeB": 1,
+            "ParticleAddress": "FleshHit",
+            "ParticleDuration": 0.0,
+            "DecalAddress": "",
+            "DecalDuration": 0.0,
+            "SFX": "",
+            "ExtraParamsRaw": ""
+        },
+        {
+            "TypeA": 3,
+            "TypeB": 2,
+            "ParticleAddress": "WindAOE",
+            "ParticleDuration": 0.5,
+            "DecalAddress": "GroundDecal",
+            "DecalDuration": 5.0,
+            "SFX": "",
+            "ExtraParamsRaw": "CameraShake=10;OtherEvent=20;"
+        },
+        {
+            "TypeA": 4,
+            "TypeB": 2,
+            "ParticleAddress": "StoneBulletHit",
+            "ParticleDuration": 0.800000011920929,
+            "DecalAddress": "",
+            "DecalDuration": 1.0,
+            "SFX": "",
+            "ExtraParamsRaw": ""
+        },
+        {
+            "TypeA": 4,
+            "TypeB": 1,
+            "ParticleAddress": "StoneBulletHit",
+            "ParticleDuration": 0.800000011920929,
+            "DecalAddress": "",
+            "DecalDuration": 1.0,
+            "SFX": "",
+            "ExtraParamsRaw": ""
+        },
+        {
+            "TypeA": 4,
+            "TypeB": 5,
+            "ParticleAddress": "WaterHit",
+            "ParticleDuration": 1.0,
+            "DecalAddress": "",
+            "DecalDuration": 1.0,
+            "SFX": "",
+            "ExtraParamsRaw": ""
+        }
+    ]
+}

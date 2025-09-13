@@ -1,8 +1,13 @@
 using JetBrains.Annotations;
 using UnityEngine;
 
-public class  ObjectSurfaceComponent  : MonoBehaviour
+namespace Effect
 {
-    [Header("Material Type")]
-    public MaterialType materialType;
+    public class ObjectSurfaceComponent : MonoBehaviour
+    {
+        [Header("Material Type")]
+        [MaterialTypeDropdown]
+        [SerializeField] string materialType;
+        public string MaterialType { get { return materialType; } }
+    }
 }

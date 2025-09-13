@@ -8,9 +8,9 @@ namespace GameUI
     public interface IHideable { void Hide(); }
     public interface IDestroyable { void DestroyUI(); }
     public interface IStatusBar { void UpdateStatusBar(float value); }
-
     public interface IButton { void BindButtonEvents(); }
 
+  
     public interface ISetValue { }
     public interface ISetValue<T>:ISetValue { void SetValue(T value); }
     public interface ISelectable<T>

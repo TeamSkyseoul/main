@@ -1,4 +1,5 @@
 ﻿using Character;
+using Effect;
 using GameUI;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,7 @@ namespace Battle
         GameUI.BattleHUD battleHUD;
         //readonly BattleHUD battleHUD = new();
         readonly HashSet<IActor> joinCharacters = new();
-
+        HitEffectController hitEffect = new();
         public BattleController() { battleHUD = UIController.Instance.ShowHUD<GameUI.BattleHUD>(); }
         public void Update()
         {
@@ -45,6 +46,9 @@ namespace Battle
         {
             if (!collision.Victim.Actor.TryGetComponent<IActor>(out var actor)) return;
             if (actor is IDeathable death && death.IsDead) return;
+           
+            hitEffect.ShowHitEffect(collision);
+
             if (actor is IHP health)
             {
                 Action<IHP> updateHUD = actor switch
