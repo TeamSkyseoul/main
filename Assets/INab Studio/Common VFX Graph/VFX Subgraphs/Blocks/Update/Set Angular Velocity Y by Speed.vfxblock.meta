@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: db5fb001bd73f33499e7c1651ab6f759
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275708
+  packageName: Interactive Dissolve Effects
+  packageVersion: 2.0
+  assetPath: Assets/INab Studio/Common VFX Graph/VFX Subgraphs/Blocks/Update/Set
+    Angular Velocity Y by Speed.vfxblock
+  uploadId: 773168

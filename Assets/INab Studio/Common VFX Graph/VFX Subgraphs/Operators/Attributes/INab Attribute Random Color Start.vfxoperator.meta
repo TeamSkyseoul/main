@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3c41d60871d8def4b89dc8ffd0a76120
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275708
+  packageName: Interactive Dissolve Effects
+  packageVersion: 2.0
+  assetPath: Assets/INab Studio/Common VFX Graph/VFX Subgraphs/Operators/Attributes/INab
+    Attribute Random Color Start.vfxoperator
+  uploadId: 773168

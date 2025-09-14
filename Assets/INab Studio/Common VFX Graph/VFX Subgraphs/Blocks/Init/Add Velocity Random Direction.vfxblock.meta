@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c1096942af877a440ae4d9b91643a041
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275708
+  packageName: Interactive Dissolve Effects
+  packageVersion: 2.0
+  assetPath: Assets/INab Studio/Common VFX Graph/VFX Subgraphs/Blocks/Init/Add Velocity
+    Random Direction.vfxblock
+  uploadId: 773168

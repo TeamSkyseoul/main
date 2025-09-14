@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 38f59117ad755a44f9145a81f81fedb6
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275708
+  packageName: Interactive Dissolve Effects
+  packageVersion: 2.0
+  assetPath: Assets/INab Studio/Common VFX Graph/VFX Subgraphs/Blocks/Update/Update
+    Color And Alpha.vfxblock
+  uploadId: 773168

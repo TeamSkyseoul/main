@@ -71,11 +71,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 0d9a4d2ced4956d46b965e8e30da0f69
-    m_Address: Rock_A_01
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0ebbcba4c34f6e640a5547cda761fa0d
     m_Address: "\uB09C\uAC04_1 (27) 1"
     m_ReadOnly: 0
@@ -139,11 +134,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1b9fe6f843906bb4aa044df46ec4dbf0
     m_Address: board2
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 1ce41a610b2c6584f8e65a6f3268a31a
-    m_Address: Rock_B_01
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -672,11 +662,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 889a6699dc11de248b1a92fe76004d7b
-    m_Address: Rock_C_02
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 895a24eef199808449a777af6e285fd2
     m_Address: Assets/Prefabs/Skill/2300000004.prefab
     m_ReadOnly: 0
@@ -764,11 +749,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - IEnemy
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 9dc949a9b54098544a101d426b3b7f1a
-    m_Address: Rock_B_02
-    m_ReadOnly: 0
-    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a10534b0aef86c04e961b9c55b27d19c
     m_Address: "\uB2E4\uB9AC_\uBC11"
@@ -908,11 +888,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c284d51a99b2631459016ec49d223917
     m_Address: Gyeonghoeru
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c294ed0830f479942b07045d1d9a10f0
-    m_Address: Rock_C_01
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -1202,11 +1177,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f476197c44c60e94eb792631e17e927c
     m_Address: "\uAC70\uBD81\uC120"
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: f654d6564b152f1478beef4b9ec504b6
-    m_Address: Rock_A_02
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

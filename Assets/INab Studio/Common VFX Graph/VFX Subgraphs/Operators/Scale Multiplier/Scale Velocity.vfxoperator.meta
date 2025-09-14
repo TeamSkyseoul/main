@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0ed4d15c275802148bc5e1977a393b97
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275708
+  packageName: Interactive Dissolve Effects
+  packageVersion: 2.0
+  assetPath: Assets/INab Studio/Common VFX Graph/VFX Subgraphs/Operators/Scale Multiplier/Scale
+    Velocity.vfxoperator
+  uploadId: 773168

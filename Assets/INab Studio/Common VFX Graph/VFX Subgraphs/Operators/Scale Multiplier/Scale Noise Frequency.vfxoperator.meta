@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1070ddebdf13b7046b7a9955db60eb86
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275708
+  packageName: Interactive Dissolve Effects
+  packageVersion: 2.0
+  assetPath: Assets/INab Studio/Common VFX Graph/VFX Subgraphs/Operators/Scale Multiplier/Scale
+    Noise Frequency.vfxoperator
+  uploadId: 773168

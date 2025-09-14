@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c8fae13fa824d694291d6e724fd5dd4d
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275708
+  packageName: Interactive Dissolve Effects
+  packageVersion: 2.0
+  assetPath: Assets/INab Studio/Common VFX Graph/VFX Subgraphs/Blocks/Init/Multiply
+    Scale Y Random.vfxblock
+  uploadId: 773168

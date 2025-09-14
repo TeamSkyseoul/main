@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3dd1be8558d6a2a47a1c57365c33572a
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275708
+  packageName: Interactive Dissolve Effects
+  packageVersion: 2.0
+  assetPath: Assets/INab Studio/Common VFX Graph/VFX Subgraphs/Blocks/Update/Flipbook
+    Master.vfxblock
+  uploadId: 773168

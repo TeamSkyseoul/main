@@ -11,7 +11,7 @@ using Character;
 public partial class Throw : Action
 {
     [SerializeReference] public BlackboardVariable<Transform> Actor;
-    [SerializeReference] public BlackboardVariable<Vector3> Power;
+    [SerializeReference] public BlackboardVariable<float> Power;
     [SerializeReference] public BlackboardVariable<Transform> Target;
 
     protected override Status OnStart()
@@ -22,11 +22,10 @@ public partial class Throw : Action
 
         if (actor is not IThrow thrower) return Status.Failure;
         var actorPos = Actor.Value.position;
-        actorPos.y = 0;
         var targetPos = Target.Value.position;
-        targetPos.y = 0;
         var forward = -(actorPos - targetPos).normalized;
         thrower.Throw(forward, Power.Value);
+        Debug.DrawLine(Actor.Value.position, Actor.Value.position + forward * Power.Value, Color.red,3f);
         return Status.Success;
     }
 

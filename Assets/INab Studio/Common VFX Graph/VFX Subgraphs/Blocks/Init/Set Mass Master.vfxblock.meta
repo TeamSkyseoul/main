@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 52edeba2ee4a771479947e2d9ac9bf05
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275708
+  packageName: Interactive Dissolve Effects
+  packageVersion: 2.0
+  assetPath: Assets/INab Studio/Common VFX Graph/VFX Subgraphs/Blocks/Init/Set Mass
+    Master.vfxblock
+  uploadId: 773168

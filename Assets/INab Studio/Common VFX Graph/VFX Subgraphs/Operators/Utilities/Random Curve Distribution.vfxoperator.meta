@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 01520af31d284ab4aa3515d247b9b52c
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275708
+  packageName: Interactive Dissolve Effects
+  packageVersion: 2.0
+  assetPath: Assets/INab Studio/Common VFX Graph/VFX Subgraphs/Operators/Utilities/Random
+    Curve Distribution.vfxoperator
+  uploadId: 773168

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 796faa2ea6f394a4195e289a8632985d
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275708
+  packageName: Interactive Dissolve Effects
+  packageVersion: 2.0
+  assetPath: Assets/INab Studio/Common VFX Graph/VFX Subgraphs/Operators/Utilities/Get
+    Grid Position With Y Rotation.vfxoperator
+  uploadId: 773168
