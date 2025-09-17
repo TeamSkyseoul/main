@@ -16,7 +16,7 @@ namespace GameUI
                 return _instance;
             }
         }
-        public static WorldUI WorldUI => Instance.worldUI;
+        public static WorldUIController WorldUI => Instance.worldUI;
         #endregion
 
         public UIHUD MainHUD { get; private set; }
@@ -25,11 +25,9 @@ namespace GameUI
         const string UI_PATH_PREFIX = "UI/";
         readonly UIHelper uiHelper = new();
         readonly Stack<UIPopUp> popUpStack = new();
-        readonly WorldUI worldUI = new();
+        readonly WorldUIController worldUI = new();
+
         int order = 10;
-       
-
-
 
         UIController() {  uiHelper.FindOrAddGameObject(UI_PATH_PREFIX);}
        
@@ -95,8 +93,31 @@ namespace GameUI
 
             return result;
         }
-        
-        public void ClosePopup()
+        public void ClosePopup<T>() where T : UIPopUp
+        {
+            if (popUpStack.Count == 0) return;
+
+            var tempStack = new Stack<UIPopUp>();
+            UIPopUp targetPopup = null;
+
+            while (popUpStack.Count > 0)
+            {
+                var popup = popUpStack.Pop();
+                if (popup is T)
+                {
+                    targetPopup = popup;
+                    Object.Destroy(popup.gameObject);
+                    order--;
+                    break;
+                }
+                else tempStack.Push(popup);
+
+            }
+            while (tempStack.Count > 0)
+                popUpStack.Push(tempStack.Pop());
+        }
+
+        public void CloseTopPopUp()
         {
             if (popUpStack.Count == 0) return;
 
@@ -108,7 +129,7 @@ namespace GameUI
        
         public void CloseAllPopup()
         {
-            while (popUpStack.Count > 0) ClosePopup();
+            while (popUpStack.Count > 0) CloseTopPopUp();
             order = 10;
         }
 

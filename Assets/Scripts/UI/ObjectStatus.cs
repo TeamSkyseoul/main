@@ -6,22 +6,23 @@ using UnityEngine;
 
 namespace GameUI
 {   
-    public class ObjectStatus : MonoBehaviour
+    public class ObjectStatus :WorldUI
     {
         [SerializeField] TextMeshProUGUI nameText;
         [SerializeField] StatusBar hpStatusBar;
         [SerializeField] StatusBar poiseStatusBar;
 
         Transform target;
-        Vector3 offset = Vector3.zero;
+        Vector3 offset = new Vector3(0.0f, 0.8f, 0.0f);
 
-        public Action<ObjectStatus> OnReleased;
      
         private void Update()
         {
             if (target != null)
+            {
+                Debug.Log(target.gameObject.name);
                 transform.position = target.position + offset;
-            
+            }
         }
             
 
@@ -39,12 +40,11 @@ namespace GameUI
         public void Release()
         {
             Unbind();
-            OnReleased.Invoke(this);
+            InvokeRelease();
         }
         public void Unbind()
         {
             target = null;
-          
         }
            
 

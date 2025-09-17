@@ -16,6 +16,6 @@ MonoBehaviour:
   - materialType: Metal
   - materialType: Flesh
   - materialType: Bullet
-  - materialType: Ground
   - materialType: Wood
   - materialType: Water
+  - materialType: Stone
