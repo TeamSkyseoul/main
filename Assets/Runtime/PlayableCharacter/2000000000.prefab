@@ -189,6 +189,7 @@ GameObject:
   - component: {fileID: 3737148222133589087}
   - component: {fileID: 5945708465015163829}
   - component: {fileID: 3894560250563087898}
+  - component: {fileID: 2361830105509868790}
   m_Layer: 0
   m_Name: 2000000000
   m_TagString: Player
@@ -306,6 +307,19 @@ MonoBehaviour:
           m_Value1: 0
         Name: Self
         m_Value: {fileID: 1761591075741585143}
+--- !u!114 &2361830105509868790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761591075741585143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3e260fa0b08ed54d95daf1564fe37e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materialType: Bullet
 --- !u!1 &3523605140092017767
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,6 +576,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6014409017045554586, guid: e38149dad777b4a43ae10affb3015637,
+        type: 3}
+      propertyPath: offset.y
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7033308312021423033, guid: e38149dad777b4a43ae10affb3015637,
         type: 3}

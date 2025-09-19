@@ -8,12 +8,14 @@ namespace GameUI
     public class MainMenu : UIPopUp
     {
         [Header("UI Tabs")]
-        [SerializeField] private List<GameObject> tabObjects;
-      
-        private readonly List<ISettingPage> tabs = new();
+        [SerializeField]  List<GameObject> tabObjects;
 
-        private PlayerSettingData _data;
-        private const int DefaultTabIndex = 0;
+        [Header("Highlight Buttons")]
+        [SerializeField] HighlightButton[] buttons;
+
+         readonly List<ISettingPage> tabs = new();
+         PlayerSettingData _data;
+         const int DefaultTabIndex = 0;
 
         public override bool Init()
         {
@@ -37,14 +39,10 @@ namespace GameUI
                     continue;
                 }
                 var module = tabObjects[i].GetComponent<ISettingPage>();
-                if (module != null)
-                {
-                    tabs.Add(module);
-                }
-                else
-                {
-                    Debug.LogError($"{tabObjects[i].name} 에 ISettingsModule 구현체가 없습니다!");
-                }
+
+                if (module != null) tabs.Add(module);
+                else Debug.LogError($"{tabObjects[i].name} 에 ISettingsModule 구현체가 없습니다!");
+
             }
            
         }
@@ -53,12 +51,14 @@ namespace GameUI
         {
             for (int i = 0; i < tabs.Count; i++)
             {
-                tabs[i].OnSettingChanged += () => ApplySubData(tabs[i]);
+                int index = i;
+                tabs[index].OnSettingChanged += () => ApplySubData(tabs[index]);
             }
         }
 
         private void OpenTab(int index)
         {
+            CheckHighlight(index);
             for (int i = 0; i < tabObjects.Count; i++)
             {
                 if (tabObjects[i] != null)
@@ -108,15 +108,20 @@ namespace GameUI
 
           UserSettings.UploadSettings(_data);
         }
-
-        public void OnClickTabButton(int index) => OpenTab(index);
+        void CheckHighlight(int index)
+        {
+            for(int i =0; i<buttons.Length; i++)
+                buttons[i].SetHighlight(index == i);
+        }
+        public void OnClickTabButton(int index)=> OpenTab(index);
 
         public void SaveSetting()
         {
             for(int i=0; i<tabs.Count; i++)
             {
-                tabs[i].ApplySetting();
-                ApplySubData(tabs[i]);
+                int index = i;
+                tabs[index].ApplySetting();
+                ApplySubData(tabs[index]);
             }
   
             UserSettings.SaveSettings();
