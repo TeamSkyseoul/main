@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c89e86ebfb4875949ae42eb06d9ac9a0
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275708
+  packageName: Interactive Dissolve Effects
+  packageVersion: 2.0
+  assetPath: Assets/INab Studio/Common VFX Graph/VFX Subgraphs/Operators/Utilities/Get
+    Grid Position.vfxoperator
+  uploadId: 773168

@@ -32,12 +32,6 @@ MonoBehaviour:
         serializedVersion: 2
         m_Bits: 4294967291
   m_SceneGUIDs:
-  - ce45cad04379da3438d79c5c9a9236ac
-  - f8d5f5699e778c044b7de0d199a870ec
-  - 37f19081f695224479535efb6215806c
-  - 709b7ef93ba4ff649a9406e904ef7ce4
-  - 96f7117a2a89710429794487170ead04
-  - f8b86799143b2e9459cf53efe5f83711
   - 391189fd54b92eb4db59c9e31a8da4a7
   obsoleteScenesToNotBake: []
   m_LightingScenarios:
@@ -374,44 +368,8 @@ MonoBehaviour:
   renderingLayerMasks: []
   m_SceneBakeData:
     m_Keys:
-    - ce45cad04379da3438d79c5c9a9236ac
-    - f8d5f5699e778c044b7de0d199a870ec
-    - 37f19081f695224479535efb6215806c
-    - 709b7ef93ba4ff649a9406e904ef7ce4
-    - 96f7117a2a89710429794487170ead04
-    - f8b86799143b2e9459cf53efe5f83711
     - 391189fd54b92eb4db59c9e31a8da4a7
     m_Values:
-    - hasProbeVolume: 0
-      bakeScene: 1
-      bounds:
-        m_Center: {x: 0, y: 0, z: 0}
-        m_Extent: {x: 0, y: 0, z: 0}
-    - hasProbeVolume: 1
-      bakeScene: 1
-      bounds:
-        m_Center: {x: 0, y: 0, z: 0}
-        m_Extent: {x: 81, y: 81, z: 81}
-    - hasProbeVolume: 0
-      bakeScene: 1
-      bounds:
-        m_Center: {x: 0, y: 0, z: 0}
-        m_Extent: {x: 0, y: 0, z: 0}
-    - hasProbeVolume: 0
-      bakeScene: 1
-      bounds:
-        m_Center: {x: 0, y: 0, z: 0}
-        m_Extent: {x: 0, y: 0, z: 0}
-    - hasProbeVolume: 0
-      bakeScene: 1
-      bounds:
-        m_Center: {x: 0, y: 0, z: 0}
-        m_Extent: {x: 0, y: 0, z: 0}
-    - hasProbeVolume: 0
-      bakeScene: 1
-      bounds:
-        m_Center: {x: 0, y: 0, z: 0}
-        m_Extent: {x: 0, y: 0, z: 0}
     - hasProbeVolume: 0
       bakeScene: 1
       bounds:

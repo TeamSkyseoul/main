@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5ec5c2e281d3c0a43bf88f72261e5006
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275708
+  packageName: Interactive Dissolve Effects
+  packageVersion: 2.0
+  assetPath: Assets/INab Studio/Common VFX Graph/VFX Subgraphs/Blocks/Init/Set Angle
+    Random.vfxblock
+  uploadId: 773168

@@ -21,7 +21,7 @@ public partial class Drop : Action
         }
         if (actor is IThrow thrower)
         {
-            thrower.Throw(Vector3.up, Vector3.one/2f);
+            thrower.Throw(Vector3.up, 0.5f);
         }
 
         return Status.Running;

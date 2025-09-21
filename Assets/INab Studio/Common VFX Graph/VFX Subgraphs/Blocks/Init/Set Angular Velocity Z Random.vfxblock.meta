@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 04fca452c0c931147aecc9136853ba2b
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275708
+  packageName: Interactive Dissolve Effects
+  packageVersion: 2.0
+  assetPath: Assets/INab Studio/Common VFX Graph/VFX Subgraphs/Blocks/Init/Set Angular
+    Velocity Z Random.vfxblock
+  uploadId: 773168

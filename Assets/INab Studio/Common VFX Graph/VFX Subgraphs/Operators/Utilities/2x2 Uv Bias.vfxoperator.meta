@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3df4b0397fc103743b113526d79d4282
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275708
+  packageName: Interactive Dissolve Effects
+  packageVersion: 2.0
+  assetPath: Assets/INab Studio/Common VFX Graph/VFX Subgraphs/Operators/Utilities/2x2
+    Uv Bias.vfxoperator
+  uploadId: 773168

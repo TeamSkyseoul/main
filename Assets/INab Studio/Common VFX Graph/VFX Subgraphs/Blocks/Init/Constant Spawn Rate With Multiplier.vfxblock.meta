@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9ab09bda69b86dd40b6ff61df9de32db
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275708
+  packageName: Interactive Dissolve Effects
+  packageVersion: 2.0
+  assetPath: Assets/INab Studio/Common VFX Graph/VFX Subgraphs/Blocks/Init/Constant
+    Spawn Rate With Multiplier.vfxblock
+  uploadId: 773168

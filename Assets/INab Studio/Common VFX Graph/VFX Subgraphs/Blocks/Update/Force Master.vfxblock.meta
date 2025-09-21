@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fd060a5c279cb7440883bf1e6c3c9dfe
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275708
+  packageName: Interactive Dissolve Effects
+  packageVersion: 2.0
+  assetPath: Assets/INab Studio/Common VFX Graph/VFX Subgraphs/Blocks/Update/Force
+    Master.vfxblock
+  uploadId: 773168

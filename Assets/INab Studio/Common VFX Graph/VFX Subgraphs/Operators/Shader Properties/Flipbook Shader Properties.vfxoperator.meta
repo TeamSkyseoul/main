@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2dac7138be1a9d84ab48551d81092d2d
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275708
+  packageName: Interactive Dissolve Effects
+  packageVersion: 2.0
+  assetPath: Assets/INab Studio/Common VFX Graph/VFX Subgraphs/Operators/Shader Properties/Flipbook
+    Shader Properties.vfxoperator
+  uploadId: 773168

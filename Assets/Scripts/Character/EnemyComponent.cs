@@ -2,6 +2,7 @@ using Battle;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace Character
 {
@@ -44,19 +45,24 @@ namespace Character
         }
         void IGrab.Grab(Transform target)
         {
+            float delay = 0f;
+            Transform grabTransform = null;
             if (TryGetComponent<GrabInfo>(out var grabInfo))
             {
-                StartCoroutine(LateGrab(grabInfo, target));
+                delay = grabInfo.GrabTransformDelay;
+                grabTransform = grabInfo.GrabTransform;
             }
+            StartCoroutine(LateGrab(delay, target, grabTransform));
             animator.SetBool("Grab", true);
-            OnGrab(target);
+
         }
-        IEnumerator LateGrab(GrabInfo grabInfo, Transform grabTarget)
+        IEnumerator LateGrab(float delay, Transform grabTarget, Transform grabTransform)
         {
-            yield return new WaitForSeconds(grabInfo.GrabTransformDelay);
-            if (grabTarget == null || grabInfo.GrabTransform == null) yield break;
-            grabTarget.SetParent(grabInfo.GrabTransform);
+            yield return new WaitForSeconds(delay);
+            if (grabTarget == null || grabTransform == null) yield break;
+            grabTarget.SetParent(grabTransform);
             grabTarget.SetLocalPositionAndRotation(Vector3.zero, Quaternion.identity);
+            OnGrab(grabTarget);
         }
         protected virtual void OnGrab(Transform target) { }
 
@@ -67,12 +73,12 @@ namespace Character
         }
         protected virtual void OnDrop() { }
 
-        void IThrow.Throw(Vector3 dir, Vector3 power)
+        void IThrow.Throw(Vector3 dir, float power)
         {
             animator.SetTrigger("Attack");
             animator.SetInteger("AttackType", 2);
             OnThrow(dir, power);
         }
-        protected virtual void OnThrow(Vector3 dir, Vector3 power) { }
+        protected virtual void OnThrow(Vector3 dir, float power) { }
     }
 }

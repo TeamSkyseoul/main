@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fe7d9246290a73e49b6d78cb14e9c989
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275708
+  packageName: Interactive Dissolve Effects
+  packageVersion: 2.0
+  assetPath: Assets/INab Studio/Common VFX Graph/VFX Subgraphs/Blocks/Init/Set Lifetime
+    Random.vfxblock
+  uploadId: 773168

@@ -46,7 +46,7 @@ namespace Character
     }
     public interface IThrow
     {
-        void Throw(Vector3 dir, Vector3 power);
+        void Throw(Vector3 dir, float power);
     }
     public interface IAlert
     {

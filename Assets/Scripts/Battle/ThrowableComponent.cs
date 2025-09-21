@@ -1,5 +1,7 @@
+using Unity.AppUI.Core;
 using Unity.Behavior;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class ThrowableComponent : WeaponBaseComponent
 {
@@ -11,15 +13,10 @@ public class ThrowableComponent : WeaponBaseComponent
     Vector3 localPosition;
     Quaternion localRotation;
 
-    public void Throw(Vector3 dir, Vector3 power)
+    public void Throw(Vector3 dir, float power)
     {
         if (!container || !rigid) return;
-        Reset();
-        throwed = true;
-        transform.SetParent(null);
-        rigid.isKinematic = false;
-        rigid.linearVelocity = dir;
-        rigid.AddForce(dir * power.magnitude, ForceMode.Impulse);
+        OnThrowStart(dir, power);
     }
 
     protected override void Initialize(Transform owner)
@@ -27,33 +24,43 @@ public class ThrowableComponent : WeaponBaseComponent
         if (container == null) return;
         container.SetActor(owner);
     }
-    private void Awake()
+    void Awake()
     {
         rigid = GetComponent<Rigidbody>();
         parent = transform.parent;
         localPosition = transform.localPosition;
         localRotation = transform.localRotation;
     }
-    private void Update()
+    void Update()
     {
         Util.Enumerator.InvokeFor(transform.GetComponentsInChildren<BehaviorGraphAgent>(), x => x.enabled = false);
 
         if (!throwed) return;
         if (container.AttackBox.NotWithinAttackWindow) container.OpenAttackWindow();
         throwed = threshold < rigid.linearVelocity.magnitude;
-        if (!throwed)
-        {
-            Util.Enumerator.InvokeFor(transform.GetComponentsInChildren<BehaviorGraphAgent>(), x => x.enabled = true);
-            transform.DetachChildren();
-            Reset();
-        }
+        if (!throwed) OnThrowEnd();
     }
-    private void Reset()
+    void Reset()
     {
         rigid.linearVelocity = Vector3.zero;
         rigid.isKinematic = true;
-
         transform.SetParent(parent);
         transform.SetLocalPositionAndRotation(localPosition, localRotation);
+    }
+
+    void OnThrowStart(Vector3 dir, float power)
+    {
+        Reset();
+        throwed = true;
+        transform.SetParent(null);
+        rigid.isKinematic = false;
+        rigid.linearVelocity = dir;
+        rigid.AddForce(dir * power, ForceMode.Impulse);
+    }
+    void OnThrowEnd()
+    {
+        Util.Enumerator.InvokeFor(transform.GetComponentsInChildren<BehaviorGraphAgent>(), x => x.enabled = true);
+        transform.DetachChildren();
+        Reset();
     }
 }

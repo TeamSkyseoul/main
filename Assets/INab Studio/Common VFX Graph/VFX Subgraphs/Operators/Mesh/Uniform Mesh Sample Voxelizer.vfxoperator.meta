@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fb5accc1c5dece84097ccc3199ead6f8
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 275708
+  packageName: Interactive Dissolve Effects
+  packageVersion: 2.0
+  assetPath: Assets/INab Studio/Common VFX Graph/VFX Subgraphs/Operators/Mesh/Uniform
+    Mesh Sample Voxelizer.vfxoperator
+  uploadId: 773168
