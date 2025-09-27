@@ -9,9 +9,9 @@ namespace GameUI
 
         [Header("공전 반대방향 자전 객체들")]
         [SerializeField] RectTransform[] directionLabels;
+       
         Transform target;
 
-        
         private void Update()
         {
             if (target != null)
@@ -20,15 +20,27 @@ namespace GameUI
         void RotateWithTarget()
         {
             float playerY = target.eulerAngles.y;
-            rotateTransform.localEulerAngles = new Vector3(0, 0, -playerY);
+            float currentZ = rotateTransform.localEulerAngles.z;
+            float targetZ = -playerY;
+
+            
+            float smoothZ = Mathf.LerpAngle(currentZ, targetZ, Time.deltaTime * 5f);
+            rotateTransform.localEulerAngles = new Vector3(0, 0, smoothZ);
+
             RotateLabels(playerY);
         }
 
         void RotateLabels(float playerY)
         {
-            for(int i  =0; i< directionLabels.Length; i++) 
+
+            for (int i = 0; i < directionLabels.Length; i++)
             {
-                directionLabels[i].localEulerAngles = new Vector3(0, 0, playerY);
+                float currentZ = directionLabels[i].localEulerAngles.z;
+                float targetZ = playerY;
+
+                
+                float smoothZ = Mathf.LerpAngle(currentZ, targetZ, Time.deltaTime * 5f);
+                directionLabels[i].localEulerAngles = new Vector3(0, 0, smoothZ);
             }
         }
         public void SetTarget(Transform target) { this.target = target; }

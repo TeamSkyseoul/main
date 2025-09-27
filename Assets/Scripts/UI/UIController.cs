@@ -29,7 +29,7 @@ namespace GameUI
 
         int order = 10;
 
-        UIController() {  uiHelper.FindOrAddGameObject(UI_PATH_PREFIX);}
+        UIController() {  uiHelper.GetEventSystem(UI_PATH_PREFIX);}
        
         void LoadUI<T>(string name, System.Action<T> onLoaded, Transform parent = null, bool sort = true) where T : UIBase
         {

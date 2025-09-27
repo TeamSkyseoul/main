@@ -1,27 +1,42 @@
+using Battle;
 using GameUI;
 using Unity.VisualScripting;
 using UnityEngine;
 
 namespace GameCamera
 {
-    public class MiniMapCamera : MonoBehaviour,IInitializable
+    public class MiniMapCamera : MonoBehaviour
     {
         [Header("위치 오프셋")]
         [SerializeField] Vector3 offset;
-        private void Start()
+
+        Transform target;
+        
+        public void Init(IActor target)
         {
-            Initialize();
+            Component comp = target as Component;
+            if (comp == null)
+            {
+                Debug.LogError($"[MiniMapCamera] {target} 는 Component가 아님.");
+                return;
+            }
+
+            this.target = comp.transform;
+
+            GameUI.BattleHUD hud = (GameUI.BattleHUD)UIController.Instance.MainHUD;
+            hud.SettingMiniMapTarget(transform);
         }
-        public void Initialize()
+        void LateUpdate()
         {
-            transform.position = transform.parent.position + offset;
+            if (target == null) return;
 
-            BattleHUD hud = (BattleHUD)UIController.Instance.MainHUD;
-            hud.SettingMiniMapTarget(transform.parent);
+            
+            transform.position = target.position + offset;
 
+            transform.rotation = Quaternion.Euler(90f, target.eulerAngles.y, 0f);
         }
 
-       
-     
+
+
     }
 }

@@ -23,7 +23,7 @@ namespace GameUI
             return uiRoot;
         }
 
-        public  GameObject FindOrAddGameObject(string path)
+        public  GameObject GetEventSystem(string path)
         {
             if (eventSystem != null) return eventSystem;
 
@@ -36,17 +36,7 @@ namespace GameUI
             }
             string prefabPath = path + "EventSystem";
             GameObject prefab = Resources.Load<GameObject>(prefabPath);
-            if (prefab != null)
-            {
-                eventSystem = Object.Instantiate(prefab);
-            }
-            else
-            {
-                eventSystem = new GameObject("@EventSystem");
-                eventSystem.AddComponent<UnityEngine.EventSystems.EventSystem>();
-                eventSystem.AddComponent<UnityEngine.EventSystems.StandaloneInputModule>();
-            }
-
+            eventSystem = Object.Instantiate(prefab);
             Object.DontDestroyOnLoad(eventSystem);
             return eventSystem;
         }

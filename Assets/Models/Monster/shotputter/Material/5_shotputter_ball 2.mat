@@ -158,7 +158,7 @@ Material:
     - _ForwardVector: {r: 0, g: 0, b: 1, a: 0}
     - _GlareColor: {r: 0, g: 0, b: 1, a: 1}
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
-    - _PositionVector: {r: 83.17, g: 2.7, b: 62.88, a: 0}
+    - _PositionVector: {r: 76.95, g: 2.6599998, b: 62.88, a: 0}
     - _RightVector: {r: 1, g: 0, b: 0, a: 0}
     - _ScaleVector: {r: 0.01, g: 0.01, b: 0.01, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}

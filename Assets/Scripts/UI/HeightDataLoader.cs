@@ -28,7 +28,6 @@ public class HeightDataLoader
             for (int i = 0; i < heightDataBase.entries.Count; i++)
             {
                 heights[heightDataBase.entries[i].ID] = new Vector3(0, heightDataBase.entries[i].Height, 0);
-                Debug.Log($"[HeightDataLoader] :{heightDataBase.entries[i].ID} - {heightDataBase.entries[i].Height}");
             }
           
         }
@@ -40,12 +39,11 @@ public class HeightDataLoader
         if (ID.EndsWith("(Clone)"))
             ID = ID.Replace("(Clone)", "");
 
-        Debug.Log($"[HeightDataLoader] : {ID}");
-
         if (heights.TryGetValue(ID, out var height))
             return height;
-
+   
         Debug.LogWarning($"[HeightDataLoader] ID not found: {ID}");
         return Vector3.zero;
     }
+
 }
