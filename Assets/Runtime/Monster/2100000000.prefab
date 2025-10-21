@@ -1433,6 +1433,7 @@ GameObject:
   - component: {fileID: 6548210407573932726}
   - component: {fileID: 5515132425823479974}
   - component: {fileID: 2697977493280069415}
+  - component: {fileID: 9204948066680945097}
   m_Layer: 0
   m_Name: 2100000000
   m_TagString: Zombie
@@ -1474,8 +1475,9 @@ MonoBehaviour:
   body: {fileID: 583409319565097871}
   hp:
     maxValue: 0
+  groundChecker: {fileID: 0}
   initOnEnable: 0
-  weapon: {fileID: 6191749435204424647}
+  attacks: []
 --- !u!195 &5515132425823479974
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1528,6 +1530,19 @@ MonoBehaviour:
           m_Value1: 0
         Name: Self
         m_Value: {fileID: 3278685064763445876}
+--- !u!114 &9204948066680945097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3278685064763445876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3e260fa0b08ed54d95daf1564fe37e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materialType: Flesh
 --- !u!1 &3330779959384064964
 GameObject:
   m_ObjectHideFlags: 0

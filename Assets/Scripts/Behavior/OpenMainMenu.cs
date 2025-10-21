@@ -14,7 +14,7 @@ public partial class OpenMainMenu : Action
     {
         UIController ui = UIController.Instance;
       
-        if (ui.IsAnyPopUp()) ui.ClosePopup();
+        if (ui.IsAnyPopUp()) ui.CloseTopPopUp();
         else ui.ShowPopup<MainMenu>();
         return Status.Success;
     }

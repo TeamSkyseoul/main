@@ -20,7 +20,7 @@ public class SODataTableEditor : EditorWindow
         GetWindow<SODataTableEditor>("SO Data Table");
     }
 
-    private void OnGUI()
+    void OnGUI()
     {
         DrawTargetSelector();
 
@@ -31,23 +31,9 @@ public class SODataTableEditor : EditorWindow
             DrawTable();
         }
     }
-    //private void OnDestroy()
-    //{
-    //    if (targetSO != null && rowsField != null && rowsList != null)
-    //    {
-    //        rowsList.Clear();
-    //        rowsField.SetValue(targetSO, rowsList);
 
-    //        EditorUtility.SetDirty(targetSO);
-    //        AssetDatabase.SaveAssets();
-    //    }
-
-    //    targetSO = null;
-    //    rowsField = null;
-    //    rowsList = null;
-    //    rowType = null;
-    //}
-    private void DrawTargetSelector()
+    #region Target Selection
+     void DrawTargetSelector()
     {
         var newSO = (ScriptableObject)EditorGUILayout.ObjectField("Target SO", targetSO, typeof(ScriptableObject), false);
 
@@ -56,84 +42,178 @@ public class SODataTableEditor : EditorWindow
             targetSO = newSO;
             if (targetSO != null)
             {
-                rowsField = targetSO.GetType().GetField("rows", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
-                if (rowsField != null)
-                {
-                    rowsList = rowsField.GetValue(targetSO) as IList;
-                    if (rowsList == null)
-                    {
-                        Debug.LogWarning("rows 필드가 비어 있어 초기화합니다.");
-                        var listType = rowsField.FieldType;
-                        rowsList = (IList)Activator.CreateInstance(listType);
-                        rowsField.SetValue(targetSO, rowsList);
-                    }
+                FindRowsField();
+                InitializeRowsList();
+                DetermineRowType();
+            }
+        }
+    }
 
-                    if (rowsList.Count > 0)
-                    {
-                        rowType = rowsList[0].GetType();
-                    }
-                    else
-                    {
-                        
-                        if (rowsField.FieldType.IsArray)
-                            rowType = rowsField.FieldType.GetElementType();
-                        else if (rowsField.FieldType.IsGenericType)
-                            rowType = rowsField.FieldType.GetGenericArguments()[0];
-                    }
+     void FindRowsField()
+    {
+        rowsField = targetSO.GetType().GetField("rows", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+
+        if (rowsField == null)
+        {
+            foreach (var f in targetSO.GetType().GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance))
+            {
+                if (typeof(IList).IsAssignableFrom(f.FieldType) && f.GetCustomAttribute<SerializeField>() != null)
+                {
+                    rowsField = f;
+                    break;
                 }
             }
         }
     }
 
-    private void DrawToolbar()
+     void InitializeRowsList()
+    {
+        if (rowsField == null) return;
+
+        rowsList = rowsField.GetValue(targetSO) as IList;
+        if (rowsList == null)
+        {
+            var listType = rowsField.FieldType;
+            rowsList = (IList)Activator.CreateInstance(listType);
+            rowsField.SetValue(targetSO, rowsList);
+        }
+    }
+
+     void DetermineRowType()
+    {
+        if (rowsList == null) return;
+
+        if (rowsList.Count > 0)
+        {
+            rowType = rowsList[0].GetType();
+        }
+        else
+        {
+            if (rowsField.FieldType.IsArray)
+                rowType = rowsField.FieldType.GetElementType();
+            else if (rowsField.FieldType.IsGenericType)
+                rowType = rowsField.FieldType.GetGenericArguments()[0];
+        }
+    }
+    #endregion
+
+    #region Toolbar
+    //버튼 제작 
+    void DrawToolbar()
     {
         EditorGUILayout.BeginHorizontal(EditorStyles.toolbar);
 
         if (GUILayout.Button("Load CSV", EditorStyles.toolbarButton))
-        {
-            string path = EditorUtility.OpenFilePanel("Load CSV", "", "csv");
-            if (!string.IsNullOrEmpty(path))
-            {
-                var method = typeof(CsvLoader).GetMethod("LoadCsv").MakeGenericMethod(rowType);
-                var loadedList = method.Invoke(null, new object[] { path }) as IList;
-
-                rowsList.Clear();
-                foreach (var item in loadedList)
-                    rowsList.Add(item);
-            }
-        }
+            LoadCsv();
 
         if (GUILayout.Button("Save CSV", EditorStyles.toolbarButton))
-        {
-            string path = EditorUtility.SaveFilePanel("Save CSV", "", targetSO.name + ".csv", "csv");
-            if (!string.IsNullOrEmpty(path))
-            {
-                var method = typeof(CsvLoader).GetMethod("SaveCsv").MakeGenericMethod(rowType);
-                method.Invoke(null, new object[] { path, rowsList });
-            }
-        }
+            SaveCsv();
 
         if (GUILayout.Button("+ Add Row", EditorStyles.toolbarButton))
-        {
-            rowsList.Add(Activator.CreateInstance(rowType));
-        }
+            AddRow();
 
         if (GUILayout.Button("Save SO", EditorStyles.toolbarButton))
-        {
-            EditorUtility.SetDirty(targetSO);
-            AssetDatabase.SaveAssets();
-        }
+            SaveSO();
+
+        if (GUILayout.Button("Load JSON", EditorStyles.toolbarButton))
+            LoadJson();
+
+        if (GUILayout.Button("Save JSON", EditorStyles.toolbarButton))
+            SaveJson();
 
         EditorGUILayout.EndHorizontal();
     }
+     void LoadJson()
+    {
+        string path = EditorUtility.OpenFilePanel("Load JSON", Application.dataPath, "json");
+        if (string.IsNullOrEmpty(path)) return;
 
-    private void DrawTable()
+        string json = File.ReadAllText(path);
+
+      
+        var wrapperType = typeof(ListWrapper<>).MakeGenericType(rowType);
+        var wrapper = JsonUtility.FromJson(json, wrapperType);
+
+        var dataField = wrapperType.GetField("items");
+        var loadedList = dataField.GetValue(wrapper) as IList;
+
+        rowsList.Clear();
+        foreach (var item in loadedList)
+            rowsList.Add(item);
+    }
+
+    void SaveJson()
+    {
+        string path = EditorUtility.SaveFilePanel(
+         "Save JSON",
+         Application.dataPath,                
+         targetSO.name + ".json",
+         "json"
+         );
+        if (string.IsNullOrEmpty(path)) return;
+
+        var wrapperType = typeof(ListWrapper<>).MakeGenericType(rowType);
+        var wrapper = Activator.CreateInstance(wrapperType);
+
+        var dataField = wrapperType.GetField("items");
+        dataField.SetValue(wrapper, rowsList);
+
+        string json = JsonUtility.ToJson(wrapper, true);
+        File.WriteAllText(path, json);
+    }
+
+ 
+   
+     void LoadCsv()
+    {
+        string path = EditorUtility.OpenFilePanel("Load CSV", Application.dataPath, "csv");
+        if (string.IsNullOrEmpty(path)) return;
+
+        var method = typeof(CsvLoader).GetMethod("LoadCsv").MakeGenericMethod(rowType);
+        var loadedList = method.Invoke(null, new object[] { path }) as IList;
+
+        rowsList.Clear();
+        foreach (var item in loadedList)
+            rowsList.Add(item);
+    }
+
+     void SaveCsv()
+    {
+        string path = EditorUtility.SaveFilePanel("Save CSV", 
+            Application.dataPath,
+            targetSO.name + ".csv", 
+            "csv");
+        if (string.IsNullOrEmpty(path)) return;
+
+        var method = typeof(CsvLoader).GetMethod("SaveCsv").MakeGenericMethod(rowType);
+        method.Invoke(null, new object[] { path, rowsList });
+    }
+
+    void AddRow() { rowsList.Add(Activator.CreateInstance(rowType)); }
+     void SaveSO()
+    {
+        EditorUtility.SetDirty(targetSO);
+        AssetDatabase.SaveAssets();
+    }
+    #endregion
+
+    #region Table
+     void DrawTable()
     {
         if (rowsList == null || rowType == null) return;
 
         var fields = rowType.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
 
-     
+        DrawTableHeader(fields);
+
+        scrollPos = EditorGUILayout.BeginScrollView(scrollPos);
+        int removeIndex = DrawTableRows(fields);
+        if (removeIndex >= 0) rowsList.RemoveAt(removeIndex);
+        EditorGUILayout.EndScrollView();
+    }
+
+    void DrawTableHeader(FieldInfo[] fields)
+    {
         EditorGUILayout.BeginHorizontal();
         GUILayout.Label("ID", EditorStyles.boldLabel, GUILayout.Width(30));
         foreach (var f in fields)
@@ -144,16 +224,16 @@ public class SODataTableEditor : EditorWindow
         }
         GUILayout.Label("Delete", EditorStyles.boldLabel, GUILayout.Width(50));
         EditorGUILayout.EndHorizontal();
+    }
 
-        scrollPos = EditorGUILayout.BeginScrollView(scrollPos);
-
-        
+    int DrawTableRows(FieldInfo[] fields)
+    {
         int removeIndex = -1;
         for (int i = 0; i < rowsList.Count; i++)
         {
             EditorGUILayout.BeginHorizontal();
 
-            GUILayout.Label(i.ToString(), GUILayout.Width(30)); 
+            GUILayout.Label(i.ToString(), GUILayout.Width(30));
 
             var row = rowsList[i];
             foreach (var f in fields)
@@ -170,22 +250,17 @@ public class SODataTableEditor : EditorWindow
             }
 
             if (GUILayout.Button("X", GUILayout.Width(50)))
-            {
                 removeIndex = i;
-            }
 
             EditorGUILayout.EndHorizontal();
         }
-
-        if (removeIndex >= 0)
-            rowsList.RemoveAt(removeIndex);
-
-        EditorGUILayout.EndScrollView();
+        return removeIndex;
     }
+    #endregion
 
+    #region Field Drawing
     private object DrawFieldCell(object value, Type type, float width)
     {
-
         if (type == typeof(int))
             return EditorGUILayout.IntField((int)(value ?? 0), GUILayout.Width(width));
         if (type == typeof(float))
@@ -199,30 +274,38 @@ public class SODataTableEditor : EditorWindow
         if (typeof(UnityEngine.Object).IsAssignableFrom(type))
             return EditorGUILayout.ObjectField((UnityEngine.Object)value, type, false, GUILayout.Width(width));
 
-     
+      
         if (!type.IsPrimitive && !type.IsEnum && !typeof(UnityEngine.Object).IsAssignableFrom(type))
-        {
-            if (value == null)
-                value = Activator.CreateInstance(type);
-
-            EditorGUILayout.BeginVertical(GUILayout.Width(width));
-            var nestedFields = type.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
-            foreach (var nf in nestedFields)
-            {
-                if (!nf.IsPublic && nf.GetCustomAttribute<SerializeField>() == null)
-                    continue;
-                object nestedValue = nf.GetValue(value);
-                object newNestedValue = DrawFieldCell(nestedValue, nf.FieldType, width - 10);
-                if (!Equals(nestedValue, newNestedValue))
-                    nf.SetValue(value, newNestedValue);
-            }
-            EditorGUILayout.EndVertical();
-            return value;
-        }
+            return DrawNestedObject(value, type, width);
 
         GUILayout.Label($"(Unsupported)", GUILayout.Width(width));
         return value;
     }
-   
 
+    object DrawNestedObject(object value, Type type, float width)
+    {
+        if (value == null)
+            value = Activator.CreateInstance(type);
+
+        EditorGUILayout.BeginVertical(GUILayout.Width(width));
+        var nestedFields = type.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+        foreach (var nf in nestedFields)
+        {
+            if (!nf.IsPublic && nf.GetCustomAttribute<SerializeField>() == null)
+                continue;
+
+            object nestedValue = nf.GetValue(value);
+            object newNestedValue = DrawFieldCell(nestedValue, nf.FieldType, width - 10);
+            if (!Equals(nestedValue, newNestedValue))
+                nf.SetValue(value, newNestedValue);
+        }
+        EditorGUILayout.EndVertical();
+        return value;
+    }
+    [Serializable]
+     class ListWrapper<T>
+    {
+        public List<T> items;
+    }
+    #endregion
 }

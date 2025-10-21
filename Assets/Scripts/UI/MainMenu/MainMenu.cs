@@ -8,12 +8,14 @@ namespace GameUI
     public class MainMenu : UIPopUp
     {
         [Header("UI Tabs")]
-        [SerializeField] private List<GameObject> _tabObjects;
-      
-        private readonly List<ISettingPage> _tabs = new();
+        [SerializeField]  List<GameObject> tabObjects;
 
-        private PlayerSettingData _data;
-        private const int DefaultTabIndex = 0;
+        [Header("Highlight Buttons")]
+        [SerializeField] HighlightButton[] buttons;
+
+         readonly List<ISettingPage> tabs = new();
+         PlayerSettingData _data;
+         const int DefaultTabIndex = 0;
 
         public override bool Init()
         {
@@ -27,41 +29,40 @@ namespace GameUI
 
         private void EnsureTabs()
         {
-            _tabs.Clear();
+            tabs.Clear();
 
-            foreach (var obj in _tabObjects)
+            for(int i =0; i< tabObjects.Count; i++)
             {
-                if (obj == null)
+                if (tabObjects[i] == null)
                 {
                     Debug.LogError("Null reference in _tabObjects list!");
                     continue;
                 }
-                var module = obj.GetComponent<ISettingPage>();
-                if (module != null)
-                {
-                    _tabs.Add(module);
-                }
-                else
-                {
-                    Debug.LogError($"{obj.name} 에 ISettingsModule 구현체가 없습니다!");
-                }
+                var module = tabObjects[i].GetComponent<ISettingPage>();
+
+                if (module != null) tabs.Add(module);
+                else Debug.LogError($"{tabObjects[i].name} 에 ISettingsModule 구현체가 없습니다!");
+
             }
+           
         }
 
         private void RegisterEvents()
         {
-            foreach (var tab in _tabs)
+            for (int i = 0; i < tabs.Count; i++)
             {
-                tab.OnSettingChanged += () => ApplySubData(tab);
+                int index = i;
+                tabs[index].OnSettingChanged += () => ApplySubData(tabs[index]);
             }
         }
 
         private void OpenTab(int index)
         {
-            for (int i = 0; i < _tabObjects.Count; i++)
+            CheckHighlight(index);
+            for (int i = 0; i < tabObjects.Count; i++)
             {
-                if (_tabObjects[i] != null)
-                    _tabObjects[i].gameObject.SetActive(i == index);
+                if (tabObjects[i] != null)
+                    tabObjects[i].gameObject.SetActive(i == index);
             }
         }
 
@@ -69,7 +70,7 @@ namespace GameUI
         {
             _data =  Games.System.Settings.UserSettings.Settings;
 
-            foreach (var tab in _tabs)
+            foreach (var tab in tabs)
             {
                 switch (tab)
                 {
@@ -107,17 +108,22 @@ namespace GameUI
 
           UserSettings.UploadSettings(_data);
         }
-
-        public void OnClickTabButton(int index) => OpenTab(index);
+        void CheckHighlight(int index)
+        {
+            for(int i =0; i<buttons.Length; i++)
+                buttons[i].SetHighlight(index == i);
+        }
+        public void OnClickTabButton(int index)=> OpenTab(index);
 
         public void SaveSetting()
         {
-            foreach (var tab in _tabs)
+            for(int i=0; i<tabs.Count; i++)
             {
-                tab.ApplySetting();
-                ApplySubData(tab);
+                int index = i;
+                tabs[index].ApplySetting();
+                ApplySubData(tabs[index]);
             }
-
+  
             UserSettings.SaveSettings();
         }
 
@@ -128,7 +134,7 @@ namespace GameUI
         }
 
         #region ButtonEvents
-        public void OnClickBackButton() => Destroy(gameObject);
+        public void OnClickBackButton() => UIController.Instance.ClosePopup<MainMenu>();
 
         public void OnClickLobbyButton()
         {

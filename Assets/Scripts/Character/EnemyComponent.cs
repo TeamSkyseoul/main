@@ -6,7 +6,7 @@ using UnityEngine.AI;
 
 namespace Character
 {
-    public class EnemyComponent : CharacterBaseComponent, IEnemy, ITraveler, IStun, IHitStun, IGrab, IThrow
+    public class EnemyComponent : CharacterBaseComponent, IEnemy, ITraveler, IStun, IHitStun, IGrab, IThrow,IStatusable
     {
         [SerializeField] List<SkillComponent> attacks = new();
 

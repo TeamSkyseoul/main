@@ -635,6 +635,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7fc76988090ca6e48ad0196bfe2fa525
+    m_Address: Blood
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 813e22f7efd693b4e905195dd83dfaeb
     m_Address: Assets/Runtime/Monster/2100000003.prefab
     m_ReadOnly: 0
@@ -672,6 +677,12 @@ MonoBehaviour:
     m_Address: Fence1
     m_ReadOnly: 0
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 89fea7c9ea0c44845b5f86eb970998f1
+    m_Address: Assets/Runtime/Prop/2200000005.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - IProp
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8a446428d36fdd14187b6339ffbc9508
     m_Address: Plane (7)
@@ -805,6 +816,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ac33d386f22aed14894197f816f0a5ec
+    m_Address: HitEffect
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ac9bf9eed5056de4cbdd23322c1c09a9
     m_Address: "\uB9CC\uC138\uC0B0_\uBD80\uC18D\uBB3C_2"
     m_ReadOnly: 0
@@ -888,6 +904,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c284d51a99b2631459016ec49d223917
     m_Address: Gyeonghoeru
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c3e084fe7f2622843a30f9871b1c01ca
+    m_Address: StoneBulletHit
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -995,6 +1016,11 @@ MonoBehaviour:
     m_SerializedLabels:
     - Skill
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d48e976067f711c43b6e1ceb957aee7f
+    m_Address: HeightDataBase
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d4f9c9fa28ba3d64cb3f69555024d56b
     m_Address: Assets/JsonData/Map/A-3.Json
     m_ReadOnly: 0
@@ -1076,6 +1102,12 @@ MonoBehaviour:
     m_Address: pillar
     m_ReadOnly: 0
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e47247020edf38e4fb087229a241b4e8
+    m_Address: Assets/Runtime/Skill/2300000008.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Skill
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e4873226ce6e74d46b187b1b6716f6d4
     m_Address: board4

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static Define;
 
-//건들지마세요 
+
 public class Utils
 {
     public static T GetOrAddComponent<T>(GameObject obj) where T : UnityEngine.Component
@@ -47,7 +47,7 @@ public static class CoroutineHelper
     private static readonly WaitForFixedUpdate WaitForFixedUpdate = new WaitForFixedUpdate();
     private static Dictionary<float, WaitForSeconds> _WaitForSeconds;
 
-    static CoroutineHelper() // 정적 생성자
+    static CoroutineHelper() 
     {
         _WaitForSeconds = new Dictionary<float, WaitForSeconds>();
     }

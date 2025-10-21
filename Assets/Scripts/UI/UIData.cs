@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace GameUI
@@ -7,9 +9,19 @@ namespace GameUI
     public class NotificationData
     {
         public string key;
-
         [TextArea]
         public string format;
+    }
 
+    [Serializable]
+    public class HeightData
+    {
+        public string ID;
+        public float Height;
+    }
+    [Serializable]
+    public class HeightDataBase
+    {
+        public List<HeightData> entries = new();
     }
 }

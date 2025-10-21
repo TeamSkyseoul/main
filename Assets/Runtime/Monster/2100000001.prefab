@@ -1570,6 +1570,7 @@ GameObject:
   - component: {fileID: 2401662364930754530}
   - component: {fileID: 8884377709336183055}
   - component: {fileID: 391293279975522354}
+  - component: {fileID: 1608715638182813579}
   m_Layer: 0
   m_Name: 2100000001
   m_TagString: Zombie
@@ -1611,8 +1612,9 @@ MonoBehaviour:
   body: {fileID: 3868100414978280287}
   hp:
     maxValue: 0
+  groundChecker: {fileID: 0}
   initOnEnable: 0
-  weapon: {fileID: 1852251816852927027}
+  attacks: []
 --- !u!195 &8884377709336183055
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1665,6 +1667,19 @@ MonoBehaviour:
           m_Value1: 0
         Name: Self
         m_Value: {fileID: 3899736051880425068}
+--- !u!114 &1608715638182813579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3899736051880425068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3e260fa0b08ed54d95daf1564fe37e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materialType: Flesh
 --- !u!1 &4057421918079622273
 GameObject:
   m_ObjectHideFlags: 0
@@ -2076,7 +2091,7 @@ Transform:
   m_GameObject: {fileID: 4785211353724030099}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

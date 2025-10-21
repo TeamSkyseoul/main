@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace Character
 {
+    public interface IStatusable { }
     public interface IGroundCheckable { bool IsGrounded { get; } }
     public interface IJumpable { void Jump(); }
     public interface IAttackable { void Attack(int attackType); }
@@ -51,5 +52,13 @@ namespace Character
     {
         void Alert();
         void Release();
+    }
+
+    public interface IRetriever 
+    {
+        float Duration { get; }
+        Vector3 Offset { get;  }
+        Vector3 Rotation { get; }
+        void Retrieve(Transform actor);
     }
 }

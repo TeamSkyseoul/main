@@ -2,15 +2,19 @@ using System;
 
 
 
+
 namespace GameUI
 {
     public interface IShowable { void Show(); }
     public interface IHideable { void Hide(); }
     public interface IDestroyable { void DestroyUI(); }
     public interface IStatusBar { void UpdateStatusBar(float value); }
-
     public interface IButton { void BindButtonEvents(); }
 
+    public interface IWorldShowable
+    {
+        event System.Action<IWorldShowable> OnReleased;
+    }
     public interface ISetValue { }
     public interface ISetValue<T>:ISetValue { void SetValue(T value); }
     public interface ISelectable<T>
@@ -30,5 +34,4 @@ namespace GameUI
         T GetSubData();
     }
    
-      
 }
