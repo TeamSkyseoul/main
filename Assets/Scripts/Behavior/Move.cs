@@ -16,7 +16,9 @@ public partial class Move : Action
 
     protected override Status OnStart()
     {
+
         if (!Actor.Value.TryGetComponent<IActor>(out var actor) || actor is not IMovable movable) return Status.Failure;
+
 
         movable.Move(Direction.Value, Power.Value);
         return Status.Success;

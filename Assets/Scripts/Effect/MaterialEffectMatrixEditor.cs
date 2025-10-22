@@ -16,6 +16,7 @@ public class MaterialEffectMatrixEditor : Editor
     {
         matrix = (MaterialEffectMatrix)target;
         matrix.EnsureMatrixSize();
+        matrix.BuildCache();
     }
 
     public override void OnInspectorGUI()
@@ -24,21 +25,23 @@ public class MaterialEffectMatrixEditor : Editor
             return;
 
         DrawDatabaseReference();
-
         EditorGUILayout.Space();
         DrawMatrix();
 
+        EditorGUILayout.Space();
         if (GUILayout.Button("Rebuild Matrix"))
         {
             matrix.EnsureMatrixSize();
+            matrix.BuildCache();
+            matrix.SaveCacheToRows();
             EditorUtility.SetDirty(matrix);
         }
 
         EditorGUILayout.Space();
-        EditorGUILayout.LabelField($"현재 행렬 크기: {matrix.materialTypeDatabase.rows.Count}", EditorStyles.miniBoldLabel);
+        EditorGUILayout.LabelField($"현재 Matrix의 크기: {matrix.materialTypeDatabase.rows.Count}", EditorStyles.miniBoldLabel);
+
     }
 
-    #region Validation & Setup
     private bool ValidateDatabase()
     {
         if (matrix.materialTypeDatabase == null)
@@ -54,9 +57,7 @@ public class MaterialEffectMatrixEditor : Editor
         }
         return true;
     }
-    #endregion
 
-    #region Drawing
     private void DrawDatabaseReference()
     {
         matrix.materialTypeDatabase = (MaterialTypeDatabase)EditorGUILayout.ObjectField(
@@ -94,9 +95,7 @@ public class MaterialEffectMatrixEditor : Editor
         GUILayout.BeginHorizontal();
         GUILayout.Space(RowLabelWidth);
         for (int i = 0; i < types.Count; i++)
-        {
             GUILayout.Label(types[i].materialType, centeredLabel, GUILayout.Width(CellWidth));
-        }
         GUILayout.EndHorizontal();
     }
 
@@ -108,13 +107,13 @@ public class MaterialEffectMatrixEditor : Editor
             GUILayout.Label(types[i].materialType, GUILayout.Width(RowLabelWidth));
 
             for (int j = 0; j < size; j++)
-                DrawMatrixCell(i, j, size);
+                DrawMatrixCell(types, i, j, size);
 
             GUILayout.EndHorizontal();
         }
     }
 
-    private void DrawMatrixCell(int i, int j, int size)
+    private void DrawMatrixCell(System.Collections.Generic.List<MaterialTypeData> types, int i, int j, int size)
     {
         if (j < i)
         {
@@ -122,24 +121,19 @@ public class MaterialEffectMatrixEditor : Editor
             return;
         }
 
-        int index = GetIndex(i, j, size);
-        if (index < 0 || index >= matrix.rows.Count)
-        {
-            GUILayout.Space(CellWidth + CellSpacing);
-            return;
-        }
+        var typeA = types[i].materialType;
+        var typeB = types[j].materialType;
+        var data = matrix.GetOrCreate(typeA, typeB);
 
-        var data = matrix.rows[index];
         if (GUILayout.Button(CheckWriteData(data) ? "✔" : "-", GUILayout.Width(CellWidth)))
         {
             MaterialEffectDataPopup.Open(data);
         }
     }
 
-    bool CheckWriteData(MaterialEffectData data)
+    private bool CheckWriteData(MaterialEffectData data)
     {
         if (data == null) return false;
-
         if (string.IsNullOrEmpty(data.ParticleAddress) &&
             string.IsNullOrEmpty(data.DecalAddress) &&
             string.IsNullOrEmpty(data.SFX))
@@ -150,14 +144,5 @@ public class MaterialEffectMatrixEditor : Editor
 
         return true;
     }
-    #endregion
-
-    #region Utility
-    private int GetIndex(int i, int j, int size)
-    {
-        if (i > j) (i, j) = (j, i);
-        return i * size - (i * (i - 1)) / 2 + (j - i);
-    }
-    #endregion
 }
 #endif

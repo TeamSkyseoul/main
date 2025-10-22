@@ -24,3 +24,13 @@ public enum BasicStatus
     IsGrounded,
     IsAiring
 }
+[BlackboardEnum]
+public enum RobotSubStatus
+{
+    None,
+    Hacking,
+    FollowingPlayer,
+    PreparingExplosion,
+    Exploding,
+    Cooldown
+}

@@ -57,6 +57,12 @@ MonoBehaviour:
     DecalDuration: 1
     SFX: 
     ExtraParamsRaw: 
+  - ParticleAddress: 
+    ParticleDuration: 1
+    DecalAddress: 
+    DecalDuration: 1
+    SFX: 
+    ExtraParamsRaw: 
   - ParticleAddress: Blood
     ParticleDuration: 1
     DecalAddress: 
@@ -141,4 +147,40 @@ MonoBehaviour:
     DecalDuration: 1
     SFX: 
     ExtraParamsRaw: 
-  currentSize: 6
+  - ParticleAddress: 
+    ParticleDuration: 1
+    DecalAddress: 
+    DecalDuration: 1
+    SFX: 
+    ExtraParamsRaw: 
+  - ParticleAddress: 
+    ParticleDuration: 1
+    DecalAddress: 
+    DecalDuration: 1
+    SFX: 
+    ExtraParamsRaw: 
+  - ParticleAddress: 
+    ParticleDuration: 1
+    DecalAddress: 
+    DecalDuration: 1
+    SFX: 
+    ExtraParamsRaw: 
+  - ParticleAddress: 
+    ParticleDuration: 1
+    DecalAddress: 
+    DecalDuration: 1
+    SFX: 
+    ExtraParamsRaw: 
+  - ParticleAddress: 
+    ParticleDuration: 1
+    DecalAddress: 
+    DecalDuration: 1
+    SFX: 
+    ExtraParamsRaw: 
+  - ParticleAddress: 
+    ParticleDuration: 1
+    DecalAddress: 
+    DecalDuration: 1
+    SFX: 
+    ExtraParamsRaw: 
+  currentSize: 7

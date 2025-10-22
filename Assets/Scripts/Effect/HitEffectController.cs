@@ -50,13 +50,21 @@ namespace Effect
             {
                 Debug.Log($"[HitEffectController] : {attacker.MaterialType},{victim.MaterialType}간의 data가 없음 ");
             }
-           
-            
+
+
             Vector3 hitPoint = collision.HitPoint;
-            Quaternion hitRot = Quaternion.LookRotation(collision.Attacker.Actor.transform.forward);
+
+ 
+            Vector3 victimToAttacker = (collision.Attacker.Actor.transform.position - collision.Victim.Actor.transform.position).normalized;
+
+     
+            Vector3 normal = -victimToAttacker;
 
 
-            
+            Quaternion hitRot = Quaternion.LookRotation(normal);
+
+
+
             if (!string.IsNullOrEmpty(data.ParticleAddress)) 
                 CreateEffectInstance(data.ParticleAddress, data.ParticleDuration, hitPoint, hitRot);
 

@@ -27,13 +27,13 @@ namespace Effect
 
         void OnEnable()
         {
-            if (Application.isPlaying && withLifeCycle)
+            if (withLifeCycle)
                 InvokeAppear();
         }
 
         void OnDisable()
         {
-            if (Application.isPlaying && withLifeCycle)
+            if  (withLifeCycle)
                 InvokeDissolve();
         }
 
