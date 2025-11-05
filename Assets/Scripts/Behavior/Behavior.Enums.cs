@@ -27,6 +27,6 @@ public enum BasicStatus
 [BlackboardEnum]
 public enum RobotSubStatus
 {
-    Sleep,
-    Wake
+    Sleep=0,
+    Wake=1<<0
 }

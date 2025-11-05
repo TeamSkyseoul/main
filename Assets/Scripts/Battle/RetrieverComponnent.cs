@@ -31,7 +31,7 @@ namespace Character
             actor.TryGetComponent(out IAppearance appearance);
             appearance?.InvokeDissolve();         
 
-            yield return new WaitForSeconds(CalcWaitTime(appearance));
+            yield return new WaitForSeconds(CalDisappearTime(appearance));
 
             DissolveAndRetrieve(actor);
 
@@ -42,9 +42,10 @@ namespace Character
             appearance?.InvokeAppear();
         }
 
-        float CalcWaitTime(IAppearance appearance) =>
+        float CalDisappearTime(IAppearance appearance) =>
             (appearance != null && durationWithEffect) ? appearance.Duration : Duration;
 
+       
         void ApplyRetrieveTransform(Transform actor)
         {
             actor.SetPositionAndRotation(

@@ -3,7 +3,7 @@ using Battle;
 
 namespace Character
 {
-    public class RobotHackingTarget : InteractableBaseComponent
+    public class RobotHackingTarget : InteractComponent
     {
         IWakeable robot;
 

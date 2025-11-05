@@ -6,21 +6,44 @@ namespace Character
 {
     public class RobotComponent : PropBaseComponent, IMovable, IAttackable, IHP, IWakeable
     {
+        [Header("Base Stats")]
+        [SerializeField] Statistics hp = new(10);
 
-        [SerializeField] Statistics hp = new(1);
-        [SerializeField] List<SkillComponent> skills = new();
+        [Header("Skill Actions")]
+        [SerializeField] List<SkillAction> skills = new();
 
+
+        readonly Dictionary<SkillTriggerType, List<SkillAction>> skillTable = new();
         readonly IMove walk = new Walk();
-        public Statistics HP => hp;
 
+        public Statistics HP => hp;
         public bool IsWake { get; private set; }
         public float WakeDuration { get; set; }
 
         protected override void OnInitialize()
         {
             base.OnInitialize();
+            BuildSkillTable();
         }
 
+        void BuildSkillTable()
+        {
+            skillTable.Clear();
+            for (int i = 0; i < skills.Count; i++)
+            {
+                var skill = skills[i];
+                if (skill == null) continue;
+
+                skill.Initialize();
+
+                if (!skillTable.ContainsKey(skill.TriggerType))
+                    skillTable.Add(skill.TriggerType, new List<SkillAction>());
+
+                skillTable[skill.TriggerType].Add(skill);
+            }
+        }
+
+  
         #region Movement
         void IMovable.Move(Vector3 direction, float strength)
         {
@@ -37,37 +60,22 @@ namespace Character
 
         protected virtual void OnMove(Vector3 direction, float strength) { }
 
-        public virtual void StopMove()
-        {
-            animator?.SetBool("IsMove", false);
-        }
+        public virtual void StopMove() => animator?.SetBool("IsMove", false);
         #endregion
+     
 
-        #region Combat
         public virtual void Attack(int attackType = 0)
         {
             animator?.SetTrigger("Attack");
             animator?.SetInteger("AttackType", attackType);
-            OnAttack(attackType);
-        }
 
-        protected virtual void OnAttack(int attackType)
-        {
-            if (skills == null || skills.Count == 0) return;
-
-            int index = Mathf.Clamp(attackType, 0, skills.Count - 1);
-
-            var skill = skills[index];
-
-            if (skill == null) return;
-
-            skill.SetCaster(transform);
-            skill.Fire();
+            TryExecuteSkills(SkillTriggerType.OnAttack);
         }
 
         protected override void OnTakeDamage()
         {
-            hp.Value--;
+            TryExecuteSkills(SkillTriggerType.OnHit);
+
             if (hp.Value <= 0 && !IsDead)
                 (this as IDeathable)?.Die();
         }
@@ -75,10 +83,28 @@ namespace Character
         public virtual void Wake()
         {
             IsWake = true;
-            OnWake();
+            TryExecuteSkills(SkillTriggerType.OnWake);
         }
-        protected virtual void OnWake() { }
-        
+
+        protected override void OnDie()
+        {
+            base.OnDie();
+            TryExecuteSkills(SkillTriggerType.OnDeath);
+        }
+
+        #region Skill Execution
+        void TryExecuteSkills(SkillTriggerType type)
+        {
+            if (!skillTable.TryGetValue(type, out var skillList)) return;
+
+           
+            for (int i = 0; i < skillList.Count; i++)
+            {
+                var skill = skillList[i];
+                if (skill == null) continue;
+                skill.Execute(transform);
+            }
+        }
         #endregion
     }
 }
