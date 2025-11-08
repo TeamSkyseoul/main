@@ -7,6 +7,7 @@ namespace Util
     {
         public UnityEvent MouseDownEvent;
         public UnityEvent MouseUpEvent;
+        public UnityEvent MouseEnterEvent;
 
         private void OnMouseDown()
         {
@@ -16,6 +17,11 @@ namespace Util
         private void OnMouseUp()
         {
             MouseUpEvent.Invoke();
+        }
+
+        private void OnMouseEnter()
+        {
+            MouseEnterEvent.Invoke();
         }
     }
 }

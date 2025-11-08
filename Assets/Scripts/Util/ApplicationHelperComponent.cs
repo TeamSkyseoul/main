@@ -4,6 +4,6 @@ public class ApplicationHelperComponent : MonoBehaviour
 {
     public void ExitGame()
     {
-        Application.Quit();
+        ApplicationControl.QuitGame();
     }
 }
