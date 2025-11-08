@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3864573778524823096}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: stairs 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,6 +45,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "\uC804\uB4F1_\uACC4\uB2E8 (5)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7081668349977971141, guid: 7c6139f5c3d44264d91d47d0a1ad0d35,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7081668349977971141, guid: 7c6139f5c3d44264d91d47d0a1ad0d35,
         type: 3}
@@ -184,6 +189,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "\uACC4\uB2E8 (1)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 853d59382c223c9499debe642d32c66f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 853d59382c223c9499debe642d32c66f,
         type: 3}

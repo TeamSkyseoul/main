@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5332641608718438894}
   - component: {fileID: 3431288913395146633}
   - component: {fileID: 300779506835790356}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5068447068373459373}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.0646387, y: 1.0646387, z: 1.0646387}
   m_ConstrainProportionsScale: 0
@@ -86,7 +86,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5068447068373459373}
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 4300000, guid: 6ad91313bb112de4ca841dca36f86b9d, type: 2}
 --- !u!65 &300779506835790356
 BoxCollider:
   m_ObjectHideFlags: 0

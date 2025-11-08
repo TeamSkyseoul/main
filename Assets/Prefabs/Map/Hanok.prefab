@@ -111,6 +111,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 127
       objectReference: {fileID: 0}
+    - target: {fileID: 3497751851917120998, guid: 98e7bb5dae5e04445b1b12e859675511,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 24e9aafc5d184324c8ba47be6d15861f, type: 2}
     - target: {fileID: 7936156389702746260, guid: 98e7bb5dae5e04445b1b12e859675511,
         type: 3}
       propertyPath: m_PolyMesh.name
@@ -211,6 +216,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 127
       objectReference: {fileID: 0}
+    - target: {fileID: 3497751851917120998, guid: 98e7bb5dae5e04445b1b12e859675511,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 24e9aafc5d184324c8ba47be6d15861f, type: 2}
     - target: {fileID: 7936156389702746260, guid: 98e7bb5dae5e04445b1b12e859675511,
         type: 3}
       propertyPath: m_PolyMesh.name

@@ -20,7 +20,7 @@ public class PolybrushMeshSaver : EditorWindow
 
         targetObject = (GameObject)EditorGUILayout.ObjectField("Target Object", targetObject, typeof(GameObject), true);
 
-        if (GUILayout.Button("Save Modified Mesh to Asset"))
+        if (GUILayout.Button("Save Modified Mesh to Asset & Apply to Prefab"))
         {
             if (targetObject == null)
             {
@@ -42,22 +42,50 @@ public class PolybrushMeshSaver : EditorWindow
                 return;
             }
 
-            // 저장 경로 생성
+   
             if (!AssetDatabase.IsValidFolder(savePath))
                 AssetDatabase.CreateFolder("Assets", "Polybrush_SavedMeshes");
+
 
             string fileName = targetObject.name + "_SavedMesh.asset";
             string path = Path.Combine(savePath, fileName);
             path = AssetDatabase.GenerateUniqueAssetPath(path);
 
+         
             Mesh savedMesh = Object.Instantiate(mesh);
             AssetDatabase.CreateAsset(savedMesh, path);
             AssetDatabase.SaveAssets();
 
-            // 적용
+         
             mf.sharedMesh = savedMesh;
+            EditorUtility.SetDirty(mf);
 
-            Debug.Log($" 저장 완료: {path}");
+
+            GameObject prefabRoot = PrefabUtility.GetCorrespondingObjectFromSource(targetObject);
+            if (prefabRoot != null)
+            {
+                string prefabPath = AssetDatabase.GetAssetPath(prefabRoot);
+                var prefabStage = PrefabUtility.GetPrefabAssetType(prefabRoot);
+
+                if (prefabStage != PrefabAssetType.NotAPrefab)
+                {
+               
+                    GameObject prefabContents = PrefabUtility.LoadPrefabContents(prefabPath);
+                    var prefabMF = prefabContents.GetComponent<MeshFilter>();
+                    if (prefabMF != null)
+                    {
+                        prefabMF.sharedMesh = savedMesh;
+                        EditorUtility.SetDirty(prefabMF);
+                    }
+                    PrefabUtility.SaveAsPrefabAsset(prefabContents, prefabPath);
+                    PrefabUtility.UnloadPrefabContents(prefabContents);
+                    Debug.Log($"Prefab에 Mesh 적용 완료: {prefabPath}");
+                }
+            }
+
+            // 씬 저장 상태 갱신
+            EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
+            Debug.Log($"저장 완료 및 적용됨: {path}");
         }
     }
 }
