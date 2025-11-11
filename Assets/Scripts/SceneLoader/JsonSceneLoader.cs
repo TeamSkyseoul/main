@@ -6,48 +6,41 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine;
 using System.Linq;
 using System.Threading;
-using System.Security.Cryptography;
-using TopDown;
+using UnityEditor.ShaderGraph.Legacy;
 using GameUI;
-
+using TopDown;
 
 namespace SceneLoad
 {
-    public class JsonSceneLoader : TopDown.Loader
+    public class JsonSceneLoader : Loader
     {
-        CancellationTokenSource _cancellationTokenSource;
-        readonly List<AsyncOperationHandle> _handles = new();
-        readonly List<GameObject> _instantiatedObjects = new();
-        readonly Dictionary<int, GameObject> _instantiatedObjectsById = new();
-        readonly Dictionary<string, GameObject> _prefabCache = new();
+        CancellationTokenSource cancellationToken;
 
-        public JsonSceneLoader(string name)
+        readonly List<AsyncOperationHandle> handles = new();
+        readonly List<GameObject> instantiatedObjects = new();
+        readonly Dictionary<int, GameObject> instantiatedObjectsByID = new();
+        readonly Dictionary<string, GameObject> prefabCache = new();
+        readonly List<SceneObjectData> failedList = new();
+
+        const int MaxRetryCount = 2;
+        int maxTask = 5;
+        public JsonSceneLoader(string name, int task = 5)
         {
+            maxTask = task;
             SettingLocator(name);
-         #if UNITY_EDITOR
+#if UNITY_EDITOR
             AttachEditorSafeHelper();
-         #endif
+#endif
         }
 
-       
-
-        public void SettingLocator(string sceneName)
-        {
-            Locator = sceneName;
-        }
-
-        public override void Load()
-        {
-            _ = LoadAsync();
-        }
-
-
+        public void SettingLocator(string sceneName) => Locator = sceneName;
+        public override void Load() => _ = LoadAsync();
 
         async Task LoadAsync()
         {
             await Addressables.InitializeAsync().Task;
-            _cancellationTokenSource = new CancellationTokenSource();
-            var token = _cancellationTokenSource.Token;
+            cancellationToken = new CancellationTokenSource();
+            var token = cancellationToken.Token;
 
             string key = Locator;
             string json = await ReadJsonAsync(key);
@@ -59,46 +52,102 @@ namespace SceneLoad
                 return;
             }
 
-            List<SceneObjectData> dataList = DeserializeJson(json);
-            if (dataList == null  ||dataList.Count == 0)
+            var dataList = DeserializeJson(json);
+            if (dataList == null || dataList.Count == 0)
             {
                 Debug.LogError("[JsonSceneLoader] JSON 파싱 실패 또는 오브젝트 없음.");
                 InvokeOnFailure();
                 return;
             }
 
-            await PreloadPrefabs(dataList, token);
 
+            await PreloadPrefabs(dataList, token);
+            await InstantiateAllAsync(dataList, token);
+
+
+            if (failedList.Count > 0)
+                await RetryFailedPrefabs(token);
+
+            if (failedList.Count > 0)
+            {
+                Debug.LogError($"[JsonSceneLoader] 여전히 실패한 객체 존재: {failedList[0].ID}");
+                InvokeOnSuccess();
+            }
+            else
+                InvokeOnSuccess();
+        }
+
+        async Task InstantiateAllAsync(List<SceneObjectData> dataList, CancellationToken token)
+        {
             for (int i = 0; i < dataList.Count; i++)
             {
-                if (token.IsCancellationRequested) return;
+                if (token.IsCancellationRequested)
+                    return;
 
                 var data = dataList[i];
                 Transform parent = GetParent(data.parentID);
-                GameObject obj = await InstantiatePrefab(data, parent, token);
 
+                var obj = await InstantiatePrefab(data, parent, token);
                 if (obj == null)
                 {
-                    Debug.LogError($"[JsonSceneLoader] 인스턴스 생성 실패: ID={data.ID}");
-                    InvokeOnFailure();
-                    return;
+                    failedList.Add(data);
+                    continue;
                 }
 
                 InvokeOnProgress((float)(i + 1) / dataList.Count);
-                if (i % 5 == 0) await Task.Yield();
+
+
+                if (i % maxTask == 0)
+                    await Task.Yield();
             }
-            InvokeOnSuccess();
+        }
+
+        async Task RetryFailedPrefabs(CancellationToken token)
+        {
+            var retryTarget = new List<SceneObjectData>(failedList);
+            failedList.Clear();
+
+            foreach (var data in retryTarget)
+            {
+                int retry = 0;
+                bool success = false;
+
+                while (retry < MaxRetryCount && !success)
+                {
+                    var parent = GetParent(data.parentID);
+                    var obj = await InstantiatePrefab(data, parent, token);
+
+                    if (obj != null)
+                    {
+                        success = true;
+                        break;
+                    }
+
+                    retry++;
+                    await Task.Delay(100, token);
+                }
+
+                if (!success)
+                {
+                    failedList.Add(data);
+                    Debug.LogError($"[JsonSceneLoader] 재시도 실패: {data.PrefabAddress}");
+                }
+
+                await Task.Yield();
+            }
         }
 
         Transform GetParent(int id)
         {
-            return _instantiatedObjectsById.TryGetValue(id, out var parentObject) ? parentObject.transform : null;
+            return instantiatedObjectsByID.TryGetValue(id, out var parentObject)
+                ? parentObject.transform
+                : null;
         }
 
         async Task<string> ReadJsonAsync(string key)
         {
             var handle = Addressables.LoadAssetAsync<TextAsset>(key);
-            _handles.Add(handle);
+            handles.Add(handle);
             await handle.Task;
             return handle.Status == AsyncOperationStatus.Succeeded ? handle.Result.text : null;
         }
@@ -123,32 +172,20 @@ namespace SceneLoad
                 .Where(d => !string.IsNullOrEmpty(d.PrefabAddress))
                 .Select(d => d.PrefabAddress)
                 .Distinct()
-                .Where(addr => !_prefabCache.ContainsKey(addr))
+                .Where(addr => !prefabCache.ContainsKey(addr))
                 .ToList();
 
-            List<Task> preloadTasks = new();
-
-            foreach (var address in addresses)
+            var preloadTasks = addresses.Select(async address =>
             {
-                if (token.IsCancellationRequested) return;
-
                 var handle = Addressables.LoadAssetAsync<GameObject>(address);
-                _handles.Add(handle);
+                handles.Add(handle);
+                await handle.Task;
 
-                var task = handle.Task.ContinueWith(t =>
-                {
-                    if (t.IsCompletedSuccessfully && handle.Status == AsyncOperationStatus.Succeeded)
-                    {
-                        _prefabCache[address] = handle.Result;
-                    }
-                    else
-                    {
-                        Debug.LogError($"[JsonSceneLoader] 프리팹 프리로드 실패: {address}");
-                    }
-                }, token);
-
-                preloadTasks.Add(task);
-            }
+                if (handle.Status == AsyncOperationStatus.Succeeded)
+                    prefabCache[address] = handle.Result;
+                else
+                    Debug.LogError($"[JsonSceneLoader] 프리팹 프리로드 실패: {address}");
+            }).ToList();
 
             await Task.WhenAll(preloadTasks);
         }
@@ -157,123 +194,113 @@ namespace SceneLoad
         {
             if (token.IsCancellationRequested) return null;
 
+
             GameObject instance = null;
 
             if (!string.IsNullOrEmpty(data.PrefabAddress))
             {
                 instance = await InstantiatePrefabObject(data, token);
-                if (instance == null)
-                {
-                    Debug.LogError($"[JsonSceneLoader] 프리팹 인스턴스화 실패: {data.PrefabAddress}");
-                    return null;
-                }
+
+                if (instance == null) return null;
+
 
                 if (parent != null)
                 {
                     instance.transform.SetParent(parent, false);
                     instance.transform.SetSiblingIndex(data.SiblingIndex);
                 }
+
                 ApplyTransform(instance.transform, data);
             }
             else if (data.SiblingIndex >= 0 && parent != null)
             {
                 instance = FindContainer(data, parent);
-                if (instance == null)
-                {
-                    Debug.LogError($"[JsonSceneLoader] 부모 ID {data.parentID}에서 컨테이너 객체를 찾을 수 없습니다.");
-                    return null;
-                }
             }
 
             if (instance != null)
-            {
-                _instantiatedObjectsById[data.ID] = instance;
-            }
+                instantiatedObjectsByID[data.ID] = instance;
 
             return instance;
         }
 
         async Task<GameObject> InstantiatePrefabObject(SceneObjectData data, CancellationToken token)
         {
-            if (_prefabCache.TryGetValue(data.PrefabAddress, out var prefab))
+            if (prefabCache.TryGetValue(data.PrefabAddress, out var prefab))
             {
                 var instance = GameObject.Instantiate(prefab);
-                _instantiatedObjects.Add(instance);
+                instantiatedObjects.Add(instance);
                 return instance;
             }
             else
             {
                 var handle = Addressables.InstantiateAsync(data.PrefabAddress);
-                _handles.Add(handle);
+                handles.Add(handle);
                 await handle.Task;
 
                 if (token.IsCancellationRequested || handle.Status != AsyncOperationStatus.Succeeded)
-                {
-                    Debug.LogError($"[JsonSceneLoader] 인스턴스화 실패: {data.PrefabAddress}");
                     return null;
-                }
 
                 var instance = handle.Result;
-                _instantiatedObjects.Add(instance);
+                instantiatedObjects.Add(instance);
                 return instance;
             }
         }
 
         GameObject FindContainer(SceneObjectData data, Transform parent)
         {
-            if (_instantiatedObjectsById.TryGetValue(data.parentID, out var parentObj) && data.SiblingIndex >= 0)
+            if (instantiatedObjectsByID.TryGetValue(data.parentID, out var parentObj)
+                && data.SiblingIndex >= 0
+                && data.SiblingIndex < parentObj.transform.childCount)
             {
-                Transform container = parentObj.transform.GetChild(data.SiblingIndex);
+                var container = parentObj.transform.GetChild(data.SiblingIndex);
                 ApplyTransform(container, data);
                 return container.gameObject;
             }
 
-            Debug.LogWarning($"[JsonSceneLoader] 유효하지 않은 containerIndex: {data.SiblingIndex}, 부모 ID: {data.parentID}");
+            Debug.LogWarning($"[JsonSceneLoader] 잘못된 컨테이너 인덱스: {data.SiblingIndex}");
             return null;
         }
 
-        void ApplyTransform(Transform transform, SceneObjectData data)
+        void ApplyTransform(Transform t, SceneObjectData data)
         {
-            transform.localPosition = data.Position;
-            transform.localRotation = data.Rotation;
-            transform.localScale = data.Scale;
+            t.localPosition = data.Position;
+            t.localRotation = data.Rotation;
+            t.localScale = data.Scale;
         }
 
-        #region Unload
+        #region UnLoad
+
         public override void Unload()
         {
             CancelLoading();
             ReleaseInstantiatedObjects();
             ReleaseLoadedAssets();
-
-            _instantiatedObjectsById?.Clear();
-            _prefabCache?.Clear();
+            instantiatedObjectsByID.Clear();
+            prefabCache.Clear();
         }
 
         void CancelLoading()
         {
-            if (_cancellationTokenSource != null)
+            if (cancellationToken == null)
+                return;
+
+            try
             {
-                try
-                {
-                    if (!_cancellationTokenSource.IsCancellationRequested)
-                        _cancellationTokenSource.Cancel();
-                }
-                catch (ObjectDisposedException) { }
-                finally
-                {
-                    try { _cancellationTokenSource.Dispose(); }
-                    catch { }
-                    _cancellationTokenSource = null;
-                }
+                if (!cancellationToken.IsCancellationRequested)
+                    cancellationToken.Cancel();
+            }
+            catch { }
+            finally
+            {
+                cancellationToken.Dispose();
+                cancellationToken = null;
             }
         }
 
-        public void ReleaseInstantiatedObjects()
+        void ReleaseInstantiatedObjects()
         {
-            for (int i = _instantiatedObjects.Count - 1; i >= 0; i--)
+            foreach (var obj in instantiatedObjects)
             {
-                var obj = _instantiatedObjects[i];
                 if (obj == null) continue;
 
                 try
@@ -288,48 +315,37 @@ namespace SceneLoad
                     Debug.LogWarning($"[JsonSceneLoader] ReleaseInstance 실패: {e.Message}");
                 }
             }
-            _instantiatedObjects.Clear();
+            instantiatedObjects.Clear();
         }
 
         void ReleaseLoadedAssets()
         {
-            for (int i = _handles.Count - 1; i >= 0; i--)
+            foreach (var handle in handles)
             {
-                var handle = _handles[i];
-                try
-                {
-                    if (handle.IsValid())
-                    {
-                        if (handle.Status == AsyncOperationStatus.Succeeded)
-                            Addressables.Release(handle);
-                        else
-                            Addressables.Release(handle); 
-                    }
-                }
+                if (!handle.IsValid()) continue;
+
+                try { Addressables.Release(handle); }
                 catch (Exception ex)
                 {
-                    Debug.LogWarning($"[JsonSceneLoader] Release 핸들 예외: {ex.Message}");
+                    Debug.LogWarning($"[JsonSceneLoader] 핸들 해제 예외: {ex.Message}");
                 }
             }
-            _handles.Clear();
+            handles.Clear();
         }
-
         #endregion
 
-        #region  UnityEditor
+        #region UnityEditor
+#if UNITY_EDITOR
         void AttachEditorSafeHelper()
         {
-            var existing = GameObject.Find(nameof(JsonSceneLoaderComponent));
-            if (existing != null) return;
+            if (GameObject.Find(nameof(JsonSceneLoaderComponent)) != null)
+                return;
 
-           
             var safeGo = new GameObject(nameof(JsonSceneLoaderComponent));
             UnityEngine.Object.DontDestroyOnLoad(safeGo);
-
-            var safeComp = safeGo.AddComponent<GameUI.JsonSceneLoaderComponent>();
-            safeComp.SetLoader(this);
+            safeGo.AddComponent<JsonSceneLoaderComponent>().SetLoader(this);
         }
+#endif
         #endregion
     }
-
 }

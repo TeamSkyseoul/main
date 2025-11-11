@@ -48,17 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackContainer: {fileID: 1230330738025771186}
   <Skill>k__BackingField:
-    frames:
-    - ms: 2000
-      duration: 300
-      Offset: {x: 0, y: 0, z: 0}
-      Rotation: {x: 0, y: 0, z: 0}
-      Scale: {x: 1, y: 1, z: 1}
-    - ms: 2300
-      duration: 300
-      Offset: {x: 0, y: 0, z: 0}
-      Rotation: {x: 0, y: 0, z: 0}
-      Scale: {x: 1, y: 1, z: 1}
+    frames: []
 --- !u!1 &8058893374707188203
 GameObject:
   m_ObjectHideFlags: 0
@@ -139,10 +129,10 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8058893374707188203}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}

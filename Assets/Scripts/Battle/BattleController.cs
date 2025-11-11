@@ -38,8 +38,8 @@ namespace Battle
         {
             if (actor is IDamageable body)
                 body.HitBox.OnCollision += OnHitCharacter;
-            if (actor is IPlayable player)
-                CreateMiniMapCamera(actor);
+            if (actor is IPlayable player) CreateMiniMapCamera(actor);
+
             joinCharacters.Add(actor);
 
         }

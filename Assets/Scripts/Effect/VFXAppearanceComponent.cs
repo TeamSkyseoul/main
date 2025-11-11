@@ -7,15 +7,17 @@ namespace Effect
     public interface IAppearance
     {
         float Duration { get; }
+ 
         void InvokeDissolve();
         void InvokeAppear();
     }
    
     public class VFXAppearanceComponent : MonoBehaviour, IAppearance
     {
-        
+
         [Header("Duration")]
-        [SerializeField,Range(0,10)] float duration;
+        [SerializeField, Range(0, 10)] float duration;
+
 
         [Header("VFX")]
         [SerializeField] InteractiveEffect dissolve;
@@ -23,17 +25,17 @@ namespace Effect
 
         [SerializeField] bool withLifeCycle;
         public float Duration => duration;
-
+  
 
         void OnEnable()
         {
-            if (Application.isPlaying && withLifeCycle)
+            if (withLifeCycle)
                 InvokeAppear();
         }
 
         void OnDisable()
         {
-            if (Application.isPlaying && withLifeCycle)
+            if  (withLifeCycle)
                 InvokeDissolve();
         }
 

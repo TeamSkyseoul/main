@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b4f41e97cca24d4faa2717df70f5d7f, type: 3}
+  m_Name: RangeAttack
+  m_EditorClassIdentifier: 
+  TriggerType: 1
+  skillPrefab: {fileID: 2187535483480344317, guid: d49e9f293cb1cb146b662011e9c3b284,
+    type: 3}
+  Position: {x: 0, y: 0.5, z: 0}
+  Rotation: {x: 0, y: 0, z: 0}
+  Scale: {x: 0, y: 0, z: 0}

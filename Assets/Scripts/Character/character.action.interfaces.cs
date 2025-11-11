@@ -1,4 +1,5 @@
 using Battle;
+using System;
 using UnityEngine;
 
 namespace Character
@@ -61,4 +62,27 @@ namespace Character
         Vector3 Rotation { get; }
         void Retrieve(Transform actor);
     }
+    public interface IExplode
+    {
+        void Explosion();
+    }
+    public interface IHackable { IActor Owner { get; } void Wake(IActor actor); bool IsWake { get; } float WakeDuration { get;} }
+
+    public interface IInteractable
+    {
+        IActor CurrentActor { get; }
+        float Progress { get; }
+        bool CanBegin(IActor actor);
+        void Begin(IActor actor); void Tick(IActor actor, float deltaTime); void Cancel();
+
+        event Action<float> OnProgress;
+        event Action OnCompleted, OnBegin, OnCancel;
+    }
+    public interface IInteractor
+    {
+        void BeginInteract(IActor actor);
+        void Tick(IActor actor);
+        void Cancel();
+    }
+
 }

@@ -47,6 +47,18 @@ namespace Character
         {
             return Input.GetAxisRaw("Cancel") != 0;
         }
+        public static bool IsInputInteraction(out InteractState state)
+        {
+            state = InteractState.None;
+
+            if (Input.GetKeyDown(KeyCode.F)) state = InteractState.Begin;
+            else if (Input.GetKey(KeyCode.F)) state = InteractState.Tick;
+            else if (Input.GetKeyUp(KeyCode.F)) state = InteractState.Cancel;
+
+       
+            return state != InteractState.None;
+        }
+
         public static bool IsInputConsumption(out int slotIndex)
         {
             slotIndex = -1;

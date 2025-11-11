@@ -36,6 +36,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0347a2ca593e212468d38a00c0f15925
+    m_Address: Rock_A_02
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 03f6827ea2fc939409f181217fa44b4f
     m_Address: "\uACF5\uC0AC\uC7A5_\uAE54\uB77C\uCF58"
     m_ReadOnly: 0
@@ -51,6 +56,26 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 057ab2a324362924b87c975f2471ca58
+    m_Address: "\uAD11\uD654\uBB38"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 05d3e82b28fca0349803ed11a6fd577f
+    m_Address: pond9
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 065a2a845b7b84440a572ffedb646209
+    m_Address: "\uAE30\uC640\uC9D1_2_1"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 076b523b98fe8504d942e204a0060174
+    m_Address: Cube (7)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 08f75fee01d41344081f5ac4b6cdf905
     m_Address: "\uB3CC_3"
     m_ReadOnly: 0
@@ -61,18 +86,43 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 0abf646e334706d4a8b268f996a072b8
-    m_Address: light 6
+  - m_GUID: 09ec9f4c47ee9f4448d267ec113a2683
+    m_Address: Decal Projector (25)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 0d022d2099cde0a4b86dc884219d7ffb
-    m_Address: Fence
+  - m_GUID: 0b3df741b1383ab46bdbeef1444d62ef
+    m_Address: Jar 1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0dfa8111928a89946bf56cd907d2f040
+    m_Address: Spot Light (2)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0ebbcba4c34f6e640a5547cda761fa0d
     m_Address: "\uB09C\uAC04_1 (27) 1"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0fa8856d9916df64aa81dd0b402a5d87
+    m_Address: Decal Projector (8)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 102debb9309560346af608e208945f14
+    m_Address: Navmesh 1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 113c3b09b61f9d840ab4cb871629fd32
+    m_Address: Gwanghwamun handrail
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 12b14a7636ca46f4db7acc8ffb89e671
+    m_Address: Cube (11)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -83,11 +133,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 150223eab976a6344b10900391966de5
     m_Address: 3-0
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 151b29c3d6629d046b8c737ceced72d5
-    m_Address: sm_Cobble_02_02_LOD0 (2)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -112,6 +157,31 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 18192bd15e9aa764daef41ddd75750a1
+    m_Address: Decal Projector (29)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1866983c94dae4345b1d867725ff3a39
+    m_Address: rock 1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 188efb9a7d14fe3479833e8c3e4d9d46
+    m_Address: molding
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 18a7cad427a38d140845359befaea09d
+    m_Address: pond6
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 191c9fb67769f4345a69b0c547374b7c
+    m_Address: Debris (2)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 192c35c1297ca504582ba585ce2cc93b
     m_Address: "\uBCBD_1 (103)"
     m_ReadOnly: 0
@@ -132,8 +202,28 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 1b9fe6f843906bb4aa044df46ec4dbf0
-    m_Address: board2
+  - m_GUID: 1b14d49bdb06df543b62c29f0c409266
+    m_Address: Decal Projector (4)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1b732ca48da06d1498568dae84c39be6
+    m_Address: lamp 1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1c59913b56b95d74d94a4e48cbe8a3e2
+    m_Address: Spot Light (1)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1e64085b2957259488550e30c288c9d9
+    m_Address: Cube (3)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1f7e9000fc488ae4589c05415a5e5564
+    m_Address: Decal Projector (22)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -142,8 +232,13 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 234ffb20e7486f6469f408664eb62473
-    m_Address: mountain
+  - m_GUID: 2035c50934da03041983e06035bc5b0a
+    m_Address: Point Light (3)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 213656f7f2bf7194d911bf62fce20a9f
+    m_Address: Point Light (21)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -152,13 +247,13 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 239a338706befb64cb6eaef915394f91
-    m_Address: molding 1
+  - m_GUID: 23a9444caacc72b45a0ab36e6998c710
+    m_Address: "\uC9F1\uB3CC_3"
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 23a9444caacc72b45a0ab36e6998c710
-    m_Address: "\uC9F1\uB3CC_3"
+  - m_GUID: 242027cbb67775d41b2a78074f672874
+    m_Address: Decal Projector (2)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -172,6 +267,16 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 250280bae04a6424e93f12096c034fb2
+    m_Address: stairs 1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 261957d805c488d45af5b6f92f18d634
+    m_Address: navMesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 26564140a062c854e8a9d4cc6b71fab2
     m_Address: "\uC11D\uB4F1"
     m_ReadOnly: 0
@@ -182,8 +287,8 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 29ddabb00a402d2458b65f8ace1ec4e4
-    m_Address: construction goods
+  - m_GUID: 2a0f2db7228a56b47bd4ac361dc394ac
+    m_Address: fountain1 1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -213,8 +318,33 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 2fd25fe5ff351d0419bb770fa7a937f1
-    m_Address: Plane (4)
+  - m_GUID: 2efcf6cd4b51dc047a1464d55f2c670c
+    m_Address: BigExplosion
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2f758ef3aa856164db835e22339b8153
+    m_Address: Cube (5)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2ff95b875920d12488dac03f67969586
+    m_Address: hitbox
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 31d7805f65a24834e906ce19132d123e
+    m_Address: Decal Projector (19)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 322ec80663e672446ac3b163dd070d2c
+    m_Address: animal
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3230838a8ab5a834ab60ef6be439233c
+    m_Address: "\uBE44\uBC00\uBC29"
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -223,13 +353,8 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 32ec3abf482877d458888726d25cd6a4
-    m_Address: "\uACBD\uBCF5\uAD81_\uBC14\uB2E5"
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 33e8bd398d1ff2f45a3291f1c681ae71
-    m_Address: big
+  - m_GUID: 32a000f30fa4f4e45a48f0b55809cf65
+    m_Address: Decal Projector (125)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -243,28 +368,18 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3660e5ad6232f6c4e86edea97eda357e
-    m_Address: Hanok 1
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 37abcc894ff7df349987d3782531431e
     m_Address: Terrain 2
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 37e0afe49eaefeb4b9f4a2aa6618cca0
-    m_Address: board3
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3844f1e7d0a15e1458045ca3a8e6b53e
-    m_Address: board5
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 39f63dba22bf51245ac7d46b2ace97ae
     m_Address: "\uB09C\uAC04_2 (12)"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3a2570a6b9f533c44b37e6d0987babeb
+    m_Address: Decal Projector (127)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -283,8 +398,13 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3c90a60f07f848043b5cbda0e1919a3a
-    m_Address: toilet2
+  - m_GUID: 3bb55b9dc42e34c47b35dea94575a162
+    m_Address: Rock_A_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3c9aabb11a494794683a687c36aecec5
+    m_Address: stone pagoda-handrail
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -304,18 +424,28 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3eb9520f18fdbcc409dc2cccb4d2dbbd
+    m_Address: sky lantern
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3ef329f2db292ad4c8cf7ed4b257e171
     m_Address: "\uACF5\uC0AC\uC7A5_\uD30C\uC774\uD504\uC544\uB798"
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3f011c67796361f43a533b2680b501b2
-    m_Address: small
+  - m_GUID: 3f326a3d401918944ba59aa1e2821106
+    m_Address: "\uB9CC\uC138\uC0B0_\uBD80\uC18D\uBB3C_4 (15)"
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3f326a3d401918944ba59aa1e2821106
-    m_Address: "\uB9CC\uC138\uC0B0_\uBD80\uC18D\uBB3C_4 (15)"
+  - m_GUID: 3f4f99472ed8bcb4ba373ee5e08ddc45
+    m_Address: Decal Projector (33)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3fa552e633960004783434f78ce906e2
+    m_Address: Debris (7)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -334,13 +464,8 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 413176248d7a7e149be1259d7abf7183
-    m_Address: decal 2
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 4266f4ba9164c024180ce7daba90502e
-    m_Address: ---------------------------------
+  - m_GUID: 42b6230276ed9d54fb903ee8278f52ea
+    m_Address: Decal Projector (36)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -349,13 +474,38 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 441f149e923f81f4da232930fa5ba74a
+    m_Address: Cube (2)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4488aef890cbc5d4f96742c4366d359a
     m_Address: "\uB2E4\uB9AC"
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 47fdbf425c65b5247bd9bd6b159fa01e
+    m_Address: cat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 48f7e57b9e06e444a8590311fc569bf8
     m_Address: statue1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4b563558143e27749a2ec1c0e8ce8f9a
+    m_Address: CherryBlossoms
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4b893f906cc8ce9439ae8c574d81dd8f
+    m_Address: Debris (5)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4c4e4e09e7c204a469333b3e8745052e
+    m_Address: "\uBC14\uB2E5"
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -369,18 +519,8 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 4cc312587e7bb494585f93732bab5b1b
-    m_Address: light 4
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4d69716da3ee8554b9c2d400165acf49
     m_Address: "\uC9F1\uB3CC_4"
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 4d745b2c04419b547839ffc41771b82e
-    m_Address: pipe4
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -395,13 +535,38 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4e0d3a08ac3745c4aa0a7f496ba50317
+    m_Address: pond4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4f60b9d1cf6f2164f951e66a233bc63d
+    m_Address: cherry blossoms3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4f9e418dbeb99ff4db6fad3ce617c8d9
     m_Address: "\uC9F1\uB3CC_2"
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4fa59047ec55693478ab4caa1c5707ab
+    m_Address: Decal Projector (7)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 50bb2efcc48d45648b291441475db51c
+    m_Address: door
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 515e00152ca4f9647a8daae0a9ef7053
+    m_Address: Hanok-handrail
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 519ee2b611118034090f830b41a0c47e
-    m_Address: Light
+    m_Address: light
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -413,6 +578,16 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 532d854bb94df9046bcaf45c0c5be6ca
     m_Address: 2_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 540cc448573419a46a19c8c4652ca8cf
+    m_Address: fountain2 1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 549e1703ba8a7c547be3cd4529bd1df6
+    m_Address: Decal Projector (20)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -431,8 +606,8 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 5695e0f4d4b872943a94c52de8b5b96b
-    m_Address: construction site
+  - m_GUID: 57afb3a8ebb289c4293cebd5a9bbd8ca
+    m_Address: threshold 1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -446,18 +621,23 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 58ef746b16a213f4fbbc13c66faff16b
+    m_Address: cherry blossoms2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 599203274635ea746b6d8c96a4467eaf
     m_Address: "\uD654\uBD841"
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 5a45126752ed3054ab705b95daf92911
-    m_Address: Plane (1)
+  - m_GUID: 59b6041d334a67e40aa94ee266240961
+    m_Address: pond7
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 5eaaa9462ac95fd4fbf8efdc6f167774
-    m_Address: "\uACC4\uB2E8"
+  - m_GUID: 5d52d33bab4010b439510d7eb2896ba0
+    m_Address: Cube (15)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -471,18 +651,18 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 603371c6a02f9244abff716c3c461443
+    m_Address: Cat 3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 609df872ec1bb1b4cbffab147b5fcb15
     m_Address: "\uB300\uBB382 (1)"
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 625775bde39e3894197a8100bda68cfb
-    m_Address: "\uAE30\uC640\uC9D11"
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 62f29d11a9ea63d4f9bc1da49df80b71
-    m_Address: wheel loader
+  - m_GUID: 622dc7214e8d3614c87ffb7e8fa05569
+    m_Address: pond12
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -493,6 +673,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 65676cd7db71abf4fa2dff8909aebffc
     m_Address: GeoBookSeon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6659ed3dbade817439e1771938892fba
+    m_Address: Decal Projector (6)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -512,13 +697,13 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 6b02d4a4b69d6fb46a683a00b2dd4c81
-    m_Address: "\uC11D\uB4F1 (7)"
+  - m_GUID: 6a0441bc72819274fae9212f9e681951
+    m_Address: Debris (4)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 6c28e46472185ac4184f6cf75ab0f784
-    m_Address: Terrain (1)
+  - m_GUID: 6b02d4a4b69d6fb46a683a00b2dd4c81
+    m_Address: "\uC11D\uB4F1 (7)"
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -532,8 +717,13 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 6ebf0054fd9e12b4ba2887572e5c4b8a
-    m_Address: Plane (3)
+  - m_GUID: 6d508a2498404df4295449f48c59bb4f
+    m_Address: pond2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6dc745457ae628843936f25a967bc0a5
+    m_Address: Point Light (24)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -558,18 +748,33 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 727838affa100de44b6a1f3ed7d0308b
-    m_Address: "\uBCBD"
+  - m_GUID: 726737b4e109b064595045cb1284c1bc
+    m_Address: "\uACC4\uB2E8_1"
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 72e05ff97316e264bac381e8704a3eb2
-    m_Address: light 5
+  - m_GUID: 743e47ed1c17e574a9003d1909bca302
+    m_Address: pond1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 746f41c64a01d1643b3c511b5883916d
+    m_Address: Decal Projector (18)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 74737474b8f50d64380dea46e1276b99
+    m_Address: "\uAE30\uB465"
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 752239336bebec14c8c9d9af8a994845
     m_Address: Jar, rock
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7592ddc5df6e94340aa382495c1a51fc
+    m_Address: "\uACBD\uBCF5\uAD81_\uBC14\uB2E5"
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -605,6 +810,16 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7ad09bfa3035bbb41950165c30136b9e
+    m_Address: prop
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7aecf84ca29dc9140a34b17b63edde85
+    m_Address: pond13
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7b3e6db10d22f504dbc606110b2cb5e7
     m_Address: Grass_B
     m_ReadOnly: 0
@@ -620,13 +835,18 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 7e2091f3fa4e8ef44bd0a659f480079f
-    m_Address: decal 3
+  - m_GUID: 7c6139f5c3d44264d91d47d0a1ad0d35
+    m_Address: "\uC804\uB4F1_\uACC4\uB2E8 (5)"
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7e6dede31ece84044b19eac343dab537
     m_Address: light 1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7eb8bb3d202fe254fa6f278ebc18aa07
+    m_Address: pond10
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -652,8 +872,33 @@ MonoBehaviour:
     m_SerializedLabels:
     - IPlayable
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 83b7418b7065d73449a62dd800cf6b5d
+    m_Address: cherry blossoms4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 84499b8b9830cd840a39004cfc0665bf
     m_Address: fountain2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 849253cc08091cf478682aed58b877f0
+    m_Address: Point Light (5)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 84f46ddd9432d49469e6a668aa7aa271
+    m_Address: Point Light (24) 1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 84fb84f39e3348a41b3303eeddbf227f
+    m_Address: Reflection Probe (2)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 852cc623abbaf5341a3a303ed481b257
+    m_Address: Spot Light (3)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -662,8 +907,8 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 87d4da31071e7d74bb7074b4021ddd02
-    m_Address: ProbeVolumePerSceneData
+  - m_GUID: 86c8b13017da3d1498103e42049ebb12
+    m_Address: Point Light (26)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -673,19 +918,39 @@ MonoBehaviour:
     m_SerializedLabels:
     - Skill
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 897e73e57b397954abcb679d3e3e3970
-    m_Address: Fence1
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 89fea7c9ea0c44845b5f86eb970998f1
     m_Address: Assets/Runtime/Prop/2200000005.prefab
     m_ReadOnly: 0
     m_SerializedLabels:
     - IProp
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 8a446428d36fdd14187b6339ffbc9508
-    m_Address: Plane (7)
+  - m_GUID: 8ac89c9a994065848baa69066f575100
+    m_Address: "\uACBD\uD68C\uB8E8"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8affc497bc016e349bd5aa295d01b8e8
+    m_Address: Decal Projector (24)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8b151d28c1d27c34487e663e132b50f6
+    m_Address: Decal Projector (17)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8c02895e1849e8b4ca9d054265cdf83b
+    m_Address: "\uC704\uD5D8\uBB38\uAD6C"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8d8873bd1f85c3942bf7f961cec01074
+    m_Address: Rock_B_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8d96d19bef6425648bde70c04c47ca70
+    m_Address: Point Light (2)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -704,13 +969,13 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 91624db6409be3e44b9d0805a248bde8
-    m_Address: middle
+  - m_GUID: 924df82484a2ec14f8a97442a79dc0b4
+    m_Address: Point Light (23)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 92c7f60c9f5d6cb47a7f9fef8ec8a115
-    m_Address: molding 2
+  - m_GUID: 9300cc2f471c7d448b672391dbb59598
+    m_Address: Reflection Probe (1)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -725,13 +990,28 @@ MonoBehaviour:
     m_SerializedLabels:
     - Skill
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 94ac1c51cd2050c4095a5911aab9ade2
+    m_Address: Decal Projector (10)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 94c187802c3ac8747a87e1f7abc62a0a
+    m_Address: Cube (8)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 964e1be8104167b45a9ac978e33b3de1
     m_Address: Flooring
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 96a29e3c55777e84b9aedfa007fddfee
-    m_Address: "\uACBD\uBCF5\uAD81"
+  - m_GUID: 96b240eb4388a7044916dde6cd4cf848
+    m_Address: pillar 1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 981005e74cbf83a459740def2a1a32a1
+    m_Address: Cube (14)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -745,8 +1025,18 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 994e127c4608b094992d83562367e9d7
+    m_Address: Decal Projector (12)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9975d61b3bec316428c24a91bf9281fa
     m_Address: "\uBB38 (2)"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 99c2d245aa44bd943b3990e89a92a635
+    m_Address: Decal Projector (26)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -761,6 +1051,26 @@ MonoBehaviour:
     m_SerializedLabels:
     - IEnemy
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9d7e1b15328b8ce4d963e5728e48b427
+    m_Address: Point Light (6)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9ed21285e37dc2741883c0497acc8033
+    m_Address: stone pedestal
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9f12da1aa3181604c9df4cea3a910666
+    m_Address: Decal Projector (16)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9ff393331a7d5bb469cbcd9645155c5a
+    m_Address: Decal Projector (5)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a10534b0aef86c04e961b9c55b27d19c
     m_Address: "\uB2E4\uB9AC_\uBC11"
     m_ReadOnly: 0
@@ -771,28 +1081,8 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: a1e84ef834752f04fa9350ea213f211b
-    m_Address: pipe support
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: a267437cc4ad1c84eace68e03776411b
-    m_Address: Safety first
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: a292558299abfb743bed06d2a142a44c
-    m_Address: Fence2
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a35c2de39878f7141a0a678acb1e3fa1
     m_Address: stone pagoda
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: a37a15970220a1d4593729d4b12a60c7
-    m_Address: signboard
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -803,6 +1093,31 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a4e8b66229ea6894db8e60ec51c771ff
     m_Address: "\uD574\uD14C"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a57f074d502b4ea4db5f66ce82c0ebca
+    m_Address: Debris (6)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a6d7969f239b69340b0ffbbca4e396f6
+    m_Address: "\uBE44\uBC00\uBC29_\uACC4\uB2E8"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a6ff6f0d9d0958148a9b55d9516697aa
+    m_Address: Decal Projector (13)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a7acf9af25cf5104a9b67ce37c6b8e75
+    m_Address: Decal Projector (11)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a8bf28135dafeda44987fdeb9d642e6b
+    m_Address: Hanok-bottom
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -826,13 +1141,33 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: adb1d7a36b1be554e80d864595aa7f2c
+    m_Address: Decal Projector (15)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: adfcddcd8b415694e9fae5399450cc59
     m_Address: "\uC7A5\uD310"
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b12d828c53cacc84a814ee1f6fe79a60
-    m_Address: Plane (2)
+  - m_GUID: adff04585ffa3ac4697bc513c56c920c
+    m_Address: Decal Projector (21)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aed59aed5412ef6479a491ca5cd72da7
+    m_Address: Decal Projector (9)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b010a08d36f9de040bc27eed4c36e1e0
+    m_Address: "\uACC4\uB2E8"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b069871540a4e1247b5f2c610bf6a652
+    m_Address: cherry blossoms1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -841,13 +1176,13 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b56fdf3fe44621e408976a95beadacde
-    m_Address: "\uB9CC\uC138\uC0B0_\uBD80\uC18D\uBB3C_5 (8)"
+  - m_GUID: b23da5afeb693ec469536ce065123ebf
+    m_Address: pond8
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b5fa901ef80510e4aa88b8c27129daec
-    m_Address: "\uC815\uC790"
+  - m_GUID: b56fdf3fe44621e408976a95beadacde
+    m_Address: "\uB9CC\uC138\uC0B0_\uBD80\uC18D\uBB3C_5 (8)"
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -856,8 +1191,18 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b8535deeaee648b4182f46993908bce3
-    m_Address: pipe1
+  - m_GUID: b79ae515bf866434b9d063fb6dd18035
+    m_Address: '---------------------------------  '
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b7d1b48026e8e1447a3ba0a74a73cdf9
+    m_Address: Point Light (3) 1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b8e39d6bbe460c7449a0a653947b73a6
+    m_Address: portal
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -872,13 +1217,23 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bb2b2c7a62548b544917b52358d3be55
+    m_Address: stone pagoda-bottom
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bb31d93c04979db4fb2584638f419779
+    m_Address: Decal Projector (27)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bb5b90dd842dbb24caef98f5a20e54b5
     m_Address: "\uC88C\uBB3C\uC1E0"
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: bb660cfca1efeec498a54fae7773498e
-    m_Address: pipe
+  - m_GUID: bbcf7f2f9e8ddac4198181e229c52d4e
+    m_Address: Decal Projector (31)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -892,6 +1247,16 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bed3e23087cb6d840aa08dad502e21aa
+    m_Address: "\uACC4\uB2E8"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bee23ad5b5f567c46a4c859be49e0f3d
+    m_Address: Decal Projector (30)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bf37dd299ec1b6249bc4e235bd007f08
     m_Address: Rock_C_02
     m_ReadOnly: 0
@@ -902,18 +1267,33 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c0f337c2c1aa5b44e9179c27c1ff7507
+    m_Address: Point Light (1)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c1409d3600361594b8851649caefe70f
+    m_Address: "\uAC70\uBD81\uC120 (1)"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c284d51a99b2631459016ec49d223917
     m_Address: Gyeonghoeru
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c3e084fe7f2622843a30f9871b1c01ca
-    m_Address: StoneBulletHit
+  - m_GUID: c2a01205675ab3e4c83fb69b139c89ca
+    m_Address: Reflection Probe (4)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c41fd8cb3c597874cb6ef7647f75c8ea
-    m_Address: board1
+  - m_GUID: c3c46794353b2ef4db4c8afb8d3dbf00
+    m_Address: Debris (1)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c3e084fe7f2622843a30f9871b1c01ca
+    m_Address: StoneBulletHit
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -927,29 +1307,18 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c7cd225b0adde6c4f9479e8bbdbbf117
-    m_Address: Assets/Runtime/Prop/2200000002.prefab
+  - m_GUID: c8881c22862a0f246ad9b1ffa926c5be
+    m_Address: Decal Projector (35)
     m_ReadOnly: 0
-    m_SerializedLabels:
-    - IProp
+    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c975ad6f055ecaa48bc8b86f5c40c8c5
     m_Address: pond
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c9c608647fff9da40993a36551883d68
-    m_Address: toilet1
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: caea6ac02e48b7c428d8e4cde497e5af
-    m_Address: toilet
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: caf86f44a3d41024cabaee1c86cdd4b0
-    m_Address: wreck
+  - m_GUID: c9c7fa76774363b4c87f0a4ac5234096
+    m_Address: pond11
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -958,8 +1327,18 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cbf0d582c43e0d5468931d7ba97681ab
+    m_Address: Decal Projector (1)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: cc4b57b1752a2cc4280b895456c8b0ff
     m_Address: turtle ship
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cd4fddd23b861eb4f89047041e4eedd6
+    m_Address: Reflection Probe
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -970,6 +1349,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: cdeb422c802eb9145b788b93096be249
     m_Address: "\uB3CC_1 (109)"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ce2548f5550c5324a91cc711dd32c96d
+    m_Address: Cube (10)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -984,13 +1368,23 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cf331b8f402d5b84f97998c5a0040372
+    m_Address: Root
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: cf5b94ae082c25d4da9fb1060098aa2e
     m_Address: fountain1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: cfe84b311cf490d4785f64db44e88b8b
-    m_Address: ProbeVolumePerSceneData 1
+  - m_GUID: cfafa561af615c2478c540bebbbbc519
+    m_Address: pond3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d08e58249c8b5444cb22e208478dc55f
+    m_Address: Rock_B_02
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -999,8 +1393,8 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d2da1349a95089440bb0e5b55b9f7e06
-    m_Address: Plane (5)
+  - m_GUID: d1712d2183acaaa449868b0d9a829951
+    m_Address: pond5
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -1027,8 +1421,18 @@ MonoBehaviour:
     m_SerializedLabels:
     - FieldData
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d5cfa2b23931bed429eaaaa6140d7756
+    m_Address: Point Light
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d5d53985b358eed4cb80ac3e3722cce0
     m_Address: "\uD48D\uB4F1 (1)"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d5e3367bbafc2d741b738a02466df273
+    m_Address: Decal Projector (28)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -1037,8 +1441,18 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: da21da6d54ae9594185acea60ad683cb
-    m_Address: traffic cone
+  - m_GUID: d793c9274d5d73a45b156d4dc0dea425
+    m_Address: Decal Projector
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d8202ed1eee0bbe439e2fa7e0a16f667
+    m_Address: Cube
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: da6c0951a5f6a9a48a1508796fd76f04
+    m_Address: "\uB300\uBB382"
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -1052,8 +1466,18 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: db632fe7e6d688a46bf23c9e2e6bb000
+    m_Address: Point Light (18)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: dc9c1bcf717cf3742b6c3e59b8cb99d2
     m_Address: "\uB09C\uAC04_3"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dd846404cbd25c64682f5303034a57d5
+    m_Address: stairs
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -1067,13 +1491,8 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e19bf131b8400be4cacf52fddc97bc3f
-    m_Address: light 7
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e2691df46becf4d4daa44aa8a40332fd
-    m_Address: "\uBC14\uB2E5"
+  - m_GUID: e0a53ca0a91fb3644b53f1ca84cb8d43
+    m_Address: Decal Projector (14)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -1082,16 +1501,16 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e2dce3a5cddafad4ca489ba524235d55
+    m_Address: Decal Projector (23)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e30919cb891f0824e8d563cf1439122e
     m_Address: Assets/Runtime/PlayableCharacter/2000000005.prefab
     m_ReadOnly: 0
     m_SerializedLabels:
     - IPlayable
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e3ca1196b22aceb4785783ee79dff261
-    m_Address: 6-1
-    m_ReadOnly: 0
-    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e405567583945b0479cc9b40db9c88e0
     m_Address: Terrain 4
@@ -1109,18 +1528,13 @@ MonoBehaviour:
     m_SerializedLabels:
     - Skill
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e4873226ce6e74d46b187b1b6716f6d4
-    m_Address: board4
+  - m_GUID: e58e10b736a18134583cb41753fb5089
+    m_Address: stairs 2
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e5518f6d9f730b945a82b05090230bfc
-    m_Address: sm_Cobble_02_02_LOD0 (1)
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e5f4c3a753a45f44284112258ed696f7
-    m_Address: pipe2
+  - m_GUID: e60a281473704ea45a7989e7b8b667e8
+    m_Address: Decal Projector (3)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -1134,13 +1548,18 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e8959bb604509bb4b804fcc76a9654a9
-    m_Address: board
+  - m_GUID: e7e09b476f5e27541a79ced0a3926a20
+    m_Address: Decal Projector (32)
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e94afb49a32c7304e927ebc5f3b7f94a
-    m_Address: pipe3
+  - m_GUID: e7f0fc9b05995fd4db0fb8da4e5f5788
+    m_Address: Debris (3)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e8b6233d494f0fe47945c97eeadf4392
+    m_Address: ds
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -1150,18 +1569,13 @@ MonoBehaviour:
     m_SerializedLabels:
     - IEnemy
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: ea7f7e8a0fcf49f45917dd90f1a5d89f
-    m_Address: pond 1
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: eaeba84cdab8e5f42b054a8aff7a0483
     m_Address: Rock_B_01
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ebbb7fba7ac43c243b38a6d950c1d7c0
-    m_Address: Terrain
+    m_Address: terrain
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -1197,6 +1611,16 @@ MonoBehaviour:
     m_SerializedLabels:
     - IPlayable
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eec35af3d300d294199aa91e56278911
+    m_Address: Point Light (20)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ef7460799071d884188b5b4d97a35033
+    m_Address: gravel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f017f0c9b32733444add6866cc55c8ef
     m_Address: 12
     m_ReadOnly: 0
@@ -1212,6 +1636,26 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f5508baf0d77e2b45b117291cc7392ba
+    m_Address: Decal Projector (129)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f640949af283c984d8f9adaa0fe11be3
+    m_Address: Cube (6)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f8a9d98e5b37e314ebdd707d1922b5a2
+    m_Address: statue 1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f9a01d8599e481941a93376af02eb4ae
+    m_Address: Decal Projector (126)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f9f760d220ba2a84187c4129603ade36
     m_Address: Tower
     m_ReadOnly: 0
@@ -1223,22 +1667,37 @@ MonoBehaviour:
     m_SerializedLabels:
     - FieldComponent
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fa1d49496e479da48a612010d23dc80f
+    m_Address: "\uBCBD_3"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: fc14a29f218c65d4bafc637bc60519ce
     m_Address: Assets/Runtime/Monster/2100000005.prefab
     m_ReadOnly: 0
     m_SerializedLabels:
     - IEnemy
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: fdffb66b826b1284982eddcedbee6b63
-    m_Address: background
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: fe0bf28b895e2d54db10b5c3452ec5e3
     m_Address: Assets/Runtime/Monster/2100000000.prefab
     m_ReadOnly: 0
     m_SerializedLabels:
     - IEnemy
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fe2229ccba3741645a57c8a6717a3752
+    m_Address: Cube (1)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fee2a0e96eadf25459fdf0a114f6ce47
+    m_Address: Decal Projector (128)
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ffc3fedf2b0e12a45bebe96aa5fbf439
+    m_Address: Spot Light
+    m_ReadOnly: 0
+    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 7107e067d9f312f4998c197892b1440a, type: 2}

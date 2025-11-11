@@ -1,8 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scripts/UI/MessageSender.asset.meta
 guid: 058d07defa38667428e3c43b44504f9b
 NativeFormatImporter:
+========
+guid: d48e976067f711c43b6e1ceb957aee7f
+TextScriptImporter:
+>>>>>>>> c10e912a (Feat[ObjectStatus]: Actor 키 측정 구현):Assets/ScriptableObject/HeightDatabase.json.meta
   externalObjects: {}
-  mainObjectFileID: 11400000
   userData: 
   assetBundleName: 
   assetBundleVariant: 

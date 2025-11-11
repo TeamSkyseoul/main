@@ -14,29 +14,22 @@ public partial class ConsumeItem : Action
 
     protected override Status OnStart()
     {
-       
-        //TODO: UICONTROLLER -> USE ITEM 
+     
         if (UIController.Instance.MainHUD is BattleHUD hud)
         {
-            //TODO : 아이템 획득 기능 전까지 3번 4번으로 NOTIFY CHECK
-            if (SlotIndex.Value== 3)
-            {
-                hud.ShowMessage("ItemAcquired", "권총");
-            }
-            else if(SlotIndex.Value==4)
-            {
-                hud.ShowMessage("EnemyAppeared", "좀비");
-            }
-            else
-            {
-                hud.ConsumeItem(SlotIndex.Value);
-            }
+            
+            if (SlotIndex.Value== 3) hud.ShowMessage("ItemAcquired", "권총");
+            else if(SlotIndex.Value==4) hud.ShowMessage("EnemyAppeared", "좀비");
+            else hud.ConsumeItem(SlotIndex.Value);
             return Status.Success;
         }
 
-        Debug.LogWarning("[ConsumeItem] BattleHUD가 로드되지 않음");
         return Status.Failure;
+
     }
+
+
+      
 
     protected override Status OnUpdate()
     {

@@ -24,3 +24,17 @@ public enum BasicStatus
     IsGrounded,
     IsAiring
 }
+[BlackboardEnum]
+public enum InteractState
+{
+    None,
+    Begin,
+    Tick,
+    Cancel
+}
+[BlackboardEnum]
+public enum RobotSubStatus
+{
+    Sleep=0,
+    Wake=1<<0
+}

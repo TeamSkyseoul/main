@@ -1,74 +1,64 @@
 using Character;
 using Effect;
 using System.Collections;
-using UnityEditor;
 using UnityEngine;
 
-public class RetrieverComponent : MonoBehaviour, IRetriever
+namespace Character
 {
-    public float Duration => duration;
-    public Vector3 Offset => offset;
-    public Vector3 Rotation => rotation;
-    
-    [SerializeField] float duration;
-    [SerializeField] Vector3 offset;
-    [SerializeField] Vector3 rotation;
-    [SerializeField] bool syncWithEffect;
-    public void Retrieve(Transform actor) => StartCoroutine(RetrieveRoutine(actor));
-
-    private IEnumerator RetrieveRoutine(Transform actor)
-    { 
-        actor.TryGetComponent<IAppearance>(out var appearance);
-
-        appearance?.InvokeDissolve();
-
-        yield return new WaitForSeconds(GetWaitTime(appearance));
-
-        actor.gameObject.SetActive(false);  
-
-        RepositionActor(actor);
-
-        actor.gameObject.SetActive(true);
-
-        appearance?.InvokeAppear();
-    }
-
-    private float GetWaitTime(IAppearance appearance) => (appearance != null&&syncWithEffect) ? appearance.Duration : Duration;
-
-    private void RepositionActor(Transform actor)
+    public class RetrieverComponent : PropBaseComponent, IRetriever
     {
-        actor.position = transform.position + Offset;
-        actor.rotation = transform.rotation * Quaternion.Euler(Rotation);
-    }
-}
+        public float Duration => duration;
+        public Vector3 Offset => retrieve.Offset;
+        public Vector3 Rotation => retrieve.Rotation;
 
+        [SerializeField] bool durationWithEffect;
+        [SerializeField] float duration;
+        [SerializeField] RetrieveOffset retrieve;
 
-
-
-
-#if UNITY_EDITOR
-
-
-[CustomEditor(typeof(RetrieverComponent))]
-public class RetrieverComponentEditor : Editor
-{
-    public override void OnInspectorGUI()
-    {
-        serializedObject.Update();
-
-        var syncProp = serializedObject.FindProperty("syncWithEffect");
-        EditorGUILayout.PropertyField(syncProp);
-
-        if (!syncProp.boolValue)
+        public void Retrieve(Transform actor)
         {
-            var durationProp = serializedObject.FindProperty("duration");
-            EditorGUILayout.PropertyField(durationProp);
+            if (actor == null) return;
+            StartCoroutine(RetrieveRoutine(actor));
+        }
+        void DissolveAndRetrieve(Transform actor)
+        {
+            actor.gameObject.SetActive(false);
+            ApplyRetrieveTransform(actor);
         }
 
-        EditorGUILayout.PropertyField(serializedObject.FindProperty("offset"));
-        EditorGUILayout.PropertyField(serializedObject.FindProperty("rotation"));
+        IEnumerator RetrieveRoutine(Transform actor)
+        {
+            actor.TryGetComponent(out IAppearance appearance);
+            appearance?.InvokeDissolve();         
 
-        serializedObject.ApplyModifiedProperties();
+            yield return new WaitForSeconds(CalDisappearTime(appearance));
+
+            DissolveAndRetrieve(actor);
+
+            animator.SetTrigger("Working");
+
+            actor.gameObject.SetActive(true);
+
+            appearance?.InvokeAppear();
+        }
+
+        float CalDisappearTime(IAppearance appearance) =>
+            (appearance != null && durationWithEffect) ? appearance.Duration : Duration;
+
+       
+        void ApplyRetrieveTransform(Transform actor)
+        {
+            actor.SetPositionAndRotation(
+                transform.position + Offset,
+                transform.rotation * Quaternion.Euler(Rotation)
+            );
+        }
+    }
+
+    [System.Serializable]
+    public struct RetrieveOffset
+    {
+        public Vector3 Offset;
+        public Vector3 Rotation;
     }
 }
-#endif
