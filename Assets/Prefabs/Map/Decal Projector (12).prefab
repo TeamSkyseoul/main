@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8524019158181611479
+--- !u!1 &939614044257838125
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2612533860216134405}
-  - component: {fileID: 1191443458719634170}
+  - component: {fileID: 1902088447139479507}
+  - component: {fileID: 3685855528570951126}
   m_Layer: 0
   m_Name: Decal Projector (12)
   m_TagString: Untagged
@@ -17,13 +17,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2612533860216134405
+--- !u!4 &1902088447139479507
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8524019158181611479}
+  m_GameObject: {fileID: 939614044257838125}
   serializedVersion: 2
   m_LocalRotation: {x: -0.021643799, y: -0.048202943, z: 0.07400461, w: 0.9958572}
   m_LocalPosition: {x: -3.7990036, y: 0.57600117, z: 9.43}
@@ -32,13 +32,13 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -2.062, y: -5.697, z: 8.603}
---- !u!114 &1191443458719634170
+--- !u!114 &3685855528570951126
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8524019158181611479}
+  m_GameObject: {fileID: 939614044257838125}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
