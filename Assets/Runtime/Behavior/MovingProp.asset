@@ -13,35 +13,16 @@ MonoBehaviour:
   m_Name: MovingProp
   m_EditorClassIdentifier: 
   Graphs:
-<<<<<<< HEAD
-  - rid: 6245346065263100600
+  - rid: 6245346127317041409
   RootGraph:
-    rid: 6245346065263100600
-=======
-  - rid: 7433452390807502925
-  RootGraph:
-    rid: 7433452390807502925
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    rid: 6245346127317041409
   m_DebugInfo: {fileID: 4889609589823328939}
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-<<<<<<< HEAD
-    - rid: 6245346065263100495
-      type: {class: 'BlackboardVariable`1[[RobotSubStatus, Assembly-CSharp]]', ns: Unity.Behavior,
-=======
-    - rid: 7433452390685082601
-      type: {class: 'BlackboardVariable`1[[System.Int32, mscorlib]]', ns: Unity.Behavior,
-        asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 0
-          m_Value1: 0
-        Name: 
-        m_Value: 1
-    - rid: 7433452390685082605
+    - rid: 6245346127317041303
       type: {class: 'BlackboardVariable`1[[RobotSubStatus, Assembly-CSharp]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -50,21 +31,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 0
-    - rid: 7433452390685082615
-      type: {class: 'BlackboardVariable`1[[BattleStatus, Assembly-CSharp]]', ns: Unity.Behavior,
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
-        asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 0
-          m_Value1: 0
-        Name: 
-        m_Value: 0
-<<<<<<< HEAD
-    - rid: 6245346065263100496
-=======
-    - rid: 7433452390685082619
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041304
       type: {class: 'BlackboardVariable`1[[Unity.Behavior.ConditionOperator, Unity.Behavior]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -73,8 +40,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 0
-<<<<<<< HEAD
-    - rid: 6245346065263100497
+    - rid: 6245346127317041305
       type: {class: 'BlackboardVariable`1[[System.Int32, mscorlib]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -83,7 +49,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 1
-    - rid: 6245346065263100507
+    - rid: 6245346127317041315
       type: {class: 'BlackboardVariable`1[[BattleStatus, Assembly-CSharp]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -92,7 +58,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 3
-    - rid: 6245346065263100511
+    - rid: 6245346127317041319
       type: {class: 'BlackboardVariable`1[[Unity.Behavior.ConditionOperator, Unity.Behavior]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -101,10 +67,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 0
-    - rid: 6245346065263100520
-=======
-    - rid: 7433452390807502852
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041328
       type: {class: 'BlackboardVariable`1[[AbnormalStatus, Assembly-CSharp]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -113,11 +76,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 2
-<<<<<<< HEAD
-    - rid: 6245346065263100521
-=======
-    - rid: 7433452390807502853
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041329
       type: {class: 'BlackboardVariable`1[[BattleStatus, Assembly-CSharp]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -126,11 +85,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 2
-<<<<<<< HEAD
-    - rid: 6245346065263100526
-=======
-    - rid: 7433452390807502858
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041334
       type: {class: 'BlackboardVariable`1[[Unity.Behavior.ConditionOperator, Unity.Behavior]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -139,11 +94,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 3
-<<<<<<< HEAD
-    - rid: 6245346065263100527
-=======
-    - rid: 7433452390807502859
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041335
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -152,11 +103,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 3
-<<<<<<< HEAD
-    - rid: 6245346065263100531
-=======
-    - rid: 7433452390807502863
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041339
       type: {class: 'BlackboardVariable`1[[Unity.Behavior.ConditionOperator, Unity.Behavior]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -165,11 +112,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 0
-<<<<<<< HEAD
-    - rid: 6245346065263100532
-=======
-    - rid: 7433452390807502864
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041340
       type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -178,11 +121,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 1
-<<<<<<< HEAD
-    - rid: 6245346065263100533
-=======
-    - rid: 7433452390807502865
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041341
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -191,11 +130,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 1
-<<<<<<< HEAD
-    - rid: 6245346065263100534
-=======
-    - rid: 7433452390807502866
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041342
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -204,11 +139,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 3
-<<<<<<< HEAD
-    - rid: 6245346065263100548
-=======
-    - rid: 7433452390807502880
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041356
       type: {class: 'BlackboardVariable`1[[BattleStatus, Assembly-CSharp]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -217,11 +148,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 4
-<<<<<<< HEAD
-    - rid: 6245346065263100549
-=======
-    - rid: 7433452390807502881
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041357
       type: {class: 'BlackboardVariable`1[[BattleStatus, Assembly-CSharp]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -230,11 +157,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 3
-<<<<<<< HEAD
-    - rid: 6245346065263100551
-=======
-    - rid: 7433452390807502883
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041359
       type: {class: 'BlackboardVariable`1[[Unity.Behavior.ConditionOperator, Unity.Behavior]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -243,11 +166,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 3
-<<<<<<< HEAD
-    - rid: 6245346065263100553
-=======
-    - rid: 7433452390807502885
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041361
       type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -256,11 +175,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 1
-<<<<<<< HEAD
-    - rid: 6245346065263100554
-=======
-    - rid: 7433452390807502886
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041362
       type: {class: 'BlackboardVariable`1[[System.Int32, mscorlib]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -269,11 +184,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 1
-<<<<<<< HEAD
-    - rid: 6245346065263100558
-=======
-    - rid: 7433452390807502890
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041366
       type: {class: 'BlackboardVariable`1[[AbnormalStatus, Assembly-CSharp]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -282,11 +193,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 2
-<<<<<<< HEAD
-    - rid: 6245346065263100560
-=======
-    - rid: 7433452390807502892
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041368
       type: {class: 'BlackboardVariable`1[[Unity.Behavior.ConditionOperator, Unity.Behavior]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -295,11 +202,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 2
-<<<<<<< HEAD
-    - rid: 6245346065263100561
-=======
-    - rid: 7433452390807502893
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041369
       type: {class: 'BlackboardVariable`1[[Unity.Behavior.ConditionOperator, Unity.Behavior]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -308,11 +211,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 0
-<<<<<<< HEAD
-    - rid: 6245346065263100566
-=======
-    - rid: 7433452390807502898
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041374
       type: {class: 'BlackboardVariable`1[[AbnormalStatus, Assembly-CSharp]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -321,11 +220,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 2
-<<<<<<< HEAD
-    - rid: 6245346065263100568
-=======
-    - rid: 7433452390807502900
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041376
       type: {class: 'BlackboardVariable`1[[Unity.Behavior.ConditionOperator, Unity.Behavior]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -334,11 +229,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 3
-<<<<<<< HEAD
-    - rid: 6245346065263100570
-=======
-    - rid: 7433452390807502902
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041378
       type: {class: 'BlackboardVariable`1[[Unity.Behavior.ConditionOperator, Unity.Behavior]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -347,11 +238,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 3
-<<<<<<< HEAD
-    - rid: 6245346065263100574
-=======
-    - rid: 7433452390807502906
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041382
       type: {class: 'BlackboardVariable`1[[AbnormalStatus, Assembly-CSharp]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -360,11 +247,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 2
-<<<<<<< HEAD
-    - rid: 6245346065263100576
-=======
-    - rid: 7433452390807502908
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041384
       type: {class: 'BlackboardVariable`1[[Unity.Behavior.ConditionOperator, Unity.Behavior]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -373,11 +256,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 3
-<<<<<<< HEAD
-    - rid: 6245346065263100577
-=======
-    - rid: 7433452390807502909
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041385
       type: {class: 'BlackboardVariable`1[[Unity.Behavior.ConditionOperator, Unity.Behavior]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -386,11 +265,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 0
-<<<<<<< HEAD
-    - rid: 6245346065263100578
-=======
-    - rid: 7433452390807502910
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041386
       type: {class: 'BlackboardVariable`1[[System.Int32, mscorlib]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -399,13 +274,8 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 0
-<<<<<<< HEAD
-    - rid: 6245346065263100579
+    - rid: 6245346127317041387
       type: {class: 'BlackboardVariable`1[[System.Int32, mscorlib]]', ns: Unity.Behavior,
-=======
-    - rid: 7433452390807502911
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         asm: Unity.Behavior}
       data:
         GUID:
@@ -413,54 +283,16 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 1
-<<<<<<< HEAD
-    - rid: 6245346065263100583
+    - rid: 6245346127317041391
       type: {class: 'BlackboardVariable`1[[Unity.Behavior.ConditionOperator, Unity.Behavior]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
-=======
-    - rid: 7433452390807502912
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
-        asm: Unity.Behavior}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
       data:
         GUID:
           m_Value0: 0
           m_Value1: 0
         Name: 
-<<<<<<< HEAD
         m_Value: 0
-    - rid: 6245346065263100585
-=======
-        m_Value: 3
-    - rid: 7433452390807502913
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
-        asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 0
-          m_Value1: 0
-        Name: 
-        m_Value: 0.2
-    - rid: 7433452390807502914
-      type: {class: 'BlackboardVariable`1[[System.String, mscorlib]]', ns: Unity.Behavior,
-        asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 0
-          m_Value1: 0
-        Name: 
-        m_Value: SpeedMagnitude
-    - rid: 7433452390807502915
-      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
-        asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 0
-          m_Value1: 0
-        Name: 
-        m_Value: 1
-    - rid: 7433452390807502917
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041393
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -469,11 +301,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 5
-<<<<<<< HEAD
-    - rid: 6245346065263100586
-=======
-    - rid: 7433452390807502918
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041394
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -482,11 +310,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 1
-<<<<<<< HEAD
-    - rid: 6245346065263100587
-=======
-    - rid: 7433452390807502919
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041395
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -495,8 +319,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 3
-<<<<<<< HEAD
-    - rid: 6245346065263100588
+    - rid: 6245346127317041396
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -505,7 +328,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 1
-    - rid: 6245346065263100589
+    - rid: 6245346127317041397
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -514,10 +337,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 3
-    - rid: 6245346065263100590
-=======
-    - rid: 7433452390807502921
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041398
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -526,11 +346,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 0.2
-<<<<<<< HEAD
-    - rid: 6245346065263100591
-=======
-    - rid: 7433452390807502922
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041399
       type: {class: 'BlackboardVariable`1[[System.String, mscorlib]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -539,8 +355,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: SpeedMagnitude
-<<<<<<< HEAD
-    - rid: 6245346065263100592
+    - rid: 6245346127317041400
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -549,7 +364,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 1
-    - rid: 6245346065263100594
+    - rid: 6245346127317041402
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -558,7 +373,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 0.2
-    - rid: 6245346065263100595
+    - rid: 6245346127317041403
       type: {class: 'BlackboardVariable`1[[System.String, mscorlib]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -567,10 +382,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: SpeedMagnitude
-    - rid: 6245346065263100596
-=======
-    - rid: 7433452390807502923
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041404
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -579,11 +391,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 0
-<<<<<<< HEAD
-    - rid: 6245346065263100597
-=======
-    - rid: 7433452390807502924
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041405
       type: {class: 'BlackboardVariable`1[[Unity.Behavior.NavigateToTargetAction/TargetPositionMode, Unity.Behavior]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -592,11 +400,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 1
-<<<<<<< HEAD
-    - rid: 6245346065263100600
-=======
-    - rid: 7433452390807502925
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041409
       type: {class: BehaviorGraphModule, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         AuthoringAssetID:
@@ -604,179 +408,97 @@ MonoBehaviour:
           m_Value1: 11309176924788296088
         m_DebugInfo: {fileID: 0}
         BlackboardReference:
-<<<<<<< HEAD
-          rid: 6245346065263100601
+          rid: 6245346127317041410
         BlackboardGroupReferences: []
         Root:
-          rid: 6245346065263100602
+          rid: 6245346127317041411
         m_ActiveNodes: []
         m_NodesToTick: []
         m_NodesToEnd:
-          rid: 6245346065263100603
+          rid: 6245346127317041412
         m_EndedNodes:
-          rid: 6245346065263100604
-        m_VersionTimestamp: 638981650310821707
-    - rid: 6245346065263100601
+          rid: 6245346127317041413
+        m_VersionTimestamp: 638983965519948671
+    - rid: 6245346127317041410
       type: {class: BlackboardReference, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         m_Blackboard:
-          rid: 6245346065263100605
+          rid: 6245346127317041414
         m_Source: {fileID: 8686773973910242259}
-    - rid: 6245346065263100602
-=======
-          rid: 7433452390807502926
-        BlackboardGroupReferences: []
-        Root:
-          rid: 7433452390807502927
-        m_ActiveNodes: []
-        m_NodesToTick: []
-        m_NodesToEnd:
-          rid: 7433452390807502928
-        m_EndedNodes:
-          rid: 7433452390807502929
-        m_VersionTimestamp: 638971907285192631
-    - rid: 7433452390807502926
-      type: {class: BlackboardReference, ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        m_Blackboard:
-          rid: 7433452390807502930
-        m_Source: {fileID: 8686773973910242259}
-    - rid: 7433452390807502927
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041411
       type: {class: ParallelAllComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 0
           m_Value1: 0
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
           rid: -2
         m_Children:
-        - rid: 6245346065263100606
-        - rid: 6245346065263100607
-    - rid: 6245346065263100603
+        - rid: 6245346127317041415
+        - rid: 6245346127317041416
+    - rid: 6245346127317041412
       type: {class: 'Stack`1[[Unity.Behavior.Node, Unity.Behavior]]', ns: System.Collections.Generic,
         asm: mscorlib}
       data: 
-    - rid: 6245346065263100604
+    - rid: 6245346127317041413
       type: {class: 'HashSet`1[[Unity.Behavior.Node, Unity.Behavior]]', ns: System.Collections.Generic,
         asm: System.Core}
       data: 
-    - rid: 6245346065263100605
+    - rid: 6245346127317041414
       type: {class: Blackboard, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         m_Variables:
-        - rid: 6245346065263100608
-        - rid: 6245346065263100609
-        - rid: 6245346065263100610
-        - rid: 6245346065263100611
-        - rid: 6245346065263100612
-        - rid: 6245346065263100613
-        - rid: 6245346065263100614
-        - rid: 6245346065263100615
-        - rid: 6245346065263100616
-        - rid: 6245346065263100617
-        - rid: 6245346065263100618
-        - rid: 6245346065263100619
-        - rid: 6245346065263100620
-        - rid: 6245346065263100621
-    - rid: 6245346065263100606
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: -2
-        m_Children:
-        - rid: 7433452390807502931
-        - rid: 7433452390807502932
-    - rid: 7433452390807502928
-      type: {class: 'Stack`1[[Unity.Behavior.Node, Unity.Behavior]]', ns: System.Collections.Generic,
-        asm: mscorlib}
-      data: 
-    - rid: 7433452390807502929
-      type: {class: 'HashSet`1[[Unity.Behavior.Node, Unity.Behavior]]', ns: System.Collections.Generic,
-        asm: System.Core}
-      data: 
-    - rid: 7433452390807502930
-      type: {class: Blackboard, ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        m_Variables:
-        - rid: 7433452390807502933
-        - rid: 7433452390807502934
-        - rid: 7433452390807502935
-        - rid: 7433452390807502936
-        - rid: 7433452390807502937
-        - rid: 7433452390807502938
-        - rid: 7433452390807502939
-        - rid: 7433452390807502940
-        - rid: 7433452390807502941
-        - rid: 7433452390807502942
-        - rid: 7433452390807502943
-        - rid: 7433452390807502944
-        - rid: 7433452390807502945
-        - rid: 7433452390807502946
-    - rid: 7433452390807502931
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+        - rid: 6245346127317041417
+        - rid: 6245346127317041418
+        - rid: 6245346127317041419
+        - rid: 6245346127317041420
+        - rid: 6245346127317041421
+        - rid: 6245346127317041422
+        - rid: 6245346127317041423
+        - rid: 6245346127317041424
+        - rid: 6245346127317041425
+        - rid: 6245346127317041426
+        - rid: 6245346127317041427
+        - rid: 6245346127317041428
+        - rid: 6245346127317041429
+        - rid: 6245346127317041430
+    - rid: 6245346127317041415
       type: {class: StartOnEvent, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 2458721305884090052
           m_Value1: 5120224807455234289
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100602
+          rid: 6245346127317041411
         m_Child:
-          rid: 6245346065263100622
+          rid: 6245346127317041431
         ChannelVariable:
-          rid: 6245346065263100620
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502927
-        m_Child:
-          rid: 7433452390807502947
-        ChannelVariable:
-          rid: 7433452390807502945
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041429
         MessageVariables:
         - rid: -2
         - rid: -2
         - rid: -2
         - rid: -2
         Mode: 0
-<<<<<<< HEAD
-    - rid: 6245346065263100607
-=======
-    - rid: 7433452390807502932
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041416
       type: {class: Start, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 16908457453859729335
           m_Value1: 9034757434681068965
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100602
+          rid: 6245346127317041411
         m_Child:
-          rid: 6245346065263100623
+          rid: 6245346127317041432
         Repeat: 1
         AllowMultipleRepeatsPerTick: 0
-    - rid: 6245346065263100608
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502927
-        m_Child:
-          rid: 7433452390807502948
-        Repeat: 1
-        AllowMultipleRepeatsPerTick: 0
-    - rid: 7433452390807502933
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041417
       type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -785,11 +507,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: Self
         m_Value: {fileID: 0}
-<<<<<<< HEAD
-    - rid: 6245346065263100609
-=======
-    - rid: 7433452390807502934
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041418
       type: {class: 'BlackboardVariable`1[[System.String, mscorlib]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -798,11 +516,7 @@ MonoBehaviour:
           m_Value1: 17726985197155324246
         Name: EnemyTag
         m_Value: 
-<<<<<<< HEAD
-    - rid: 6245346065263100610
-=======
-    - rid: 7433452390807502935
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041419
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -811,11 +525,7 @@ MonoBehaviour:
           m_Value1: 15190413484029545400
         Name: AttackThreshold
         m_Value: 1.5
-<<<<<<< HEAD
-    - rid: 6245346065263100611
-=======
-    - rid: 7433452390807502936
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041420
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -824,11 +534,7 @@ MonoBehaviour:
           m_Value1: 3403475458330969139
         Name: TraceThreshold
         m_Value: 10
-<<<<<<< HEAD
-    - rid: 6245346065263100612
-=======
-    - rid: 7433452390807502937
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041421
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -837,11 +543,7 @@ MonoBehaviour:
           m_Value1: 10479049385788184869
         Name: patrolRadius
         m_Value: 5
-<<<<<<< HEAD
-    - rid: 6245346065263100613
-=======
-    - rid: 7433452390807502938
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041422
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -850,11 +552,7 @@ MonoBehaviour:
           m_Value1: 7528052507928013661
         Name: SkillCoolTime
         m_Value: 0
-<<<<<<< HEAD
-    - rid: 6245346065263100614
-=======
-    - rid: 7433452390807502939
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041423
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -863,11 +561,7 @@ MonoBehaviour:
           m_Value1: 9668056795492618364
         Name: MoveSpeed
         m_Value: 2
-<<<<<<< HEAD
-    - rid: 6245346065263100615
-=======
-    - rid: 7433452390807502940
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041424
       type: {class: 'BlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -876,11 +570,7 @@ MonoBehaviour:
           m_Value1: 14419944336744000952
         Name: Target
         m_Value: {fileID: 0}
-<<<<<<< HEAD
-    - rid: 6245346065263100616
-=======
-    - rid: 7433452390807502941
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041425
       type: {class: 'BlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -889,11 +579,7 @@ MonoBehaviour:
           m_Value1: 14399518660583712893
         Name: Owner
         m_Value: {fileID: 0}
-<<<<<<< HEAD
-    - rid: 6245346065263100617
-=======
-    - rid: 7433452390807502942
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041426
       type: {class: 'BlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -902,11 +588,7 @@ MonoBehaviour:
           m_Value1: 3166844886348523368
         Name: NULL
         m_Value: {fileID: 0}
-<<<<<<< HEAD
-    - rid: 6245346065263100618
-=======
-    - rid: 7433452390807502943
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041427
       type: {class: 'BlackboardVariable`1[[BattleStatus, Assembly-CSharp]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -915,11 +597,7 @@ MonoBehaviour:
           m_Value1: 9174996832335580003
         Name: BattleStatus
         m_Value: 0
-<<<<<<< HEAD
-    - rid: 6245346065263100619
-=======
-    - rid: 7433452390807502944
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041428
       type: {class: 'BlackboardVariable`1[[UnityEngine.Vector3, UnityEngine.CoreModule]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -928,11 +606,7 @@ MonoBehaviour:
           m_Value1: 3143895371578630853
         Name: wanderPosition
         m_Value: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-    - rid: 6245346065263100620
-=======
-    - rid: 7433452390807502945
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041429
       type: {class: 'BlackboardVariable`1[[OnEvent, Assembly-CSharp]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -941,11 +615,7 @@ MonoBehaviour:
           m_Value1: 8912991726668873650
         Name: DieEvent
         m_Value: {fileID: 0}
-<<<<<<< HEAD
-    - rid: 6245346065263100621
-=======
-    - rid: 7433452390807502946
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041430
       type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
       data:
@@ -954,233 +624,143 @@ MonoBehaviour:
           m_Value1: 17068974623428263828
         Name: DidDieEvent
         m_Value: 0
-<<<<<<< HEAD
-    - rid: 6245346065263100622
+    - rid: 6245346127317041431
       type: {class: PerformDieEvent, ns: , asm: Assembly-CSharp}
-=======
-    - rid: 7433452390807502947
-      type: {class: PerformExplosion, ns: , asm: Assembly-CSharp}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
       data:
         ID:
           m_Value0: 5075371385023851075
           m_Value1: 10152571032669743882
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100606
+          rid: 6245346127317041415
         Self:
-          rid: 6245346065263100608
-    - rid: 6245346065263100623
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502931
-        Self:
-          rid: 7433452390807502933
-    - rid: 7433452390807502948
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041417
+    - rid: 6245346127317041432
       type: {class: BranchingConditionComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 18057853513806515533
           m_Value1: 2725133909777537703
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100607
+          rid: 6245346127317041416
         m_Children:
-        - rid: 6245346065263100624
-        - rid: 6245346065263100625
+        - rid: 6245346127317041433
+        - rid: 6245346127317041434
         m_Conditions:
-        - rid: 6245346065263100626
-        - rid: 6245346065263100627
+        - rid: 6245346127317041435
+        - rid: 6245346127317041436
         m_RequiresAllConditions: 0
         True:
-          rid: 6245346065263100624
+          rid: 6245346127317041433
         False:
-          rid: 6245346065263100625
+          rid: 6245346127317041434
         m_CurrentChild:
           rid: -2
-    - rid: 6245346065263100624
+    - rid: 6245346127317041433
       type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 9680939959534665334
           m_Value1: 5199468850831051045
         Graph:
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100623
+          rid: 6245346127317041432
         m_Children:
-        - rid: 6245346065263100628
-        - rid: 6245346065263100629
-    - rid: 6245346065263100625
+        - rid: 6245346127317041437
+        - rid: 6245346127317041438
+    - rid: 6245346127317041434
       type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 8307127635250450310
           m_Value1: 13629221327620580272
         Graph:
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100623
+          rid: 6245346127317041432
         m_Children:
-        - rid: 6245346065263100630
-        - rid: 6245346065263100631
-    - rid: 6245346065263100626
+        - rid: 6245346127317041439
+        - rid: 6245346127317041440
+    - rid: 6245346127317041435
       type: {class: EqualRobotSubState, ns: , asm: Assembly-CSharp}
       data:
         Graph:
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         Actor:
-          rid: 6245346065263100632
+          rid: 6245346127317041441
         RobotSubState:
-          rid: 6245346065263100495
-    - rid: 6245346065263100627
+          rid: 6245346127317041303
+    - rid: 6245346127317041436
       type: {class: VariableComparisonCondition, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         Graph:
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         Variable:
-          rid: 6245346065263100616
+          rid: 6245346127317041425
         Operator:
-          rid: 6245346065263100496
+          rid: 6245346127317041304
         ComparisonValue:
-          rid: 6245346065263100617
-    - rid: 6245346065263100628
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502932
-        m_Children:
-        - rid: 7433452390807502949
-        - rid: 7433452390807502950
-        m_Conditions:
-        - rid: 7433452390807502951
-        m_RequiresAllConditions: 0
-        True:
-          rid: 7433452390807502949
-        False:
-          rid: 7433452390807502950
-        m_CurrentChild:
-          rid: -2
-    - rid: 7433452390807502949
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041426
+    - rid: 6245346127317041437
       type: {class: WaitFramesAction, ns: , asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 15826126162864710154
           m_Value1: 1333524198162046363
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100624
+          rid: 6245346127317041433
         NumFrames:
-          rid: 6245346065263100497
-    - rid: 6245346065263100629
+          rid: 6245346127317041305
+    - rid: 6245346127317041438
       type: {class: SetRobotOwnerAction, ns: , asm: Assembly-CSharp}
       data:
         ID:
           m_Value0: 5133482696642399055
           m_Value1: 2635684375254431005
         Graph:
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100624
+          rid: 6245346127317041433
         Hacker:
-          rid: 6245346065263100616
+          rid: 6245346127317041425
         Self:
-          rid: 6245346065263100608
-    - rid: 6245346065263100630
+          rid: 6245346127317041417
+    - rid: 6245346127317041439
       type: {class: SenseClosestWithTagAction, ns: , asm: Assembly-CSharp}
       data:
         ID:
           m_Value0: 8307127635250450310
           m_Value1: 13629221327620580272
         Graph:
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100625
+          rid: 6245346127317041434
         Target:
-          rid: 6245346065263100633
+          rid: 6245346127317041442
         Agent:
-          rid: 6245346065263100608
+          rid: 6245346127317041417
         TagAction:
-          rid: 6245346065263100609
-    - rid: 6245346065263100631
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502948
-        NumFrames:
-          rid: 7433452390685082601
-    - rid: 7433452390807502950
-      type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        ID:
-          m_Value0: 7272174320990127215
-          m_Value1: 1060018383202510514
-        Graph:
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502948
-        m_Children:
-        - rid: 7433452390807502952
-        - rid: 7433452390807502953
-    - rid: 7433452390807502951
-      type: {class: EqualRobotSubState, ns: , asm: Assembly-CSharp}
-      data:
-        Graph:
-          rid: 7433452390807502925
-        Actor:
-          rid: 7433452390807502954
-        RobotSubState:
-          rid: 7433452390685082605
-    - rid: 7433452390807502952
-      type: {class: FindClosestWithTagAction, ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        ID:
-          m_Value0: 7272174320990127215
-          m_Value1: 1060018383202510514
-        Graph:
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502950
-        Target:
-          rid: 7433452390807502955
-        Agent:
-          rid: 7433452390807502933
-        Tag:
-          rid: 7433452390807502934
-    - rid: 7433452390807502953
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041418
+    - rid: 6245346127317041440
       type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 9754751962196305230
           m_Value1: 6023607303674556446
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100625
+          rid: 6245346127317041434
         m_Children:
-        - rid: 6245346065263100634
-        - rid: 6245346065263100635
-    - rid: 6245346065263100632
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502950
-        m_Children:
-        - rid: 7433452390807502956
-        - rid: 7433452390807502957
-    - rid: 7433452390807502954
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+        - rid: 6245346127317041443
+        - rid: 6245346127317041444
+    - rid: 6245346127317041441
       type: {class: 'GameObjectToComponentBlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -1190,13 +770,8 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
         m_LinkedVariable:
-<<<<<<< HEAD
-          rid: 6245346065263100608
-    - rid: 6245346065263100633
-=======
-          rid: 7433452390807502933
-    - rid: 7433452390807502955
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041417
+    - rid: 6245346127317041442
       type: {class: 'ComponentToGameObjectBlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -1206,570 +781,306 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
         m_LinkedVariable:
-<<<<<<< HEAD
-          rid: 6245346065263100615
-    - rid: 6245346065263100634
-=======
-          rid: 7433452390807502940
-    - rid: 7433452390807502956
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041424
+    - rid: 6245346127317041443
       type: {class: BranchingConditionComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 7910951969311436717
           m_Value1: 9976941366379905180
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100631
+          rid: 6245346127317041440
         m_Children:
-        - rid: 6245346065263100636
-        - rid: 6245346065263100637
+        - rid: 6245346127317041445
+        - rid: 6245346127317041446
         m_Conditions:
-        - rid: 6245346065263100638
+        - rid: 6245346127317041447
         m_RequiresAllConditions: 0
         True:
-          rid: 6245346065263100636
+          rid: 6245346127317041445
         False:
-          rid: 6245346065263100637
+          rid: 6245346127317041446
         m_CurrentChild:
           rid: -2
-    - rid: 6245346065263100635
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502953
-        m_Children:
-        - rid: 7433452390807502958
-        - rid: 7433452390807502959
-        m_Conditions:
-        - rid: 7433452390807502960
-        m_RequiresAllConditions: 0
-        True:
-          rid: 7433452390807502958
-        False:
-          rid: 7433452390807502959
-        m_CurrentChild:
-          rid: -2
-    - rid: 7433452390807502957
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041444
       type: {class: BranchingConditionComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 6026730316124237285
           m_Value1: 8020297261291000208
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100631
+          rid: 6245346127317041440
         m_Children:
-        - rid: 6245346065263100639
-        - rid: 6245346065263100640
+        - rid: 6245346127317041448
+        - rid: 6245346127317041449
         m_Conditions:
-        - rid: 6245346065263100641
+        - rid: 6245346127317041450
         m_RequiresAllConditions: 0
         True:
-          rid: 6245346065263100639
+          rid: 6245346127317041448
         False:
-          rid: 6245346065263100640
+          rid: 6245346127317041449
         m_CurrentChild:
           rid: -2
-    - rid: 6245346065263100636
+    - rid: 6245346127317041445
       type: {class: SetVariableValueAction, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 9965752763060489471
           m_Value1: 7173453442889382035
         Graph:
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100634
+          rid: 6245346127317041443
         Variable:
-          rid: 6245346065263100618
+          rid: 6245346127317041427
         Value:
-          rid: 6245346065263100507
-    - rid: 6245346065263100637
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502953
-        m_Children:
-        - rid: 7433452390807502961
-        - rid: 7433452390807502962
-        m_Conditions:
-        - rid: 7433452390807502963
-        m_RequiresAllConditions: 0
-        True:
-          rid: 7433452390807502961
-        False:
-          rid: 7433452390807502962
-        m_CurrentChild:
-          rid: -2
-    - rid: 7433452390807502958
-      type: {class: SetVariableValueAction, ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        ID:
-          m_Value0: 9987357517037401414
-          m_Value1: 348445801254641515
-        Graph:
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502956
-        Variable:
-          rid: 7433452390807502943
-        Value:
-          rid: 7433452390685082615
-    - rid: 7433452390807502959
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041315
+    - rid: 6245346127317041446
       type: {class: BranchingConditionComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 1856233174927013645
           m_Value1: 10628364381531315836
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100634
+          rid: 6245346127317041443
         m_Children:
-        - rid: 6245346065263100642
-        - rid: 6245346065263100643
+        - rid: 6245346127317041451
+        - rid: 6245346127317041452
         m_Conditions:
-        - rid: 6245346065263100644
+        - rid: 6245346127317041453
         m_RequiresAllConditions: 0
         True:
-          rid: 6245346065263100642
+          rid: 6245346127317041451
         False:
-          rid: 6245346065263100643
+          rid: 6245346127317041452
         m_CurrentChild:
           rid: -2
-    - rid: 6245346065263100638
+    - rid: 6245346127317041447
       type: {class: VariableComparisonCondition, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         Graph:
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         Variable:
-          rid: 6245346065263100615
+          rid: 6245346127317041424
         Operator:
-          rid: 6245346065263100511
+          rid: 6245346127317041319
         ComparisonValue:
-          rid: 6245346065263100617
-    - rid: 6245346065263100639
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502956
-        m_Children:
-        - rid: 7433452390807502964
-        - rid: 7433452390807502965
-        m_Conditions:
-        - rid: 7433452390807502966
-        m_RequiresAllConditions: 0
-        True:
-          rid: 7433452390807502964
-        False:
-          rid: 7433452390807502965
-        m_CurrentChild:
-          rid: -2
-    - rid: 7433452390807502960
-      type: {class: VariableComparisonCondition, ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        Graph:
-          rid: 7433452390807502925
-        Variable:
-          rid: 7433452390807502940
-        Operator:
-          rid: 7433452390685082619
-        ComparisonValue:
-          rid: 7433452390807502942
-    - rid: 7433452390807502961
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041426
+    - rid: 6245346127317041448
       type: {class: BranchingConditionComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 14689184571186413668
           m_Value1: 3621391423631138612
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100635
+          rid: 6245346127317041444
         m_Children:
-        - rid: 6245346065263100645
-        - rid: 6245346065263100646
+        - rid: 6245346127317041454
+        - rid: 6245346127317041455
         m_Conditions:
-        - rid: 6245346065263100647
+        - rid: 6245346127317041456
         m_RequiresAllConditions: 0
         True:
-          rid: 6245346065263100645
+          rid: 6245346127317041454
         False:
-          rid: 6245346065263100646
+          rid: 6245346127317041455
         m_CurrentChild:
           rid: -2
-    - rid: 6245346065263100640
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502957
-        m_Children:
-        - rid: 7433452390807502967
-        - rid: 7433452390807502968
-        m_Conditions:
-        - rid: 7433452390807502969
-        m_RequiresAllConditions: 0
-        True:
-          rid: 7433452390807502967
-        False:
-          rid: 7433452390807502968
-        m_CurrentChild:
-          rid: -2
-    - rid: 7433452390807502962
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041449
       type: {class: SwitchComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 5777982341502818777
           m_Value1: 5676013083022856940
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100635
+          rid: 6245346127317041444
         m_Children:
-        - rid: 6245346065263100648
+        - rid: 6245346127317041457
         - rid: -2
-        - rid: 6245346065263100649
-        - rid: 6245346065263100650
-        - rid: 6245346065263100651
+        - rid: 6245346127317041458
+        - rid: 6245346127317041459
+        - rid: 6245346127317041460
         EnumVariable:
-          rid: 6245346065263100618
-    - rid: 6245346065263100641
+          rid: 6245346127317041427
+    - rid: 6245346127317041450
       type: {class: EqualAbnormalState, ns: , asm: Assembly-CSharp}
       data:
         Graph:
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         Actor:
-          rid: 6245346065263100652
+          rid: 6245346127317041461
         AbnormalState:
-          rid: 6245346065263100520
-    - rid: 6245346065263100642
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502957
-        m_Children:
-        - rid: 7433452390807502970
-        - rid: -2
-        - rid: 7433452390807502971
-        - rid: 7433452390807502972
-        - rid: 7433452390807502973
-        EnumVariable:
-          rid: 7433452390807502943
-    - rid: 7433452390807502963
-      type: {class: EqualAbnormalState, ns: , asm: Assembly-CSharp}
-      data:
-        Graph:
-          rid: 7433452390807502925
-        Actor:
-          rid: 7433452390807502974
-        AbnormalState:
-          rid: 7433452390807502852
-    - rid: 7433452390807502964
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041328
+    - rid: 6245346127317041451
       type: {class: SetVariableValueAction, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 8418921881808840705
           m_Value1: 1352512465704746609
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100637
+          rid: 6245346127317041446
         Variable:
-          rid: 6245346065263100618
+          rid: 6245346127317041427
         Value:
-          rid: 6245346065263100521
-    - rid: 6245346065263100643
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502959
-        Variable:
-          rid: 7433452390807502943
-        Value:
-          rid: 7433452390807502853
-    - rid: 7433452390807502965
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041329
+    - rid: 6245346127317041452
       type: {class: BranchingConditionComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 697095701494017298
           m_Value1: 29035669565203573
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100637
+          rid: 6245346127317041446
         m_Children:
-        - rid: 6245346065263100653
-        - rid: 6245346065263100654
+        - rid: 6245346127317041462
+        - rid: 6245346127317041463
         m_Conditions:
-        - rid: 6245346065263100655
+        - rid: 6245346127317041464
         m_RequiresAllConditions: 0
         True:
-          rid: 6245346065263100653
+          rid: 6245346127317041462
         False:
-          rid: 6245346065263100654
+          rid: 6245346127317041463
         m_CurrentChild:
           rid: -2
-    - rid: 6245346065263100644
+    - rid: 6245346127317041453
       type: {class: CheckDistanceCondition, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         Graph:
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         Transform:
-          rid: 6245346065263100656
+          rid: 6245346127317041465
         Target:
-          rid: 6245346065263100615
+          rid: 6245346127317041424
         Operator:
-          rid: 6245346065263100526
+          rid: 6245346127317041334
         Threshold:
-          rid: 6245346065263100610
-    - rid: 6245346065263100645
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502959
-        m_Children:
-        - rid: 7433452390807502975
-        - rid: 7433452390807502976
-        m_Conditions:
-        - rid: 7433452390807502977
-        m_RequiresAllConditions: 0
-        True:
-          rid: 7433452390807502975
-        False:
-          rid: 7433452390807502976
-        m_CurrentChild:
-          rid: -2
-    - rid: 7433452390807502966
-      type: {class: CheckDistanceCondition, ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        Graph:
-          rid: 7433452390807502925
-        Transform:
-          rid: 7433452390807502978
-        Target:
-          rid: 7433452390807502940
-        Operator:
-          rid: 7433452390807502858
-        Threshold:
-          rid: 7433452390807502935
-    - rid: 7433452390807502967
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041419
+    - rid: 6245346127317041454
       type: {class: WaitAction, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 1012604278327937594
           m_Value1: 14154479165175963528
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100639
+          rid: 6245346127317041448
         SecondsToWait:
-          rid: 6245346065263100527
-    - rid: 6245346065263100646
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502961
-        SecondsToWait:
-          rid: 7433452390807502859
-    - rid: 7433452390807502968
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041335
+    - rid: 6245346127317041455
       type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 11253433826547393319
           m_Value1: 13393655565608028027
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100639
+          rid: 6245346127317041448
         m_Children:
-        - rid: 6245346065263100657
-        - rid: 6245346065263100658
-        - rid: 6245346065263100659
-    - rid: 6245346065263100647
+        - rid: 6245346127317041466
+        - rid: 6245346127317041467
+        - rid: 6245346127317041468
+    - rid: 6245346127317041456
       type: {class: VariableComparisonCondition, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         Graph:
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         Variable:
-          rid: 6245346065263100621
+          rid: 6245346127317041430
         Operator:
-          rid: 6245346065263100531
+          rid: 6245346127317041339
         ComparisonValue:
-          rid: 6245346065263100532
-    - rid: 6245346065263100648
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502961
-        m_Children:
-        - rid: 7433452390807502979
-        - rid: 7433452390807502980
-        - rid: 7433452390807502981
-    - rid: 7433452390807502969
-      type: {class: VariableComparisonCondition, ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        Graph:
-          rid: 7433452390807502925
-        Variable:
-          rid: 7433452390807502946
-        Operator:
-          rid: 7433452390807502863
-        ComparisonValue:
-          rid: 7433452390807502864
-    - rid: 7433452390807502970
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041340
+    - rid: 6245346127317041457
       type: {class: WaitRangeAction, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 7911496920149490136
           m_Value1: 17699744972678686624
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100640
+          rid: 6245346127317041449
         Min:
-          rid: 6245346065263100533
+          rid: 6245346127317041341
         Max:
-          rid: 6245346065263100534
-    - rid: 6245346065263100649
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502962
-        Min:
-          rid: 7433452390807502865
-        Max:
-          rid: 7433452390807502866
-    - rid: 7433452390807502971
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041342
+    - rid: 6245346127317041458
       type: {class: BranchingConditionComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 11841582682479597271
           m_Value1: 17838099150285113283
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100640
+          rid: 6245346127317041449
         m_Children:
-        - rid: 6245346065263100660
-        - rid: 6245346065263100661
+        - rid: 6245346127317041469
+        - rid: 6245346127317041470
         m_Conditions:
-        - rid: 6245346065263100662
-        - rid: 6245346065263100663
-        - rid: 6245346065263100664
+        - rid: 6245346127317041471
+        - rid: 6245346127317041472
+        - rid: 6245346127317041473
         m_RequiresAllConditions: 0
         True:
-          rid: 6245346065263100660
+          rid: 6245346127317041469
         False:
-          rid: 6245346065263100661
+          rid: 6245346127317041470
         m_CurrentChild:
           rid: -2
-    - rid: 6245346065263100650
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502962
-        m_Children:
-        - rid: 7433452390807502982
-        - rid: 7433452390807502983
-        m_Conditions:
-        - rid: 7433452390807502984
-        - rid: 7433452390807502985
-        - rid: 7433452390807502986
-        m_RequiresAllConditions: 0
-        True:
-          rid: 7433452390807502982
-        False:
-          rid: 7433452390807502983
-        m_CurrentChild:
-          rid: -2
-    - rid: 7433452390807502972
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041459
       type: {class: AbortModifier, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 16482862224759953825
           m_Value1: 8179272044647111634
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100640
+          rid: 6245346127317041449
         m_Child:
-          rid: 6245346065263100665
+          rid: 6245346127317041474
         m_Conditions:
-        - rid: 6245346065263100666
-        - rid: 6245346065263100667
-        - rid: 6245346065263100668
+        - rid: 6245346127317041475
+        - rid: 6245346127317041476
+        - rid: 6245346127317041477
         m_RequiresAllConditions: 0
-    - rid: 6245346065263100651
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502962
-        m_Child:
-          rid: 7433452390807502987
-        m_Conditions:
-        - rid: 7433452390807502988
-        - rid: 7433452390807502989
-        - rid: 7433452390807502990
-        m_RequiresAllConditions: 0
-    - rid: 7433452390807502973
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041460
       type: {class: AbortModifier, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 6539733497416066378
           m_Value1: 10500345398006566082
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100640
+          rid: 6245346127317041449
         m_Child:
-          rid: 6245346065263100669
+          rid: 6245346127317041478
         m_Conditions:
-        - rid: 6245346065263100670
-        - rid: 6245346065263100671
-        - rid: 6245346065263100672
+        - rid: 6245346127317041479
+        - rid: 6245346127317041480
+        - rid: 6245346127317041481
         m_RequiresAllConditions: 0
-    - rid: 6245346065263100652
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502962
-        m_Child:
-          rid: 7433452390807502991
-        m_Conditions:
-        - rid: 7433452390807502992
-        - rid: 7433452390807502993
-        - rid: 7433452390807502994
-        m_RequiresAllConditions: 0
-    - rid: 7433452390807502974
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041461
       type: {class: 'GameObjectToComponentBlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -1779,89 +1090,49 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
         m_LinkedVariable:
-<<<<<<< HEAD
-          rid: 6245346065263100608
-    - rid: 6245346065263100653
-=======
-          rid: 7433452390807502933
-    - rid: 7433452390807502975
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041417
+    - rid: 6245346127317041462
       type: {class: SetVariableValueAction, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 15058426728231721679
           m_Value1: 17929502715475594557
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100643
+          rid: 6245346127317041452
         Variable:
-          rid: 6245346065263100618
+          rid: 6245346127317041427
         Value:
-          rid: 6245346065263100548
-    - rid: 6245346065263100654
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502965
-        Variable:
-          rid: 7433452390807502943
-        Value:
-          rid: 7433452390807502880
-    - rid: 7433452390807502976
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041356
+    - rid: 6245346127317041463
       type: {class: SetVariableValueAction, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 7847587266334264248
           m_Value1: 3312107853032034467
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100643
+          rid: 6245346127317041452
         Variable:
-          rid: 6245346065263100618
+          rid: 6245346127317041427
         Value:
-          rid: 6245346065263100549
-    - rid: 6245346065263100655
+          rid: 6245346127317041357
+    - rid: 6245346127317041464
       type: {class: CheckDistanceCondition, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         Graph:
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         Transform:
-          rid: 6245346065263100673
+          rid: 6245346127317041482
         Target:
-          rid: 6245346065263100615
+          rid: 6245346127317041424
         Operator:
-          rid: 6245346065263100551
+          rid: 6245346127317041359
         Threshold:
-          rid: 6245346065263100611
-    - rid: 6245346065263100656
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502965
-        Variable:
-          rid: 7433452390807502943
-        Value:
-          rid: 7433452390807502881
-    - rid: 7433452390807502977
-      type: {class: CheckDistanceCondition, ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        Graph:
-          rid: 7433452390807502925
-        Transform:
-          rid: 7433452390807502995
-        Target:
-          rid: 7433452390807502940
-        Operator:
-          rid: 7433452390807502883
-        Threshold:
-          rid: 7433452390807502936
-    - rid: 7433452390807502978
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041420
+    - rid: 6245346127317041465
       type: {class: 'GameObjectToComponentBlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -1871,393 +1142,212 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
         m_LinkedVariable:
-<<<<<<< HEAD
-          rid: 6245346065263100608
-    - rid: 6245346065263100657
-=======
-          rid: 7433452390807502933
-    - rid: 7433452390807502979
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041417
+    - rid: 6245346127317041466
       type: {class: ResetPath, ns: , asm: Assembly-CSharp}
       data:
         ID:
           m_Value0: 4846089005440727374
           m_Value1: 766696828396148880
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100646
+          rid: 6245346127317041455
         Agent:
-          rid: 6245346065263100674
-    - rid: 6245346065263100658
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502968
-        Agent:
-          rid: 7433452390807502996
-    - rid: 7433452390807502980
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041483
+    - rid: 6245346127317041467
       type: {class: TriggerEventAction, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 10709277657468811597
           m_Value1: 14201382419416958987
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100646
+          rid: 6245346127317041455
         ChannelVariable:
-          rid: 6245346065263100620
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502968
-        ChannelVariable:
-          rid: 7433452390807502945
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041429
         MessageVariables:
         - rid: -2
         - rid: -2
         - rid: -2
         - rid: -2
-<<<<<<< HEAD
-    - rid: 6245346065263100659
-=======
-    - rid: 7433452390807502981
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+    - rid: 6245346127317041468
       type: {class: SetVariableValueAction, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 2918766807606387099
           m_Value1: 3609859074637463180
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100646
+          rid: 6245346127317041455
         Variable:
-          rid: 6245346065263100621
+          rid: 6245346127317041430
         Value:
-          rid: 6245346065263100553
-    - rid: 6245346065263100660
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502968
-        Variable:
-          rid: 7433452390807502946
-        Value:
-          rid: 7433452390807502885
-    - rid: 7433452390807502982
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041361
+    - rid: 6245346127317041469
       type: {class: WaitFramesAction, ns: , asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 6127649581958781632
           m_Value1: 6090542542915850892
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100649
+          rid: 6245346127317041458
         NumFrames:
-          rid: 6245346065263100554
-    - rid: 6245346065263100661
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502971
-        NumFrames:
-          rid: 7433452390807502886
-    - rid: 7433452390807502983
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041362
+    - rid: 6245346127317041470
       type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 14385135804769654909
           m_Value1: 861841009008009619
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100649
+          rid: 6245346127317041458
         m_Children:
-        - rid: 6245346065263100675
-        - rid: 6245346065263100676
-    - rid: 6245346065263100662
+        - rid: 6245346127317041484
+        - rid: 6245346127317041485
+    - rid: 6245346127317041471
       type: {class: EqualAbnormalState, ns: , asm: Assembly-CSharp}
       data:
         Graph:
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         Actor:
-          rid: 6245346065263100677
+          rid: 6245346127317041486
         AbnormalState:
-          rid: 6245346065263100558
-    - rid: 6245346065263100663
+          rid: 6245346127317041366
+    - rid: 6245346127317041472
       type: {class: CheckDistanceCondition, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         Graph:
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         Transform:
-          rid: 6245346065263100678
+          rid: 6245346127317041487
         Target:
-          rid: 6245346065263100615
+          rid: 6245346127317041424
         Operator:
-          rid: 6245346065263100560
+          rid: 6245346127317041368
         Threshold:
-          rid: 6245346065263100610
-    - rid: 6245346065263100664
+          rid: 6245346127317041419
+    - rid: 6245346127317041473
       type: {class: VariableComparisonCondition, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         Graph:
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         Variable:
-          rid: 6245346065263100615
+          rid: 6245346127317041424
         Operator:
-          rid: 6245346065263100561
+          rid: 6245346127317041369
         ComparisonValue:
-          rid: 6245346065263100617
-    - rid: 6245346065263100665
+          rid: 6245346127317041426
+    - rid: 6245346127317041474
       type: {class: BranchingConditionComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 6168004663261069733
           m_Value1: 8573213495842198739
         Graph:
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100650
+          rid: 6245346127317041459
         m_Children:
-        - rid: 6245346065263100679
-        - rid: 6245346065263100680
+        - rid: 6245346127317041488
+        - rid: 6245346127317041489
         m_Conditions:
-        - rid: 6245346065263100681
+        - rid: 6245346127317041490
         m_RequiresAllConditions: 0
         True:
-          rid: 6245346065263100679
+          rid: 6245346127317041488
         False:
-          rid: 6245346065263100680
+          rid: 6245346127317041489
         m_CurrentChild:
           rid: -2
-    - rid: 6245346065263100666
+    - rid: 6245346127317041475
       type: {class: EqualAbnormalState, ns: , asm: Assembly-CSharp}
       data:
         Graph:
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         Actor:
-          rid: 6245346065263100682
+          rid: 6245346127317041491
         AbnormalState:
-          rid: 6245346065263100566
-    - rid: 6245346065263100667
+          rid: 6245346127317041374
+    - rid: 6245346127317041476
       type: {class: CheckDistanceCondition, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         Graph:
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         Transform:
-          rid: 6245346065263100683
+          rid: 6245346127317041492
         Target:
-          rid: 6245346065263100615
+          rid: 6245346127317041424
         Operator:
-          rid: 6245346065263100568
+          rid: 6245346127317041376
         Threshold:
-          rid: 6245346065263100611
-    - rid: 6245346065263100668
+          rid: 6245346127317041420
+    - rid: 6245346127317041477
       type: {class: CheckDistanceCondition, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         Graph:
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         Transform:
-          rid: 6245346065263100684
+          rid: 6245346127317041493
         Target:
-          rid: 6245346065263100615
+          rid: 6245346127317041424
         Operator:
-          rid: 6245346065263100570
+          rid: 6245346127317041378
         Threshold:
-          rid: 6245346065263100610
-    - rid: 6245346065263100669
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502971
-        m_Children:
-        - rid: 7433452390807502997
-        - rid: 7433452390807502998
-    - rid: 7433452390807502984
-      type: {class: EqualAbnormalState, ns: , asm: Assembly-CSharp}
-      data:
-        Graph:
-          rid: 7433452390807502925
-        Actor:
-          rid: 7433452390807502999
-        AbnormalState:
-          rid: 7433452390807502890
-    - rid: 7433452390807502985
-      type: {class: CheckDistanceCondition, ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        Graph:
-          rid: 7433452390807502925
-        Transform:
-          rid: 7433452390807503000
-        Target:
-          rid: 7433452390807502940
-        Operator:
-          rid: 7433452390807502892
-        Threshold:
-          rid: 7433452390807502935
-    - rid: 7433452390807502986
-      type: {class: VariableComparisonCondition, ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        Graph:
-          rid: 7433452390807502925
-        Variable:
-          rid: 7433452390807502940
-        Operator:
-          rid: 7433452390807502893
-        ComparisonValue:
-          rid: 7433452390807502942
-    - rid: 7433452390807502987
-      type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        ID:
-          m_Value0: 11203875087170783106
-          m_Value1: 12827295918202471373
-        Graph:
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502972
-        m_Children:
-        - rid: 7433452390807503001
-        - rid: 7433452390807503002
-        - rid: 7433452390807503003
-    - rid: 7433452390807502988
-      type: {class: EqualAbnormalState, ns: , asm: Assembly-CSharp}
-      data:
-        Graph:
-          rid: 7433452390807502925
-        Actor:
-          rid: 7433452390807503004
-        AbnormalState:
-          rid: 7433452390807502898
-    - rid: 7433452390807502989
-      type: {class: CheckDistanceCondition, ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        Graph:
-          rid: 7433452390807502925
-        Transform:
-          rid: 7433452390807503005
-        Target:
-          rid: 7433452390807502940
-        Operator:
-          rid: 7433452390807502900
-        Threshold:
-          rid: 7433452390807502936
-    - rid: 7433452390807502990
-      type: {class: CheckDistanceCondition, ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        Graph:
-          rid: 7433452390807502925
-        Transform:
-          rid: 7433452390807503006
-        Target:
-          rid: 7433452390807502940
-        Operator:
-          rid: 7433452390807502902
-        Threshold:
-          rid: 7433452390807502935
-    - rid: 7433452390807502991
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041419
+    - rid: 6245346127317041478
       type: {class: RandomComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 2418996592518399630
           m_Value1: 12548791929755239475
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100651
+          rid: 6245346127317041460
         m_Children:
-        - rid: 6245346065263100685
-        - rid: 6245346065263100686
-    - rid: 6245346065263100670
+        - rid: 6245346127317041494
+        - rid: 6245346127317041495
+    - rid: 6245346127317041479
       type: {class: EqualAbnormalState, ns: , asm: Assembly-CSharp}
       data:
         Graph:
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         Actor:
-          rid: 6245346065263100687
+          rid: 6245346127317041496
         AbnormalState:
-          rid: 6245346065263100574
-    - rid: 6245346065263100671
+          rid: 6245346127317041382
+    - rid: 6245346127317041480
       type: {class: CheckDistanceCondition, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         Graph:
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         Transform:
-          rid: 6245346065263100688
+          rid: 6245346127317041497
         Target:
-          rid: 6245346065263100615
+          rid: 6245346127317041424
         Operator:
-          rid: 6245346065263100576
+          rid: 6245346127317041384
         Threshold:
-          rid: 6245346065263100610
-    - rid: 6245346065263100672
+          rid: 6245346127317041419
+    - rid: 6245346127317041481
       type: {class: VariableComparisonCondition, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         Graph:
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         Variable:
-          rid: 6245346065263100615
+          rid: 6245346127317041424
         Operator:
-          rid: 6245346065263100577
+          rid: 6245346127317041385
         ComparisonValue:
-          rid: 6245346065263100617
-    - rid: 6245346065263100673
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502973
-        m_Children:
-        - rid: 7433452390807503007
-        - rid: 7433452390807503008
-    - rid: 7433452390807502992
-      type: {class: EqualAbnormalState, ns: , asm: Assembly-CSharp}
-      data:
-        Graph:
-          rid: 7433452390807502925
-        Actor:
-          rid: 7433452390807503009
-        AbnormalState:
-          rid: 7433452390807502906
-    - rid: 7433452390807502993
-      type: {class: CheckDistanceCondition, ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        Graph:
-          rid: 7433452390807502925
-        Transform:
-          rid: 7433452390807503010
-        Target:
-          rid: 7433452390807502940
-        Operator:
-          rid: 7433452390807502908
-        Threshold:
-          rid: 7433452390807502935
-    - rid: 7433452390807502994
-      type: {class: VariableComparisonCondition, ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        Graph:
-          rid: 7433452390807502925
-        Variable:
-          rid: 7433452390807502940
-        Operator:
-          rid: 7433452390807502909
-        ComparisonValue:
-          rid: 7433452390807502942
-    - rid: 7433452390807502995
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041426
+    - rid: 6245346127317041482
       type: {class: 'GameObjectToComponentBlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -2267,13 +1357,8 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
         m_LinkedVariable:
-<<<<<<< HEAD
-          rid: 6245346065263100608
-    - rid: 6245346065263100674
-=======
-          rid: 7433452390807502933
-    - rid: 7433452390807502996
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041417
+    - rid: 6245346127317041483
       type: {class: 'GameObjectToComponentBlackboardVariable`1[[UnityEngine.AI.NavMeshAgent, UnityEngine.AIModule]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -2283,59 +1368,34 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
         m_LinkedVariable:
-<<<<<<< HEAD
-          rid: 6245346065263100608
-    - rid: 6245346065263100675
-=======
-          rid: 7433452390807502933
-    - rid: 7433452390807502997
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041417
+    - rid: 6245346127317041484
       type: {class: Attack, ns: , asm: Assembly-CSharp}
       data:
         ID:
           m_Value0: 14385135804769654909
           m_Value1: 861841009008009619
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100661
+          rid: 6245346127317041470
         Num:
-          rid: 6245346065263100578
+          rid: 6245346127317041386
         Actor:
-          rid: 6245346065263100608
-    - rid: 6245346065263100676
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502983
-        Num:
-          rid: 7433452390807502910
-        Actor:
-          rid: 7433452390807502933
-    - rid: 7433452390807502998
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041417
+    - rid: 6245346127317041485
       type: {class: WaitAction, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 18027314970997566068
           m_Value1: 2151800654916793325
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100661
+          rid: 6245346127317041470
         SecondsToWait:
-          rid: 6245346065263100613
-    - rid: 6245346065263100677
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502983
-        SecondsToWait:
-          rid: 7433452390807502938
-    - rid: 7433452390807502999
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041422
+    - rid: 6245346127317041486
       type: {class: 'GameObjectToComponentBlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -2345,13 +1405,8 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
         m_LinkedVariable:
-<<<<<<< HEAD
-          rid: 6245346065263100608
-    - rid: 6245346065263100678
-=======
-          rid: 7433452390807502933
-    - rid: 7433452390807503000
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041417
+    - rid: 6245346127317041487
       type: {class: 'GameObjectToComponentBlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -2361,46 +1416,45 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
         m_LinkedVariable:
-<<<<<<< HEAD
-          rid: 6245346065263100608
-    - rid: 6245346065263100679
+          rid: 6245346127317041417
+    - rid: 6245346127317041488
       type: {class: WaitFramesAction, ns: , asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 15797601063857669231
           m_Value1: 15362254858707011689
         Graph:
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100665
+          rid: 6245346127317041474
         NumFrames:
-          rid: 6245346065263100579
-    - rid: 6245346065263100680
+          rid: 6245346127317041387
+    - rid: 6245346127317041489
       type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 11203875087170783106
           m_Value1: 12827295918202471373
         Graph:
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100665
+          rid: 6245346127317041474
         m_Children:
-        - rid: 6245346065263100689
-        - rid: 6245346065263100690
-        - rid: 6245346065263100691
-    - rid: 6245346065263100681
+        - rid: 6245346127317041498
+        - rid: 6245346127317041499
+        - rid: 6245346127317041500
+    - rid: 6245346127317041490
       type: {class: VariableComparisonCondition, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         Graph:
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         Variable:
-          rid: 6245346065263100616
+          rid: 6245346127317041425
         Operator:
-          rid: 6245346065263100583
+          rid: 6245346127317041391
         ComparisonValue:
-          rid: 6245346065263100617
-    - rid: 6245346065263100682
+          rid: 6245346127317041426
+    - rid: 6245346127317041491
       type: {class: 'GameObjectToComponentBlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -2410,8 +1464,8 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
         m_LinkedVariable:
-          rid: 6245346065263100608
-    - rid: 6245346065263100683
+          rid: 6245346127317041417
+    - rid: 6245346127317041492
       type: {class: 'GameObjectToComponentBlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -2421,8 +1475,8 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
         m_LinkedVariable:
-          rid: 6245346065263100608
-    - rid: 6245346065263100684
+          rid: 6245346127317041417
+    - rid: 6245346127317041493
       type: {class: 'GameObjectToComponentBlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -2432,36 +1486,36 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
         m_LinkedVariable:
-          rid: 6245346065263100608
-    - rid: 6245346065263100685
+          rid: 6245346127317041417
+    - rid: 6245346127317041494
       type: {class: TimeOutModifier, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 9633120845525592050
           m_Value1: 11933334768211604505
         Graph:
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100669
+          rid: 6245346127317041478
         m_Child:
-          rid: 6245346065263100692
+          rid: 6245346127317041501
         Duration:
-          rid: 6245346065263100585
-    - rid: 6245346065263100686
+          rid: 6245346127317041393
+    - rid: 6245346127317041495
       type: {class: WaitRangeAction, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 11733640518863227745
           m_Value1: 14040575958747637183
         Graph:
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100669
+          rid: 6245346127317041478
         Min:
-          rid: 6245346065263100586
+          rid: 6245346127317041394
         Max:
-          rid: 6245346065263100587
-    - rid: 6245346065263100687
+          rid: 6245346127317041395
+    - rid: 6245346127317041496
       type: {class: 'GameObjectToComponentBlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -2471,8 +1525,8 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
         m_LinkedVariable:
-          rid: 6245346065263100608
-    - rid: 6245346065263100688
+          rid: 6245346127317041417
+    - rid: 6245346127317041497
       type: {class: 'GameObjectToComponentBlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -2482,235 +1536,84 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
         m_LinkedVariable:
-          rid: 6245346065263100608
-    - rid: 6245346065263100689
-=======
-          rid: 7433452390807502933
-    - rid: 7433452390807503001
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041417
+    - rid: 6245346127317041498
       type: {class: WaitRangeAction, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 10340810928395376543
           m_Value1: 3721822557044187658
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100680
+          rid: 6245346127317041489
         Min:
-          rid: 6245346065263100588
+          rid: 6245346127317041396
         Max:
-          rid: 6245346065263100589
-    - rid: 6245346065263100690
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502987
-        Min:
-          rid: 7433452390807502911
-        Max:
-          rid: 7433452390807502912
-    - rid: 7433452390807503002
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041397
+    - rid: 6245346127317041499
       type: {class: SetWanderPos, ns: , asm: Assembly-CSharp}
       data:
         ID:
           m_Value0: 6572060116637231978
           m_Value1: 7312150194330785485
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100680
+          rid: 6245346127317041489
         WanderPos:
-          rid: 6245346065263100619
+          rid: 6245346127317041428
         PatrolRadius:
-          rid: 6245346065263100612
+          rid: 6245346127317041421
         Target:
-          rid: 6245346065263100616
-    - rid: 6245346065263100691
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502987
-        WanderPos:
-          rid: 7433452390807502944
-        PatrolRadius:
-          rid: 7433452390807502937
-        Target:
-          rid: 7433452390807502941
-    - rid: 7433452390807503003
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041425
+    - rid: 6245346127317041500
       type: {class: NavigateToLocationAction, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 15387599834148065727
           m_Value1: 15462794287612175640
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100680
+          rid: 6245346127317041489
         Agent:
-          rid: 6245346065263100608
+          rid: 6245346127317041417
         Location:
-          rid: 6245346065263100619
+          rid: 6245346127317041428
         Speed:
-          rid: 6245346065263100614
+          rid: 6245346127317041423
         DistanceThreshold:
-          rid: 6245346065263100590
+          rid: 6245346127317041398
         AnimatorSpeedParam:
-          rid: 6245346065263100591
+          rid: 6245346127317041399
         SlowDownDistance:
-          rid: 6245346065263100592
-    - rid: 6245346065263100692
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502987
-        Agent:
-          rid: 7433452390807502933
-        Location:
-          rid: 7433452390807502944
-        Speed:
-          rid: 7433452390807502939
-        DistanceThreshold:
-          rid: 7433452390807502913
-        AnimatorSpeedParam:
-          rid: 7433452390807502914
-        SlowDownDistance:
-          rid: 7433452390807502915
-    - rid: 7433452390807503004
-      type: {class: 'GameObjectToComponentBlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 0
-          m_Value1: 0
-        Name: 
-        m_Value: {fileID: 0}
-        m_LinkedVariable:
-          rid: 7433452390807502933
-    - rid: 7433452390807503005
-      type: {class: 'GameObjectToComponentBlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 0
-          m_Value1: 0
-        Name: 
-        m_Value: {fileID: 0}
-        m_LinkedVariable:
-          rid: 7433452390807502933
-    - rid: 7433452390807503006
-      type: {class: 'GameObjectToComponentBlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 0
-          m_Value1: 0
-        Name: 
-        m_Value: {fileID: 0}
-        m_LinkedVariable:
-          rid: 7433452390807502933
-    - rid: 7433452390807503007
-      type: {class: TimeOutModifier, ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        ID:
-          m_Value0: 9633120845525592050
-          m_Value1: 11933334768211604505
-        Graph:
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502991
-        m_Child:
-          rid: 7433452390807503011
-        Duration:
-          rid: 7433452390807502917
-    - rid: 7433452390807503008
-      type: {class: WaitRangeAction, ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        ID:
-          m_Value0: 11733640518863227745
-          m_Value1: 14040575958747637183
-        Graph:
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807502991
-        Min:
-          rid: 7433452390807502918
-        Max:
-          rid: 7433452390807502919
-    - rid: 7433452390807503009
-      type: {class: 'GameObjectToComponentBlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 0
-          m_Value1: 0
-        Name: 
-        m_Value: {fileID: 0}
-        m_LinkedVariable:
-          rid: 7433452390807502933
-    - rid: 7433452390807503010
-      type: {class: 'GameObjectToComponentBlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 0
-          m_Value1: 0
-        Name: 
-        m_Value: {fileID: 0}
-        m_LinkedVariable:
-          rid: 7433452390807502933
-    - rid: 7433452390807503011
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041400
+    - rid: 6245346127317041501
       type: {class: NavigateToTargetAction, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 14510057469673765070
           m_Value1: 10659956667083173130
         Graph:
-<<<<<<< HEAD
-          rid: 6245346065263100600
+          rid: 6245346127317041409
         m_Parent:
-          rid: 6245346065263100685
+          rid: 6245346127317041494
         Agent:
-          rid: 6245346065263100608
+          rid: 6245346127317041417
         Target:
-          rid: 6245346065263100693
+          rid: 6245346127317041502
         Speed:
-          rid: 6245346065263100614
+          rid: 6245346127317041423
         DistanceThreshold:
-          rid: 6245346065263100594
+          rid: 6245346127317041402
         AnimatorSpeedParam:
-          rid: 6245346065263100595
+          rid: 6245346127317041403
         SlowDownDistance:
-          rid: 6245346065263100596
+          rid: 6245346127317041404
         m_TargetPositionMode:
-          rid: 6245346065263100597
-    - rid: 6245346065263100693
-=======
-          rid: 7433452390807502925
-        m_Parent:
-          rid: 7433452390807503007
-        Agent:
-          rid: 7433452390807502933
-        Target:
-          rid: 7433452390807503012
-        Speed:
-          rid: 7433452390807502939
-        DistanceThreshold:
-          rid: 7433452390807502921
-        AnimatorSpeedParam:
-          rid: 7433452390807502922
-        SlowDownDistance:
-          rid: 7433452390807502923
-        m_TargetPositionMode:
-          rid: 7433452390807502924
-    - rid: 7433452390807503012
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041405
+    - rid: 6245346127317041502
       type: {class: 'ComponentToGameObjectBlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -2720,11 +1623,7 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
         m_LinkedVariable:
-<<<<<<< HEAD
-          rid: 6245346065263100615
-=======
-          rid: 7433452390807502940
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+          rid: 6245346127317041424
 --- !u!114 &-5246188540740841275
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2755,11 +1654,7 @@ MonoBehaviour:
   - rid: 7433452212454949181
   - rid: 7433452371267027639
   - rid: 7433452372886815256
-<<<<<<< HEAD
-  m_VersionTimestamp: 638981569485978748
-=======
-  m_VersionTimestamp: 638971251735072927
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+  m_VersionTimestamp: 638983965519693312
   m_CommandBuffer:
     m_Commands: []
   m_RuntimeBlackboardAsset: {fileID: 8686773973910242259}
@@ -2990,7 +1885,6 @@ MonoBehaviour:
   - rid: 7433452390685081890
   - rid: 7433452390685081891
   - rid: 7433452390685081892
-<<<<<<< HEAD
   - rid: 6245346022063866131
   - rid: 6245346059485446392
   - rid: 6245346063662187249
@@ -2999,10 +1893,7 @@ MonoBehaviour:
   - rid: 6245346063682109645
   - rid: 6245346065029529899
   - rid: 6245346065029530042
-  m_VersionTimestamp: 638981650310821707
-=======
-  m_VersionTimestamp: 638971907285192631
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+  m_VersionTimestamp: 638983965519948671
   m_DebugInfo: {fileID: 4889609589823328939}
   m_RuntimeGraph: {fileID: -5586967749157722054}
   AssetID:
@@ -3250,13 +2141,8 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       Tooltip: 
     NamedChildren: []
-<<<<<<< HEAD
   - Name: PerformDieEvent
     Story: Perform [self] DieEvent
-=======
-  - Name: PerformExplosion
-    Story: Perform [self] explosion
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
     RuntimeTypeID:
       m_Value0: 8378513788947879129
       m_Value1: 8993497375733604043
@@ -3303,7 +2189,6 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089
       Tooltip: 
     NamedChildren: []
-<<<<<<< HEAD
   - Name: SenseClosestWithTagAction
     Story: 'Sense [Target] closest to [Agent] with [TagAction]'
     RuntimeTypeID:
@@ -3372,8 +2257,6 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089
       Tooltip: 
     NamedChildren: []
-=======
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
   - Name: Cooldown
     Story: Cooldowns for [duration] seconds after execution
     RuntimeTypeID:
@@ -4282,11 +3165,7 @@ MonoBehaviour:
     - rid: 7433452187624144992
       type: {class: StartNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-<<<<<<< HEAD
         Position: {x: -432.63107, y: -1319.1053}
-=======
-        Position: {x: -423.66705, y: -975.95135}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 16908457453859729335
           m_Value1: 9034757434681068965
@@ -4315,11 +3194,7 @@ MonoBehaviour:
     - rid: 7433452187624145603
       type: {class: BranchingConditionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-<<<<<<< HEAD
         Position: {x: -327.62485, y: -431.4109}
-=======
-        Position: {x: -1570.667, y: -500.95135}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 7910951969311436717
           m_Value1: 9976941366379905180
@@ -4355,11 +3230,7 @@ MonoBehaviour:
     - rid: 7433452187624145604
       type: {class: FloatingPortNodeModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
-<<<<<<< HEAD
         Position: {x: -766.6251, y: -323.41122}
-=======
-        Position: {x: -2009.667, y: -392.95135}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 11967301777034988939
           m_Value1: 94736001414211957
@@ -4374,11 +3245,7 @@ MonoBehaviour:
     - rid: 7433452187624145605
       type: {class: FloatingPortNodeModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
-<<<<<<< HEAD
         Position: {x: -179.6249, y: -323.41122}
-=======
-        Position: {x: -1439.167, y: -392.95135}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 6112313098233140595
           m_Value1: 8922010900103810378
@@ -4542,182 +3409,6 @@ MonoBehaviour:
         IsExposed: 1
         m_IsShared: 0
         m_Value: {fileID: 0}
-<<<<<<< HEAD
-=======
-    - rid: 7433452210298553297
-      type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
-      data:
-        Position: {x: -321.167, y: -676.95135}
-        ID:
-          m_Value0: 7272174320990127215
-          m_Value1: 1060018383202510514
-        Parents: []
-        PortModels:
-        - rid: 7433452210298553298
-        - rid: 7433452210298553299
-        NodeType:
-          m_SerializableType: Unity.Behavior.FindClosestWithTagAction, Unity.Behavior,
-            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-        NodeTypeID:
-          m_Value0: 1272391661889856870
-          m_Value1: 10362915794162135082
-        m_FieldValues:
-        - rid: 7433452210298553300
-        - rid: 7433452210298553301
-        - rid: 7433452210298553302
-    - rid: 7433452210298553298
-      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
-      data:
-        m_Name: InputPort
-        m_PortDataFlowType: 0
-        m_IsFloating: 0
-        m_NodeModel:
-          rid: 7433452210298553297
-        m_Connections:
-        - rid: 7433452373821883156
-    - rid: 7433452210298553299
-      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
-      data:
-        m_Name: OutputPort
-        m_PortDataFlowType: 1
-        m_IsFloating: 0
-        m_NodeModel:
-          rid: 7433452210298553297
-        m_Connections:
-        - rid: 7433452212454948994
-    - rid: 7433452210298553300
-      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
-      data:
-        FieldName: Target
-        Type:
-          m_SerializableType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
-        LocalValue:
-          rid: 7433452210298553303
-        LinkedVariable:
-          rid: 7433452210517442579
-    - rid: 7433452210298553301
-      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
-      data:
-        FieldName: Agent
-        Type:
-          m_SerializableType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
-        LocalValue:
-          rid: 7433452210298553304
-        LinkedVariable:
-          rid: 7433452210517442600
-    - rid: 7433452210298553302
-      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
-      data:
-        FieldName: Tag
-        Type:
-          m_SerializableType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
-            PublicKeyToken=b77a5c561934e089
-        LocalValue:
-          rid: 7433452210298553305
-        LinkedVariable:
-          rid: 7433452210298553343
-    - rid: 7433452210298553303
-      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 0
-          m_Value1: 0
-        Name: 
-        m_Value: {fileID: 0}
-    - rid: 7433452210298553304
-      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]',
-        ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 0
-          m_Value1: 0
-        Name: 
-        m_Value: {fileID: 0}
-    - rid: 7433452210298553305
-      type: {class: 'BlackboardVariable`1[[System.String, mscorlib]]', ns: Unity.Behavior,
-        asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 0
-          m_Value1: 0
-        Name: 
-        m_Value: 
-    - rid: 7433452210298553343
-      type: {class: 'TypedVariableModel`1[[System.String, mscorlib]]', ns: Unity.Behavior.GraphFramework,
-        asm: Unity.Behavior.GraphFramework}
-      data:
-        ID:
-          m_Value0: 11226254564500106748
-          m_Value1: 17726985197155324246
-        Name: EnemyTag
-        IsExposed: 1
-        m_IsShared: 0
-        m_Value: 
-    - rid: 7433452210517442579
-      type: {class: 'TypedVariableModel`1[[UnityEngine.Transform, UnityEngine.CoreModule]]',
-        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
-      data:
-        ID:
-          m_Value0: 4413680249323961020
-          m_Value1: 14419944336744000952
-        Name: Target
-        IsExposed: 0
-        m_IsShared: 0
-        m_Value: {fileID: 0}
-    - rid: 7433452210517442600
-      type: {class: 'TypedVariableModel`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]',
-        ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
-      data:
-        ID:
-          m_Value0: 1
-          m_Value1: 0
-        Name: Self
-        IsExposed: 0
-        m_IsShared: 0
-        m_Value: {fileID: 0}
-    - rid: 7433452210517443542
-      type: {class: SetValueNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
-      data:
-        Position: {x: -2009.667, y: -302.95135}
-        ID:
-          m_Value0: 9987357517037401414
-          m_Value1: 348445801254641515
-        Parents: []
-        PortModels:
-        - rid: 7433452210517443543
-        - rid: 7433452210517443544
-        NodeType:
-          m_SerializableType: Unity.Behavior.SetVariableValueAction, Unity.Behavior,
-            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-        NodeTypeID:
-          m_Value0: 5494721648866555964
-          m_Value1: 18024545711220129068
-        m_FieldValues:
-        - rid: 7433452212454948881
-        - rid: 7433452212454948882
-    - rid: 7433452210517443543
-      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
-      data:
-        m_Name: InputPort
-        m_PortDataFlowType: 0
-        m_IsFloating: 0
-        m_NodeModel:
-          rid: 7433452210517443542
-        m_Connections:
-        - rid: 7433452187624145610
-    - rid: 7433452210517443544
-      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
-      data:
-        m_Name: OutputPort
-        m_PortDataFlowType: 1
-        m_IsFloating: 0
-        m_NodeModel:
-          rid: 7433452210517443542
-        m_Connections: []
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
     - rid: 7433452210517443574
       type: {class: 'TypedVariableModel`1[[BattleStatus, Assembly-CSharp]]', ns: Unity.Behavior.GraphFramework,
         asm: Unity.Behavior.GraphFramework}
@@ -4729,57 +3420,10 @@ MonoBehaviour:
         IsExposed: 0
         m_IsShared: 0
         m_Value: 0
-<<<<<<< HEAD
     - rid: 7433452212454948993
       type: {class: CompositeNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
         Position: {x: -325.93408, y: -867.948}
-=======
-    - rid: 7433452212454948881
-      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
-      data:
-        FieldName: Variable
-        Type:
-          m_SerializableType: BattleStatus, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-            PublicKeyToken=null
-        LocalValue:
-          rid: 7433452212454948883
-        LinkedVariable:
-          rid: 7433452210517443574
-    - rid: 7433452212454948882
-      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
-      data:
-        FieldName: Value
-        Type:
-          m_SerializableType: BattleStatus, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-            PublicKeyToken=null
-        LocalValue:
-          rid: 7433452212454948884
-        LinkedVariable:
-          rid: -2
-    - rid: 7433452212454948883
-      type: {class: 'BlackboardVariable`1[[BattleStatus, Assembly-CSharp]]', ns: Unity.Behavior,
-        asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 0
-          m_Value1: 0
-        Name: 
-        m_Value: 0
-    - rid: 7433452212454948884
-      type: {class: 'BlackboardVariable`1[[BattleStatus, Assembly-CSharp]]', ns: Unity.Behavior,
-        asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 0
-          m_Value1: 0
-        Name: 
-        m_Value: 0
-    - rid: 7433452212454948993
-      type: {class: CompositeNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
-      data:
-        Position: {x: -321.167, y: -588.95135}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 9754751962196305230
           m_Value1: 6023607303674556446
@@ -4818,11 +3462,7 @@ MonoBehaviour:
     - rid: 7433452212454949058
       type: {class: SwitchNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-<<<<<<< HEAD
         Position: {x: 1407.293, y: -127.00414}
-=======
-        Position: {x: 495.833, y: -302.95135}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 5777982341502818777
           m_Value1: 5676013083022856940
@@ -4874,11 +3514,7 @@ MonoBehaviour:
     - rid: 7433452212454949084
       type: {class: FloatingPortNodeModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
-<<<<<<< HEAD
         Position: {x: 480.79285, y: -19.004036}
-=======
-        Position: {x: -340.667, y: -194.95135}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 11778129791041465617
           m_Value1: 16238576850691565507
@@ -4893,11 +3529,7 @@ MonoBehaviour:
     - rid: 7433452212454949085
       type: {class: FloatingPortNodeModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
-<<<<<<< HEAD
         Position: {x: 743.2926, y: -19.004036}
-=======
-        Position: {x: -78.16699, y: -194.95135}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 755786016059715526
           m_Value1: 17393428499852172041
@@ -4912,11 +3544,7 @@ MonoBehaviour:
     - rid: 7433452212454949086
       type: {class: FloatingPortNodeModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
-<<<<<<< HEAD
         Position: {x: 1066.2926, y: -19.004036}
-=======
-        Position: {x: 244.83301, y: -194.95135}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 678376864276951097
           m_Value1: 17332598456417659993
@@ -4931,11 +3559,7 @@ MonoBehaviour:
     - rid: 7433452212454949087
       type: {class: FloatingPortNodeModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
-<<<<<<< HEAD
         Position: {x: 1606.793, y: -19.004036}
-=======
-        Position: {x: 695.333, y: -194.95135}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 16646213762406879684
           m_Value1: 11968817421837136469
@@ -4950,11 +3574,7 @@ MonoBehaviour:
     - rid: 7433452212454949088
       type: {class: FloatingPortNodeModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
-<<<<<<< HEAD
         Position: {x: 2210.2932, y: -19.004036}
-=======
-        Position: {x: 1208.833, y: -194.95135}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 4492214238041985402
           m_Value1: 14638328345806076097
@@ -5118,11 +3738,7 @@ MonoBehaviour:
     - rid: 7433452212454949126
       type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-<<<<<<< HEAD
         Position: {x: 480.79285, y: 68.99625}
-=======
-        Position: {x: -340.667, y: -106.951355}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 7911496920149490136
           m_Value1: 17699744972678686624
@@ -5334,11 +3950,7 @@ MonoBehaviour:
     - rid: 7433452212956692621
       type: {class: AbortNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-<<<<<<< HEAD
         Position: {x: 1606.793, y: 68.99625}
-=======
-        Position: {x: 695.333, y: -106.951355}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 16482862224759953825
           m_Value1: 8179272044647111634
@@ -5379,11 +3991,7 @@ MonoBehaviour:
         m_NodeModel:
           rid: 7433452212956692621
         m_Connections:
-<<<<<<< HEAD
         - rid: 6245346063662187252
-=======
-        - rid: 7433452373998829793
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
     - rid: 7433452212956692885
       type: {class: ConditionModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
@@ -5443,11 +4051,7 @@ MonoBehaviour:
     - rid: 7433452212956692987
       type: {class: BranchingConditionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-<<<<<<< HEAD
         Position: {x: -179.6249, y: -235.4115}
-=======
-        Position: {x: -1439.167, y: -302.95135}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 1856233174927013645
           m_Value1: 10628364381531315836
@@ -5484,11 +4088,7 @@ MonoBehaviour:
     - rid: 7433452212956692988
       type: {class: FloatingPortNodeModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
-<<<<<<< HEAD
         Position: {x: -470.1248, y: -127.41158}
-=======
-        Position: {x: -1729.667, y: -194.95135}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 618796019445192652
           m_Value1: 18395669469262573080
@@ -5503,11 +4103,7 @@ MonoBehaviour:
     - rid: 7433452212956692989
       type: {class: FloatingPortNodeModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
-<<<<<<< HEAD
         Position: {x: -31.124575, y: -127.41158}
-=======
-        Position: {x: -1290.667, y: -194.95135}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 2667248849567259499
           m_Value1: 4829358829829080089
@@ -5803,11 +4399,7 @@ MonoBehaviour:
     - rid: 7433452213496447205
       type: {class: SetValueNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-<<<<<<< HEAD
         Position: {x: -470.1248, y: -39.411537}
-=======
-        Position: {x: -1729.667, y: -106.951355}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 8418921881808840705
           m_Value1: 1352512465704746609
@@ -6039,11 +4631,7 @@ MonoBehaviour:
     - rid: 7433452213496447657
       type: {class: AbortNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-<<<<<<< HEAD
         Position: {x: 2210.2932, y: 68.99625}
-=======
-        Position: {x: 1208.833, y: -106.951355}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 6539733497416066378
           m_Value1: 10500345398006566082
@@ -6264,11 +4852,7 @@ MonoBehaviour:
     - rid: 7433452213496447983
       type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-<<<<<<< HEAD
         Position: {x: 2043.7933, y: 500.99615}
-=======
-        Position: {x: 1042.333, y: 433.04865}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 14510057469673765070
           m_Value1: 10659956667083173130
@@ -6452,11 +5036,7 @@ MonoBehaviour:
     - rid: 7433452213904867483
       type: {class: ModifierNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-<<<<<<< HEAD
         Position: {x: 2043.7933, y: 392.99603}
-=======
-        Position: {x: 1042.333, y: 325.04865}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 9633120845525592050
           m_Value1: 11933334768211604505
@@ -6515,11 +5095,7 @@ MonoBehaviour:
     - rid: 7433452213997142212
       type: {class: CompositeNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-<<<<<<< HEAD
         Position: {x: 2210.2932, y: 284.99615}
-=======
-        Position: {x: 1208.833, y: 109.048645}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 2418996592518399630
           m_Value1: 12548791929755239475
@@ -6558,11 +5134,7 @@ MonoBehaviour:
     - rid: 7433452213997142563
       type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-<<<<<<< HEAD
         Position: {x: 2333.7927, y: 392.99603}
-=======
-        Position: {x: 1332.333, y: 325.04865}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 11733640518863227745
           m_Value1: 14040575958747637183
@@ -6641,11 +5213,7 @@ MonoBehaviour:
     - rid: 7433452213997142815
       type: {class: BranchingConditionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-<<<<<<< HEAD
         Position: {x: -31.124575, y: -39.411537}
-=======
-        Position: {x: -1290.667, y: -106.951355}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 697095701494017298
           m_Value1: 29035669565203573
@@ -6682,11 +5250,7 @@ MonoBehaviour:
     - rid: 7433452213997142816
       type: {class: FloatingPortNodeModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
-<<<<<<< HEAD
         Position: {x: -179.1249, y: 176.58835}
-=======
-        Position: {x: -1438.667, y: 109.048645}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 16559836660696546136
           m_Value1: 14717072315132712233
@@ -6701,11 +5265,7 @@ MonoBehaviour:
     - rid: 7433452213997142817
       type: {class: FloatingPortNodeModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
-<<<<<<< HEAD
         Position: {x: 111.3755, y: 176.58835}
-=======
-        Position: {x: -1148.167, y: 109.048645}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 4010728888549698556
           m_Value1: 17393449694252211263
@@ -6870,11 +5430,7 @@ MonoBehaviour:
     - rid: 7433452214262169819
       type: {class: SetValueNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-<<<<<<< HEAD
         Position: {x: -179.1249, y: 284.58832}
-=======
-        Position: {x: -1438.667, y: 325.04865}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 15058426728231721679
           m_Value1: 17929502715475594557
@@ -6964,11 +5520,7 @@ MonoBehaviour:
     - rid: 7433452214262170419
       type: {class: SetValueNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-<<<<<<< HEAD
         Position: {x: 111.3755, y: 284.58832}
-=======
-        Position: {x: -1148.167, y: 325.04865}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 7847587266334264248
           m_Value1: 3312107853032034467
@@ -7047,11 +5599,7 @@ MonoBehaviour:
     - rid: 7433452214305685991
       type: {class: BranchingConditionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-<<<<<<< HEAD
         Position: {x: 1066.2926, y: 68.99625}
-=======
-        Position: {x: 244.83301, y: -106.951355}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 11841582682479597271
           m_Value1: 17838099150285113283
@@ -7115,11 +5663,7 @@ MonoBehaviour:
     - rid: 7433452214305685992
       type: {class: FloatingPortNodeModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
-<<<<<<< HEAD
         Position: {x: 949.7929, y: 284.99615}
-=======
-        Position: {x: 128.33301, y: 109.048645}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 10596715361849033882
           m_Value1: 9461066206707179365
@@ -7134,11 +5678,7 @@ MonoBehaviour:
     - rid: 7433452214305685993
       type: {class: FloatingPortNodeModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
-<<<<<<< HEAD
         Position: {x: 1168.7926, y: 284.99615}
-=======
-        Position: {x: 347.333, y: 109.048645}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 1045593276037958654
           m_Value1: 18372188384618695236
@@ -7343,11 +5883,7 @@ MonoBehaviour:
     - rid: 7433452214450913672
       type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-<<<<<<< HEAD
         Position: {x: 1168.7926, y: 500.99615}
-=======
-        Position: {x: 347.333, y: 433.04865}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 18027314970997566068
           m_Value1: 2151800654916793325
@@ -7495,11 +6031,7 @@ MonoBehaviour:
     - rid: 7433452218836845528
       type: {class: StickyNoteModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
-<<<<<<< HEAD
         Position: {x: -127.88637, y: -424.43872}
-=======
-        Position: {x: -1334.8855, y: -493.3686}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 5143896620628560379
           m_Value1: 7912038705342220206
@@ -7888,11 +6420,7 @@ MonoBehaviour:
     - rid: 7433452364981863401
       type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-<<<<<<< HEAD
         Position: {x: 1168.7926, y: 392.99603}
-=======
-        Position: {x: 347.333, y: 325.04865}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 14385135804769654909
           m_Value1: 861841009008009619
@@ -7983,11 +6511,7 @@ MonoBehaviour:
     - rid: 7433452371267027530
       type: {class: StartOnEventModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-<<<<<<< HEAD
         Position: {x: -123.24363, y: -1318.1941}
-=======
-        Position: {x: 1792.187, y: -632.9062}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 2458721305884090052
           m_Value1: 5120224807455234289
@@ -8047,11 +6571,7 @@ MonoBehaviour:
     - rid: 7433452371267027962
       type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-<<<<<<< HEAD
         Position: {x: -123.24363, y: -1228.1941}
-=======
-        Position: {x: 1791.5997, y: -524.4404}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 5075371385023851075
           m_Value1: 10152571032669743882
@@ -8060,11 +6580,7 @@ MonoBehaviour:
         - rid: 7433452371267027963
         - rid: 7433452371267027964
         NodeType:
-<<<<<<< HEAD
           m_SerializableType: PerformDieEvent, Assembly-CSharp, Version=0.0.0.0,
-=======
-          m_SerializableType: PerformExplosion, Assembly-CSharp, Version=0.0.0.0,
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
             Culture=neutral, PublicKeyToken=null
         NodeTypeID:
           m_Value0: 8378513788947879129
@@ -8193,11 +6709,7 @@ MonoBehaviour:
     - rid: 7433452372886815659
       type: {class: BranchingConditionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-<<<<<<< HEAD
         Position: {x: 563.81464, y: -502.93616}
-=======
-        Position: {x: -753.667, y: -302.95135}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 14689184571186413668
           m_Value1: 3621391423631138612
@@ -8233,11 +6745,7 @@ MonoBehaviour:
     - rid: 7433452372886815660
       type: {class: FloatingPortNodeModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
-<<<<<<< HEAD
         Position: {x: 422.81448, y: -394.93607}
-=======
-        Position: {x: -894.667, y: -194.95135}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 9946308131234077773
           m_Value1: 12407768277090818876
@@ -8252,11 +6760,7 @@ MonoBehaviour:
     - rid: 7433452372886815661
       type: {class: FloatingPortNodeModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
-<<<<<<< HEAD
         Position: {x: 669.3145, y: -394.93607}
-=======
-        Position: {x: -648.167, y: -194.95135}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 17661956936920313590
           m_Value1: 148329466579333168
@@ -8451,11 +6955,7 @@ MonoBehaviour:
     - rid: 7433452372917486299
       type: {class: SequenceNodeModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
-<<<<<<< HEAD
         Position: {x: 669.3145, y: -306.9358}
-=======
-        Position: {x: -648.167, y: -106.951355}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 11253433826547393319
           m_Value1: 13393655565608028027
@@ -8529,11 +7029,7 @@ MonoBehaviour:
     - rid: 7433452372917486552
       type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-<<<<<<< HEAD
         Position: {x: 422.81448, y: -306.9358}
-=======
-        Position: {x: -894.667, y: -106.951355}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 1012604278327937594
           m_Value1: 14154479165175963528
@@ -8660,11 +7156,7 @@ MonoBehaviour:
     - rid: 7433452373821883147
       type: {class: BranchingConditionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-<<<<<<< HEAD
         Position: {x: -429.8331, y: -1212.7065}
-=======
-        Position: {x: -423.667, y: -872.95135}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 18057853513806515533
           m_Value1: 2725133909777537703
@@ -8694,7 +7186,6 @@ MonoBehaviour:
           - rid: 7433452389710692573
           OperatorFieldModel:
             rid: -2
-<<<<<<< HEAD
         - ConditionType:
             m_SerializableType: Unity.Behavior.VariableComparisonCondition, Unity.Behavior,
               Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -8709,18 +7200,12 @@ MonoBehaviour:
           - rid: 6245346065029529707
           OperatorFieldModel:
             rid: 6245346064843146043
-=======
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         <RequiresAllConditionsTrue>k__BackingField: 0
         <ShouldTruncateNodeUI>k__BackingField: 0
     - rid: 7433452373821883148
       type: {class: FloatingPortNodeModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
-<<<<<<< HEAD
         Position: {x: -824.61414, y: -1036.7946}
-=======
-        Position: {x: -2243.667, y: -764.95135}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 15567517095293765992
           m_Value1: 16639288460954684349
@@ -8735,11 +7220,7 @@ MonoBehaviour:
     - rid: 7433452373821883149
       type: {class: FloatingPortNodeModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
-<<<<<<< HEAD
         Position: {x: -325.93408, y: -1040.8271}
-=======
-        Position: {x: -321.167, y: -764.95135}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 14516018146159836039
           m_Value1: 3327855653660442778
@@ -8800,11 +7281,7 @@ MonoBehaviour:
         m_NodeModel:
           rid: 7433452373821883148
         m_Connections:
-<<<<<<< HEAD
         - rid: 6245346065029530043
-=======
-        - rid: 7433452389710693033
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
     - rid: 7433452373821883155
       type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
@@ -8824,19 +7301,11 @@ MonoBehaviour:
         m_NodeModel:
           rid: 7433452373821883149
         m_Connections:
-<<<<<<< HEAD
         - rid: 6245346059485446393
     - rid: 7433452373998829792
       type: {class: SequenceNodeModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         Position: {x: 1709.2927, y: 500.99615}
-=======
-        - rid: 7433452210298553298
-    - rid: 7433452373998829792
-      type: {class: SequenceNodeModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
-      data:
-        Position: {x: 695.333, y: 109.048645}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 11203875087170783106
           m_Value1: 12827295918202471373
@@ -8857,11 +7326,7 @@ MonoBehaviour:
         m_NodeModel:
           rid: 7433452373998829792
         m_Connections:
-<<<<<<< HEAD
         - rid: 6245346063662187258
-=======
-        - rid: 7433452212956692623
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
     - rid: 7433452373998829794
       type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
@@ -8874,11 +7339,7 @@ MonoBehaviour:
     - rid: 7433452373998830386
       type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-<<<<<<< HEAD
         Position: {x: 949.7929, y: 392.99603}
-=======
-        Position: {x: 128.33301, y: 325.04865}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 6127649581958781632
           m_Value1: 6090542542915850892
@@ -8987,20 +7448,12 @@ MonoBehaviour:
     - rid: 7433452389710693032
       type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-<<<<<<< HEAD
         Position: {x: -824.61414, y: -948.7946}
         ID:
           m_Value0: 15826126162864710154
           m_Value1: 1333524198162046363
         Parents:
         - rid: 6245346065029530042
-=======
-        Position: {x: -2243.667, y: -676.95135}
-        ID:
-          m_Value0: 15826126162864710154
-          m_Value1: 1333524198162046363
-        Parents: []
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         PortModels:
         - rid: 7433452389710693033
         - rid: 7433452389710693034
@@ -9020,12 +7473,7 @@ MonoBehaviour:
         m_IsFloating: 0
         m_NodeModel:
           rid: 7433452389710693032
-<<<<<<< HEAD
         m_Connections: []
-=======
-        m_Connections:
-        - rid: 7433452373821883154
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
     - rid: 7433452389710693034
       type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
@@ -9058,11 +7506,7 @@ MonoBehaviour:
     - rid: 7433452390685081890
       type: {class: BranchingConditionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
-<<<<<<< HEAD
         Position: {x: 562.95624, y: -944.3366}
-=======
-        Position: {x: 249.33301, y: -500.95135}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 6026730316124237285
           m_Value1: 8020297261291000208
@@ -9097,11 +7541,7 @@ MonoBehaviour:
     - rid: 7433452390685081891
       type: {class: FloatingPortNodeModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
-<<<<<<< HEAD
         Position: {x: 563.81464, y: -590.9364}
-=======
-        Position: {x: -753.667, y: -392.95135}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 8110657656528915638
           m_Value1: 14575501002695552407
@@ -9116,11 +7556,7 @@ MonoBehaviour:
     - rid: 7433452390685081892
       type: {class: FloatingPortNodeModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
-<<<<<<< HEAD
         Position: {x: 809.4567, y: -836.3364}
-=======
-        Position: {x: 495.833, y: -392.95135}
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
         ID:
           m_Value0: 13260801688334419287
           m_Value1: 16550531318221705422
@@ -9278,11 +7714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c02bb70996b49eba31d0c206e28da24, type: 3}
   m_Name: MovingProp Blackboard
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  VersionTimestamp: 638981569485978748
-=======
-  VersionTimestamp: 638971251735072927
->>>>>>> 7fe34353 (Feat[FC_2] 컵케이크 로봇)
+  VersionTimestamp: 638983965519693312
   AssetID:
     m_Value0: 1489596762954321695
     m_Value1: 11309176924788296088
@@ -9298,14 +7730,32 @@ MonoBehaviour:
     - rid: 7433452187624145182
     - rid: 7433452212956693184
     - rid: 7433452187624145769
-    - rid: 7433452187624145284
+    - rid: 6245346127317041406
     - rid: 7433452212454949206
-    - rid: 7433452371267027714
+    - rid: 6245346127317041407
     - rid: 7433452372886815334
   m_SharedBlackboardVariableGuids: []
   references:
     version: 2
     RefIds:
+    - rid: 6245346127317041406
+      type: {class: 'BlackboardVariable`1[[BattleStatus, Assembly-CSharp]]', ns: Unity.Behavior,
+        asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 7835853725543043607
+          m_Value1: 9174996832335580003
+        Name: BattleStatus
+        m_Value: 0
+    - rid: 6245346127317041407
+      type: {class: 'BlackboardVariable`1[[OnEvent, Assembly-CSharp]]', ns: Unity.Behavior,
+        asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 4306296458251515590
+          m_Value1: 8912991726668873650
+        Name: DieEvent
+        m_Value: {fileID: 0}
     - rid: 7433452187624145001
       type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
@@ -9333,15 +7783,6 @@ MonoBehaviour:
           m_Value1: 14419944336744000952
         Name: Target
         m_Value: {fileID: 0}
-    - rid: 7433452187624145284
-      type: {class: 'BlackboardVariable`1[[BattleStatus, Assembly-CSharp]]', ns: Unity.Behavior,
-        asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 7835853725543043607
-          m_Value1: 9174996832335580003
-        Name: BattleStatus
-        m_Value: 0
     - rid: 7433452187624145769
       type: {class: 'BlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]',
         ns: Unity.Behavior, asm: Unity.Behavior}
@@ -9414,15 +7855,6 @@ MonoBehaviour:
           m_Value1: 9668056795492618364
         Name: MoveSpeed
         m_Value: 2
-    - rid: 7433452371267027714
-      type: {class: 'BlackboardVariable`1[[OnEvent, Assembly-CSharp]]', ns: Unity.Behavior,
-        asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 4306296458251515590
-          m_Value1: 8912991726668873650
-        Name: DieEvent
-        m_Value: {fileID: 0}
     - rid: 7433452372886815334
       type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior,
         asm: Unity.Behavior}
