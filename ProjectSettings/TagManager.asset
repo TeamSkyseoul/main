@@ -12,6 +12,7 @@ TagManager:
   - Zombie
   - CinemachineTarget
   - Grabbable
+  - RightArm
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Monster
   - Ground
   - MiniMap
-  - 
+  - Robot
   - 
   - 
   - 
