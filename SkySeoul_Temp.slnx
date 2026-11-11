@@ -1,0 +1,6 @@
+﻿<Solution>
+  <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="RootMotion.csproj" />
+  <Project Path="RootMotionEditor.csproj" />
+  <Project Path="Assembly-CSharp-Editor.csproj" />
+</Solution>
