@@ -47,7 +47,7 @@ QualitySettings:
     asyncUploadBufferSize: 16
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    customRenderPipeline: {fileID: 11400000, guid: 39d15144541a77e41a44b69e88d58ec4,
+    customRenderPipeline: {fileID: 11400000, guid: e95ef0f83d9422f428ae8a1f9daa436c,
       type: 2}
     terrainQualityOverrides: 0
     terrainPixelError: 1
@@ -100,7 +100,7 @@ QualitySettings:
     asyncUploadBufferSize: 16
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    customRenderPipeline: {fileID: 11400000, guid: d6d6259078239f244866ea4956d69906,
+    customRenderPipeline: {fileID: 11400000, guid: 62860b9f2fdd9fd4bbbebe7dd318ee03,
       type: 2}
     terrainQualityOverrides: 0
     terrainPixelError: 1
@@ -128,7 +128,7 @@ QualitySettings:
     globalTextureMipmapLimit: 0
     textureMipmapLimitSettings: []
     anisotropicTextures: 2
-    antiAliasing: 0
+    antiAliasing: 4
     softParticles: 0
     softVegetation: 1
     realtimeReflectionProbes: 1
@@ -153,7 +153,7 @@ QualitySettings:
     asyncUploadBufferSize: 16
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    customRenderPipeline: {fileID: 11400000, guid: f27d1e240f1e824418fc070adcbc9aed,
+    customRenderPipeline: {fileID: 11400000, guid: f520dc655ce606b43ae90f2068bcdc96,
       type: 2}
     terrainQualityOverrides: 0
     terrainPixelError: 1
@@ -167,5 +167,6 @@ QualitySettings:
     excludedTargetPlatforms: []
   m_TextureMipmapLimitGroupNames: []
   m_PerPlatformDefaultQuality:
+    Android: 0
     Server: 0
     Standalone: 2
