@@ -7,9 +7,25 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/scenes/TitleMain.unity
+    guid: b188e513855bc454090cbdbc1e314f4a
+  - enabled: 1
+    path: Assets/scenes/Title_1116(Timeline).unity
+    guid: 8b50e0bed2b2c804392717cbed70f178
+  - enabled: 1
+    path: Assets/scenes/TitleBattleTest.unity
+    guid: 849a5e93252b2224fa5d8bdc94bd797d
+  - enabled: 1
+    path: Assets/scenes/Title_1116.unity
+    guid: d42173805888c3b439ff69878610e1b7
+  - enabled: 1
+    path: Assets/scenes/ZombieBattleTest.unity
+    guid: b5ce8a9ec6a4677489d4b981e0739da6
+  - enabled: 1
     path: Assets/scenes/Parry.unity
     guid: 89cf4d484cd1ea645b089e9526e7d986
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 142f97ac6ebd14e48b0765ad1863dccd, type: 2}
     com.unity.dt.app-ui: {fileID: 11400000, guid: 99f9c9493070a9d4c979a8fec7c5a8d3, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 71381723d3b27bb42a530f1c504ef049, type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 9d4a92042d416b64185bbf94f8ea6d41, type: 3}
