@@ -1,4 +1,5 @@
 @echo off
+chcp 65001 >nul
 setlocal enabledelayedexpansion
 set "ROOT_DIR=%~dp0"
 cd /d "%ROOT_DIR%"
@@ -9,13 +10,14 @@ echo ========================================================
 echo         SkySeoul Git Multi-Repository Manager
 echo ========================================================
 echo.
-echo  [1] Pull All (?? ????? ???)
-echo  [2] Push All (?? ????? ?? ?? ? ??)
-echo  [3] Status All (?? ????? ?? ??)
-echo  [0] Exit (??)
+echo  [1] Pull All   : Update all repositories (최신화)
+echo  [2] Push All   : Commit and push all repositories (일괄 푸시)
+echo  [3] Status All : Check status of all repositories (상태 점검)
+echo  [0] Exit       : 종료
 echo.
 echo ========================================================
-set /p "CHOICE=??? ?? ??? ????? [0-3]: "
+set "CHOICE="
+set /p "CHOICE=Select menu [0-3]: "
 
 if "%CHOICE%"=="1" (
     call "%ROOT_DIR%git_pull_all.bat"

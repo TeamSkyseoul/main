@@ -1,4 +1,5 @@
 @echo off
+chcp 65001 >nul
 setlocal enabledelayedexpansion
 
 :: Set project root directory based on batch file location
@@ -89,19 +90,45 @@ echo.
 pause
 exit /b 0
 
-:: Smart Push Function (Handles regular push and upstream for PR/Fork branches)
+:: Smart Push Function (Handles regular push, upstream for PR branches, and pull on reject)
 :SMART_PUSH
+set "REPO_LABEL=%~1"
 git -c safe.directory="*" push 2>nul
 if errorlevel 1 (
-    set "TARGET_REMOTE="
-    set "CUR_BRANCH="
-    for /f "tokens=*" %%B in ('git -c safe.directory="*" branch --show-current 2^>nul') do set "CUR_BRANCH=%%B"
-    for /f "tokens=*" %%R in ('git -c safe.directory="*" remote 2^>nul') do (
-        if not defined TARGET_REMOTE set "TARGET_REMOTE=%%R"
+    set "HAS_UPSTREAM="
+    for /f "tokens=*" %%U in ('git -c safe.directory="*" rev-parse --abbrev-ref @{u} 2^>nul') do set "HAS_UPSTREAM=1"
+
+    if not defined HAS_UPSTREAM (
+        set "CUR_BRANCH="
+        set "TARGET_REMOTE="
+        for /f "tokens=*" %%B in ('git -c safe.directory="*" branch --show-current 2^>nul') do set "CUR_BRANCH=%%B"
+        for /f "tokens=*" %%R in ('git -c safe.directory="*" remote 2^>nul') do (
+            if not defined TARGET_REMOTE set "TARGET_REMOTE=%%R"
+        )
+        if defined CUR_BRANCH (
+            echo [*] Setting upstream and pushing branch [!CUR_BRANCH!] to [!TARGET_REMOTE!]...
+            git -c safe.directory="*" push -u !TARGET_REMOTE! !CUR_BRANCH!
+        )
+        exit /b 0
     )
-    if defined CUR_BRANCH (
-        echo [*] Setting upstream and pushing branch [!CUR_BRANCH!] to [!TARGET_REMOTE!]...
-        git -c safe.directory="*" push -u !TARGET_REMOTE! !CUR_BRANCH!
+
+    echo.
+    echo ----------------------------------------------------
+    echo [NOTICE] Push Rejected: !REPO_LABEL! - Remote has newer commits.
+    echo  [1] Pull and Push : Merge remote changes then retry push [Recommended]
+    echo  [2] Skip          : Skip pushing this repository
+    echo ----------------------------------------------------
+    set "PUSH_CHOICE="
+    set /p "PUSH_CHOICE=Select an option [1-2] (Default: 1): "
+    if "!PUSH_CHOICE!"=="" set "PUSH_CHOICE=1"
+
+    if "!PUSH_CHOICE!"=="1" (
+        echo [*] Pulling remote changes...
+        git -c safe.directory="*" pull --no-edit
+        echo [*] Retrying push...
+        git -c safe.directory="*" push
+    ) else (
+        echo [*] Skipping push for !REPO_LABEL!
     )
 )
 exit /b 0
