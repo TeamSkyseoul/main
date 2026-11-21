@@ -56,12 +56,12 @@
       }
     },
     "com.unity.behavior": {
-      "version": "1.0.16",
+      "version": "1.0.17",
       "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.burst": "1.7.2",
-        "com.unity.dt.app-ui": "2.0.0",
+        "com.unity.dt.app-ui": "2.2.3",
         "com.unity.modules.ai": "1.0.0",
         "com.unity.collections": "2.1.4",
         "com.unity.modules.audio": "1.0.0",
@@ -344,14 +344,13 @@
       }
     },
     "com.unity.visualscripting": {
-      "version": "1.9.12",
+      "version": "file:com.unity.visualscripting",
       "depth": 0,
-      "source": "registry",
+      "source": "embedded",
       "dependencies": {
         "com.unity.ugui": "2.0.0",
         "com.unity.modules.jsonserialize": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
+      }
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
